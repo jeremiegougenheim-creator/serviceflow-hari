@@ -421,14 +421,16 @@ body{
 /* ROLE SELECTOR / SPLASH */
 .splash-band{position:absolute;top:0;left:0;right:0;height:42%;background:linear-gradient(180deg,#1B2D4F 0%,#243A62 55%,#2E3A28 100%);overflow:hidden}
 .splash-canopy{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--bronze),var(--bronze-light),var(--bronze),transparent)}
-.splash-body{position:absolute;top:42%;left:0;right:0;bottom:0;overflow-y:auto;scrollbar-width:none}
+/* Fixed card — sits above the scrollable role list */
+.splash-card{position:absolute;top:calc(36% - 10px);left:20px;right:20px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;padding:14px 18px 14px;box-shadow:0 -4px 20px rgba(42,37,32,.12),var(--shadow);z-index:10}
+/* Scrollable area starts BELOW the fixed card */
+.splash-body{position:absolute;left:0;right:0;bottom:0;overflow-y:auto;scrollbar-width:none}
 .splash-body::-webkit-scrollbar{display:none}
-.splash-card{background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;padding:18px 20px 16px;margin:0 20px;margin-top:-26px;box-shadow:0 -4px 20px rgba(42,37,32,.12),var(--shadow);position:relative;z-index:3}
-.hari-logo-top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.hari-logo-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .hari-mono{width:48px;height:48px;background:var(--charcoal);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .hari-wm h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;color:var(--charcoal);letter-spacing:.12em;text-transform:uppercase;line-height:1}
 .hari-wm p{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);margin-top:4px}
-.hari-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--mid-grey);line-height:1.5;border-top:1px solid var(--marble);padding-top:12px}
+.hari-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--mid-grey);line-height:1.4;border-top:1px solid var(--marble);padding-top:10px}
 .role-section{padding:16px 20px 0}
 .role-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--light-grey);margin-bottom:11px}
 .role-card{background:#FDFAF6;border:1px solid var(--marble-dark);border-radius:14px;padding:13px 15px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:12px;box-shadow:0 2px 14px rgba(42,37,32,.1);margin-bottom:9px}
@@ -533,7 +535,7 @@ body{
   <div class="ld-content">
     <div class="ld-mark">THE HARI</div>
     <div class="ld-rule"></div>
-    <div class="ld-sub">Hong Kong · ServiceFlow</div>
+    <div class="ld-sub">Hong Kong · London · ServiceFlow</div>
     <div class="ld-bar-wrap"><div class="ld-bar-fill" id="ldFill" style="width:0%"></div></div>
     <div class="ld-pct" id="ldPct">0%</div>
   </div>
@@ -548,7 +550,7 @@ body{
     <div style="position:absolute;top:28px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:5px;z-index:3">
       <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;letter-spacing:.22em;color:#C9A97A;text-transform:uppercase;text-align:center">THE HARI</div>
       <div style="width:100px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,122,.7),transparent)"></div>
-      <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:.32em;color:rgba(201,169,122,.55);text-transform:uppercase">HONG KONG</div>
+      <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:.32em;color:rgba(201,169,122,.55);text-transform:uppercase">HONG KONG · LONDON</div>
     </div>
     <svg style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);width:260px;height:120px;opacity:.55" viewBox="0 0 260 120" fill="none">
       <line x1="10" y1="108" x2="250" y2="108" stroke="rgba(201,169,122,.4)" stroke-width="1"/>
@@ -574,19 +576,21 @@ body{
     </svg>
     <div class="splash-canopy"></div>
   </div>
-  <div class="splash-body">
-    <div class="splash-card">
-      <div class="hari-logo-top">
-        <div class="hari-mono">
-          <svg width="28" height="32" viewBox="0 0 32 36" fill="none"><path d="M3 3L3 33" stroke="#C9A97A" stroke-width="1.4" stroke-linecap="round"/><path d="M3 17 Q3 11 9 11 Q15 11 15 17 L15 33" stroke="#C9A97A" stroke-width="1.4" fill="none"/><path d="M17 3L17 33M29 3L29 33M17 18L29 18" stroke="#C9A97A" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </div>
-        <div class="hari-wm">
-          <h1>The Hari</h1>
-          <p>Hong Kong · ServiceFlow</p>
-        </div>
+  <!-- Fixed header card — never scrolls -->
+  <div class="splash-card" id="splashCard">
+    <div class="hari-logo-top">
+      <div class="hari-mono">
+        <svg width="28" height="32" viewBox="0 0 32 36" fill="none"><path d="M3 3L3 33" stroke="#C9A97A" stroke-width="1.4" stroke-linecap="round"/><path d="M3 17 Q3 11 9 11 Q15 11 15 17 L15 33" stroke="#C9A97A" stroke-width="1.4" fill="none"/><path d="M17 3L17 33M29 3L29 33M17 18L29 18" stroke="#C9A97A" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
-      <div class="hari-tagline">"A stylish retreat and your luxury home in Hong Kong."</div>
+      <div class="hari-wm">
+        <h1>The Hari</h1>
+        <p>ServiceFlow</p>
+      </div>
     </div>
+    <div class="hari-tagline">"A stylish retreat and your luxury home in Hong Kong."</div>
+  </div>
+  <!-- Scrollable roles list — positioned below the fixed card via JS -->
+  <div class="splash-body" id="splashBody">
     <div class="role-section">
       <div class="role-eyebrow">Select your role to continue</div>
       <div class="role-card" onclick="nav('owner')" style="border-color:rgba(160,120,74,.35)">
@@ -1448,6 +1452,20 @@ function tick(){
 tick();setInterval(tick,1000);
 
 // ── NAV (fixed: tracks in-flight transitions) ──
+// Position splash scroll area below the fixed header card
+function positionSplashBody(){
+  var phone=document.querySelector('.phone');
+  var card=document.getElementById('splashCard');
+  var body=document.getElementById('splashBody');
+  if(card&&body&&phone){
+    var phoneTop=phone.getBoundingClientRect().top;
+    var cardBottom=card.getBoundingClientRect().bottom;
+    body.style.top=(cardBottom-phoneTop+8)+'px';
+  }
+}
+window.addEventListener('load',positionSplashBody);
+setTimeout(positionSplashBody,150);
+
 var cur='splash',transitioning=false;
 function nav(id){
   if(id===cur||transitioning)return;
