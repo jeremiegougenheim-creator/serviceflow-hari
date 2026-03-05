@@ -355,7 +355,7 @@ body{
 .own-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(201,169,122,.4)}
 .port-toggle{display:flex;background:rgba(245,240,232,.06);border-radius:18px;border:1px solid rgba(201,169,122,.15);padding:3px;margin-top:14px}
 .pt-btn{flex:1;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:5px;border-radius:15px;color:rgba(245,240,232,.4);cursor:pointer;transition:all .2s;font-family:'Jost',sans-serif;border:none;background:none}
-.pt-btn.on{background:rgba(201,169,122,.18);color:#C9A97A;border:1px solid rgba(201,169,122,.3)}
+.pt-btn.on{background:rgba(201,169,122,.22);color:#C9A97A;border:1px solid rgba(201,169,122,.45);box-shadow:0 1px 6px rgba(201,169,122,.15)}
 
 /* ALERT */
 .alert-strip{margin:14px 16px 12px;background:var(--charcoal);border:1px solid rgba(201,169,122,.2);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:11px;cursor:pointer;box-shadow:var(--shadow-sm)}
@@ -414,7 +414,12 @@ body{
 .qty-btn:active{background:var(--marble-dark)}
 .qty-disp{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;color:var(--charcoal);flex:1;text-align:center}
 .qty-unit{font-family:'Jost',sans-serif;font-size:13px;color:var(--mid-grey)}
-.voice-btn{width:100%;padding:12px 15px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;display:flex;align-items:center;gap:9px;cursor:pointer;color:var(--mid-grey);font-size:12px;font-family:'Jost',sans-serif;margin-bottom:16px}
+.voice-btn{width:100%;padding:13px 15px;background:var(--marble);border:1.5px solid var(--marble-dark);border-radius:13px;display:flex;align-items:center;gap:10px;cursor:pointer;font-family:'Jost',sans-serif;margin-bottom:16px;box-shadow:inset 0 1px 3px rgba(42,37,32,.06)}
+.voice-btn .vb-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.voice-btn .vb-text{flex:1;text-align:left}
+.voice-btn .vb-main{font-size:13px;font-weight:500;line-height:1.2}
+.voice-btn .vb-sub{font-size:10px;margin-top:2px;opacity:.55}
+.voice-top{padding:15px;border-width:2px;margin-bottom:18px}
 .submit-btn{width:calc(100% - 32px);margin:0 16px 20px;background:linear-gradient(135deg,var(--bronze-dark),var(--bronze));border:none;border-radius:14px;padding:15px;color:var(--ivory);font-size:13px;font-weight:600;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;font-family:'Jost',sans-serif;box-shadow:0 8px 22px rgba(122,90,50,.32);transition:all .2s;flex-shrink:0}
 .submit-btn:active{transform:scale(.98)}
 
@@ -631,7 +636,7 @@ body{
       </div>
       <div class="role-card" style="opacity:.5;border-color:rgba(27,45,79,.2);cursor:default">
         <div class="role-icon" style="background:var(--petrol);border-color:rgba(27,45,79,.3)"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,.6)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20"/></svg></div>
-        <div class="role-info"><h3 style="color:var(--mid-grey)">New Hotel · 2028</h3><p>Expansion · Phase 3 · TBA</p></div>
+        <div class="role-info"><h3 style="color:var(--mid-grey)">New Hotel</h3><p>Expansion · Confidential</p></div>
         <div style="font-size:9px;font-weight:700;letter-spacing:.1em;padding:3px 8px;background:rgba(27,45,79,.15);border-radius:6px;color:var(--petrol);white-space:nowrap">2028</div>
       </div>
     </div>
@@ -701,17 +706,17 @@ body{
     <div class="divider"></div>
     <div class="sec-h"><h3>Quick Actions</h3></div>
     <div class="act-grid">
-      <div class="act-card c-gn" onclick="nav('fblog')">
-        <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="rgba(245,240,232,.08)"/><path d="M15 8v14M8 15h14" stroke="rgba(245,240,232,.7)" stroke-width="2" stroke-linecap="round"/></svg>
-        <h4>Log Food Waste</h4><p>Sub-30 sec · Any outlet</p>
-      </div>
       <div class="act-card c-mr" onclick="nav('briefing')">
         <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="rgba(74,103,65,.1)"/><path d="M7 9h16M7 15h10M7 21h13" stroke="#4A6741" stroke-width="1.5" stroke-linecap="round"/></svg>
         <h4>Nightly Briefing</h4><p>3 actions ready</p>
       </div>
-      <div class="act-card c-br" onclick="nav('maintenance')">
+      <div class="act-card c-gn" onclick="nav('fblog')">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="rgba(245,240,232,.08)"/><path d="M15 8v14M8 15h14" stroke="rgba(245,240,232,.7)" stroke-width="2" stroke-linecap="round"/></svg>
+        <h4>+ Log F&amp;B</h4><p>Sub-30 sec · Any outlet</p>
+      </div>
+      <div class="act-card c-br" onclick="nav('maintlog')">
         <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="rgba(245,240,232,.08)"/><path d="M19 8a4 4 0 01-5.66 5.66L8 19a2 2 0 002.83 2.83l5.34-5.34A4 4 0 0119 8z" stroke="rgba(245,240,232,.7)" stroke-width="1.5"/></svg>
-        <h4>Maintenance</h4><p>3 open faults</p>
+        <h4>Log Fault</h4><p>3 open · Maintenance</p>
       </div>
       <div class="act-card c-pt" onclick="nav('hkexesg')" style="cursor:pointer">
         <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="rgba(245,240,232,.08)"/><path d="M10 20l4-12 4 12M12 16h6" stroke="rgba(245,240,232,.7)" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -808,6 +813,9 @@ body{
         <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">23 orders · HK$8,240 · ● Active</div>
       </div>
     </div>
+    <div style="padding:0 16px 4px">
+      <button onclick="nav('fblog')" style="width:100%;padding:14px;background:linear-gradient(135deg,#0d1a0d,#1a2e0a);border:1px solid rgba(74,103,65,.3);border-radius:14px;font-size:13px;color:var(--green);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log F&amp;B Entry</button>
+    </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
     <div style="height:8px"></div>
   </div>
@@ -889,6 +897,14 @@ body{
   </div>
   <div class="scroll">
     <div style="padding:14px 16px 0">
+      <button class="voice-btn voice-top" style="color:var(--green)">
+        <div class="vb-icon" style="background:rgba(74,103,65,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <div class="vb-text">
+          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-sub">English or Chinese · Auto-fills form</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
       <div class="fl">Entry Type</div>
       <div class="chips">
         <div class="chip on" onclick="sel(this,'fbt')">Waste Log</div>
@@ -925,7 +941,6 @@ body{
       </div>
       <div class="fl">Notes (optional)</div>
       <input class="tinp" placeholder="e.g. Terrace prep reduced due to rain forecast…">
-      <button class="voice-btn" style="border-color:rgba(74,103,65,.3);color:var(--green)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>Tap to dictate · English or Chinese</button>
       <div style="height:8px"></div>
     </div>
   </div>
@@ -950,6 +965,14 @@ body{
   </div>
   <div class="scroll">
     <div style="padding:16px 16px 0">
+      <button class="voice-btn voice-top" style="color:#A0784A">
+        <div class="vb-icon" style="background:rgba(160,120,74,.1)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A0784A" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <div class="vb-text">
+          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-sub">English or Chinese · Auto-fills form</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
       <div class="fl">Outlet</div>
       <div class="chips">
         <div class="chip on" onclick="sel(this,'o')">Lucciola</div>
@@ -973,10 +996,6 @@ body{
       </div>
       <div class="fl">Notes (optional)</div>
       <input class="tinp" placeholder="e.g. Late walk-in cancellation…">
-      <button class="voice-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A0784A" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>
-        Tap to dictate · English or Chinese
-      </button>
       <div style="height:8px"></div>
     </div>
   </div>
@@ -1070,17 +1089,7 @@ body{
       <div class="kpi-tile"><div class="ktl">CPOR</div><div class="ktv">HK$<span style="font-size:20px">148</span></div><div class="ktt dn">Target HK$135</div></div>
       <div class="kpi-tile"><div class="ktl">Completed</div><div class="ktv">163 <span class="ktu">rooms</span></div><div class="ktt up">All assigned ✓</div></div>
       <div class="kpi-tile"><div class="ktl">VIP / Suites</div><div class="ktv">11 <span class="ktu">tonight</span></div><div class="ktt ntrl">Fl. 28–30</div></div>
-    <div onclick="nav('hklog')" style="margin:10px 16px 2px;background:linear-gradient(135deg,var(--bronze-dark),var(--bronze));border-radius:14px;padding:13px 16px;cursor:pointer;display:flex;align-items:center;gap:12px">
-      <div style="width:36px;height:36px;background:rgba(245,240,232,.15);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ivory)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-      </div>
-      <div style="flex:1">
-        <div style="font-size:12px;font-weight:600;color:var(--ivory)">+ Log Room Update</div>
-        <div style="font-size:10px;color:rgba(245,240,232,.6);margin-top:1px">Status · Time · Issues · Dictate</div>
-      </div>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,.5)" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-    </div></div>
-    <!-- Clickable filter tabs -->
+    </div>
     <div class="filter-bar" id="hkFilterBar">
       <div class="fc on" onclick="hkFilter(this,'all')" data-filter="all">All (163)</div>
       <div class="fc" onclick="hkFilter(this,'dep')" data-filter="dep">Departure (21)</div>
@@ -1100,6 +1109,9 @@ body{
       <div class="room-card" data-cat="vip"><div class="rnum">2904</div><div class="ri"><div class="ri-t">Executive King · Floor 29</div><div class="ri-d">VIP · Late checkout 14:00 · Orchid arrangement</div></div><div class="rs rs-vip">VIP</div></div>
       <div class="room-card" data-cat="done"><div class="rnum">0804</div><div class="ri"><div class="ri-t">Standard King · Floor 8</div><div class="ri-d">Completed 14:28 · Renewable LED dimmer set</div></div><div class="rs rs-done">Done</div></div>
       <div class="room-card" data-cat="done"><div class="rnum">0612</div><div class="ri"><div class="ri-t">Classic Queen · Floor 6</div><div class="ri-d">Completed 15:10 · All checks passed</div></div><div class="rs rs-done">Done</div></div>
+    </div>
+    <div style="padding:0 16px 4px">
+      <button onclick="nav('hklog')" style="width:100%;padding:14px;background:linear-gradient(135deg,var(--bronze-dark),#2a1800);border:1px solid rgba(160,120,74,.3);border-radius:14px;font-size:13px;color:var(--bronze-light);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--bronze-light)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log Room Update</button>
     </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
     <div style="height:8px"></div>
@@ -1257,7 +1269,7 @@ body{
       </div>
 
       <div style="padding:8px 16px 8px">
-        <button onclick="nav('maintlog')" style="width:100%;padding:12px;background:linear-gradient(135deg,#1C1C1C,#2a1800);border:1px solid rgba(255,149,0,.25);border-radius:13px;font-size:12px;color:#FF9500;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:500"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ Log New Fault</button>
+        <button onclick="nav('maintlog')" style="width:100%;padding:12px;background:linear-gradient(135deg,#1C1C1C,#2a1800);border:1px solid rgba(255,149,0,.25);border-radius:13px;font-size:12px;color:#FF9500;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:500"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log New Fault</button>
       </div>
     </div>
 
@@ -1408,15 +1420,15 @@ body{
       <div class="own-h2">The Hari<br><em>Hong Kong</em></div>
       <div class="own-meta">Q1 2026<div class="own-meta-dot"></div>Owner Overview</div>
       <div class="port-toggle">
-        <button class="pt-btn on" onclick="ptTab(this)">Hong Kong</button>
+        <button class="pt-btn on" onclick="ptTab(this)" style="font-weight:600;letter-spacing:.08em">Portfolio</button>
+        <button class="pt-btn" onclick="ptTab(this)">Hong Kong</button>
         <button class="pt-btn" onclick="ptTab(this)">London</button>
-        <button class="pt-btn" onclick="ptTab(this)">Portfolio</button>
-        <button class="pt-btn" style="opacity:.4;cursor:default;font-size:9px;letter-spacing:.02em" title="Expansion · 2028">+ 2028</button>
+        <button class="pt-btn" style="opacity:.4;cursor:default;font-size:8px;letter-spacing:.02em" title="Expansion · Confidential">New Hotel</button>
       </div>
     </div>
   </div>
   <div class="scroll">
-    <div id="ownerHK">
+    <div id="ownerHK" style="display:none">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px 16px 0">
         <div class="okpi gold"><div class="okpi-lbl">RevPAR</div><div class="okpi-val">1,450<span class="okpi-unit"> HK$</span></div><div class="okpi-delta up">↑ 8.4% vs Q1 '25</div><div class="okpi-sub">Target HK$1,380</div></div>
         <div class="okpi green"><div class="okpi-lbl">GOP Margin</div><div class="okpi-val">38.2<span class="okpi-unit">%</span></div><div class="okpi-delta up">↑ 2.1pp YoY</div><div class="okpi-sub">Luxury HK avg 34%</div></div>
@@ -1489,7 +1501,7 @@ body{
         </div>
       </div>
     </div>
-    <div id="ownerPortfolio" style="display:none">
+    <div id="ownerPortfolio">
       <div style="padding:12px 16px 0">
         <div style="background:var(--charcoal);border-radius:16px;padding:16px">
           <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:12px">Combined Portfolio · Q1 2026</div>
@@ -1544,10 +1556,9 @@ body{
     <div style="height:8px"></div>
   </div>
   <div class="bnav">
-    <button class="nb" onclick="nav('owner')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
-    <button class="nb on" onclick="ptTabById('ownerHK')" aria-label="Hong Kong"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>HK</span></button>
+    <button class="nb on" onclick="ptTabById('ownerPortfolio')" aria-label="Portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span>Portfolio</span></button>
+    <button class="nb" onclick="ptTabById('ownerHK')" aria-label="Hong Kong"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>HK</span></button>
     <button class="nb" onclick="ptTabById('ownerLDN')" aria-label="London"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg><span>London</span></button>
-    <button class="nb" onclick="ptTabById('ownerPortfolio')" aria-label="Portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span>Portfolio</span></button>
   </div>
 </div>
 
@@ -1726,6 +1737,14 @@ body{
   </div>
   <div class="scroll">
     <div style="padding:14px 16px 0">
+      <button class="voice-btn voice-top" style="color:var(--bronze)">
+        <div class="vb-icon" style="background:rgba(160,120,74,.1)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--bronze)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <div class="vb-text">
+          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-sub">English or Chinese · Auto-fills form</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
       <div class="fl">Room Number</div>
       <input class="tinp" placeholder="e.g. 2204, 3001">
       <div class="fl">Status</div>
@@ -1757,7 +1776,6 @@ body{
       </div>
       <div class="fl">Notes (optional)</div>
       <input class="tinp" placeholder="e.g. Guest requested extra pillows…">
-      <button class="voice-btn" style="border-color:rgba(160,120,74,.25);color:var(--bronze)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--bronze)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>Tap to dictate · English or Chinese</button>
       <div style="height:8px"></div>
     </div>
   </div>
@@ -1782,6 +1800,14 @@ body{
   </div>
   <div class="scroll">
     <div style="padding:14px 16px 0">
+      <button class="voice-btn voice-top" style="color:var(--green)">
+        <div class="vb-icon" style="background:rgba(74,103,65,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <div class="vb-text">
+          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-sub">English or Chinese · Auto-fills form</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
       <div class="fl">Entry Type</div>
       <div class="chips">
         <div class="chip on" onclick="sel(this,'mt')">New Fault</div>
@@ -1809,7 +1835,6 @@ body{
       </div>
       <div class="fl">Notes (optional)</div>
       <input class="tinp" placeholder="e.g. Fault code ERR-D4, guest in room…">
-      <button class="voice-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>Tap to dictate · English or Chinese</button>
       <div style="height:8px"></div>
     </div>
   </div>
@@ -2206,9 +2231,9 @@ function ptTab(btn){
   document.querySelectorAll('#owner .pt-btn').forEach(function(b){b.classList.remove('on')});
   btn.classList.add('on');
   var t=btn.textContent.trim();
+  document.getElementById('ownerPortfolio').style.display=(t==='Portfolio')?'':'none';
   document.getElementById('ownerHK').style.display        =(t==='Hong Kong')?'':'none';
   document.getElementById('ownerLDN').style.display       =(t==='London')?'':'none';
-  document.getElementById('ownerPortfolio').style.display =(t==='Portfolio')?'':'none';
 }
 
 function showInfo(text){
