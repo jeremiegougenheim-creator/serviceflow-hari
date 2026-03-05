@@ -539,6 +539,53 @@ body{
 .maint-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:#F5F0E8;line-height:1.05}
 .maint-h2 em{color:#FF9500;font-style:italic}
 .maint-meta{font-size:10px;color:rgba(255,149,0,.4);margin-top:6px;letter-spacing:.06em}
+
+.ow-hero-stat{padding:22px 20px 0}
+.ow-hero-lbl{font-size:11px;letter-spacing:.06em;text-transform:none;color:var(--charcoal);margin-bottom:8px;font-weight:700}
+.ow-hero-num{display:flex;align-items:flex-end;gap:8px}
+.ow-hero-big{font-family:'Cormorant Garamond',serif;font-size:54px;font-weight:400;color:var(--charcoal);line-height:1}
+.ow-hero-side{padding-bottom:9px}
+.ow-hero-unit{font-size:12px;color:var(--mid-grey)}
+.ow-hero-delta{font-size:13px;font-weight:600;color:var(--green);margin-top:3px}
+.ow-hero-sub{font-size:11px;color:var(--mid-grey);margin-top:5px}
+.ow-spark{margin-top:12px;line-height:0}
+.ow-pills{display:flex;padding:16px 16px 0}
+.ow-pill{flex:1;text-align:center;padding:13px 6px;background:var(--warm-white);border:1px solid var(--marble-dark)}
+.ow-pill:first-child{border-radius:12px 0 0 12px}
+.ow-pill:last-child{border-radius:0 12px 12px 0;border-left:none}
+.ow-pill:not(:first-child):not(:last-child){border-left:none}
+.ow-pill-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px;font-weight:500}
+.ow-pill-val{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--charcoal)}
+.ow-pill-d{font-size:10px;margin-top:2px}
+.ow-dark-card{margin:16px 16px 0;background:var(--charcoal);border-radius:18px;padding:20px;position:relative;overflow:hidden}
+.ow-dark-card::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(201,169,122,.07) 0%,transparent 70%)}
+.ow-dc-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.85);margin-bottom:14px;position:relative;font-weight:500}
+.ow-dc-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(245,240,232,.06);position:relative}
+.ow-dc-row:last-of-type{border-bottom:none}
+.ow-dc-key{font-size:12px;color:rgba(245,240,232,.7)}
+.ow-dc-val{font-size:12px;font-weight:500;color:rgba(245,240,232,.8)}
+.ow-dc-total{margin-top:14px;padding-top:14px;border-top:1px solid rgba(201,169,122,.2);display:flex;justify-content:space-between;align-items:center;position:relative}
+.ow-dc-total-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#C9A97A;font-weight:600}
+.ow-dc-total-sub{font-size:10px;color:rgba(245,240,232,.5);margin-top:2px}
+.ow-dc-total-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:400;color:#fff;line-height:1}
+.ow-dc-total-unit{font-size:13px;color:#C9A97A;font-weight:600}
+.ow-dc-asset{margin-top:12px;background:rgba(201,169,122,.08);border-radius:11px;padding:11px 14px;display:flex;justify-content:space-between;align-items:center;position:relative}
+.ow-dc-asset-lbl{font-size:11px;color:rgba(245,240,232,.6)}
+.ow-dc-asset-val{font-family:'Cormorant Garamond',serif;font-size:26px;color:#C9A97A;font-weight:500}
+.ow-esg-card{margin:12px 16px 0;background:var(--ivory);border:1.5px solid rgba(74,180,100,.2);border-radius:18px;padding:18px;box-shadow:0 3px 16px rgba(42,37,32,.05)}
+.ow-esg-top{display:flex;justify-content:space-between;align-items:flex-start}
+.ow-esg-lbl{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:5px}
+.ow-esg-score{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:400;color:var(--charcoal);line-height:1}
+.ow-esg-delta{font-size:11px;color:var(--green);margin-top:4px}
+.ow-esg-right{text-align:right}
+.ow-esg-right-lbl{font-size:10px;color:var(--mid-grey);margin-bottom:6px;font-weight:500}
+.ow-esg-co2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--charcoal)}
+.ow-esg-co2-unit{font-size:11px;color:var(--mid-grey)}
+.ow-esg-bar-wrap{margin-top:14px}
+.ow-esg-bar-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--light-grey);margin-bottom:5px}
+.ow-esg-bar-track{height:5px;background:var(--marble);border-radius:3px;overflow:hidden}
+.ow-esg-bar-fill{height:100%;background:linear-gradient(90deg,#4ab464,#6abe8a);border-radius:3px}
+.ow-esg-foot{margin-top:11px;font-size:10px;color:var(--mid-grey)}
 </style>
 </head>
 <body>
@@ -702,6 +749,39 @@ body{
       <div class="t-ico r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B3A3A" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
       <div class="t-body"><div class="t-out">Zoku · Financial Leakage</div><div class="t-ttl">3 omakase courses unposted — HK$480 POS variance</div><div class="t-sub">Reconcile before 09:00 Monday</div></div>
       <div class="sev sh"></div>
+    </div>
+    <div class="divider"></div>
+    <div style="padding:0 16px 4px">
+      <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:10px">Guest Sentiment Bridge</div>
+      <!-- NPS card 1 -->
+      <div style="background:var(--ivory);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;margin-bottom:8px;box-shadow:var(--shadow-sm)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <div style="font-size:11px;font-weight:500;color:var(--charcoal)">Hari Suite · AC fast-track ✓</div>
+          <div style="background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:3px 8px;font-size:11px;font-weight:700;color:var(--green)">NPS +5</div>
+        </div>
+        <div style="font-size:11px;color:var(--mid-grey);line-height:1.5;margin-bottom:8px">"AC repaired within 40 min — best service recovery I've experienced." — Guest, Room 3002</div>
+        <div style="display:flex;gap:6px">
+          <div style="font-size:10px;color:var(--bronze);background:rgba(160,120,74,.08);border-radius:6px;padding:3px 7px">Maintenance → Guest sat.</div>
+          <div style="font-size:10px;color:var(--green);background:rgba(74,103,65,.08);border-radius:6px;padding:3px 7px">Resolved 18:30</div>
+        </div>
+      </div>
+      <!-- NPS card 2 -->
+      <div style="background:var(--ivory);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;margin-bottom:8px;box-shadow:var(--shadow-sm)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <div style="font-size:11px;font-weight:500;color:var(--charcoal)">Lucciola waste cut → fresher dishes</div>
+          <div style="background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:3px 8px;font-size:11px;font-weight:700;color:var(--green)">NPS +3</div>
+        </div>
+        <div style="font-size:11px;color:var(--mid-grey);line-height:1.5;margin-bottom:8px">"Branzino was perfectly cooked — clearly made to order." — Table 8, dinner service</div>
+        <div style="display:flex;gap:6px">
+          <div style="font-size:10px;color:var(--green);background:rgba(74,103,65,.08);border-radius:6px;padding:3px 7px">F&amp;B Intelligence → quality</div>
+          <div style="font-size:10px;color:var(--bronze);background:rgba(160,120,74,.08);border-radius:6px;padding:3px 7px">−2.2 kg waste</div>
+        </div>
+      </div>
+      <!-- Tonight's NPS total -->
+      <div style="background:var(--charcoal);border-radius:14px;padding:14px;display:flex;justify-content:space-between;align-items:center">
+        <div><div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-bottom:4px">Tonight's NPS</div><div style="font-size:11px;color:rgba(245,240,232,.5)">Operational actions → guest sat.</div></div>
+        <div style="text-align:right"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--ivory);line-height:1">72</div><div style="font-size:10px;color:var(--green)">↑ 8pts vs last Sunday</div></div>
+      </div>
     </div>
     <div class="divider"></div>
     <div class="sec-h"><h3>Quick Actions</h3></div>
@@ -1417,7 +1497,7 @@ body{
     <div class="own-inner">
       <button class="back" style="color:rgba(201,169,122,.8);margin-bottom:8px" onclick="nav('splash')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Role Selector</button>
       <div class="own-eyebrow">Confidential · Asset Intelligence</div>
-      <div class="own-h2">The Hari<br><em>Hong Kong</em></div>
+      <div class="own-h2" id="ownerTitle">The Hari<br><em>Portfolio</em></div>
       <div class="own-meta">Q1 2026<div class="own-meta-dot"></div>Owner Overview</div>
       <div class="port-toggle">
         <button class="pt-btn on" onclick="ptTab(this)" style="font-weight:600;letter-spacing:.08em">Portfolio</button>
@@ -1428,120 +1508,167 @@ body{
     </div>
   </div>
   <div class="scroll">
-    <div id="ownerHK" style="display:none">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px 16px 0">
-        <div class="okpi gold"><div class="okpi-lbl">RevPAR</div><div class="okpi-val">1,450<span class="okpi-unit"> HK$</span></div><div class="okpi-delta up">↑ 8.4% vs Q1 '25</div><div class="okpi-sub">Target HK$1,380</div></div>
-        <div class="okpi green"><div class="okpi-lbl">GOP Margin</div><div class="okpi-val">38.2<span class="okpi-unit">%</span></div><div class="okpi-delta up">↑ 2.1pp YoY</div><div class="okpi-sub">Luxury HK avg 34%</div></div>
-        <div class="okpi petrol"><div class="okpi-lbl">TRevPAR</div><div class="okpi-val">2,180<span class="okpi-unit"> HK$</span></div><div class="okpi-delta up">↑ 11% incl. F&amp;B</div><div class="okpi-sub">F&amp;B lift: +HK$320</div></div>
-        <div class="okpi def"><div class="okpi-lbl">Occupancy</div><div class="okpi-val">78<span class="okpi-unit">%</span></div><div class="okpi-delta up">↑ 4pp vs Q1 '25</div><div class="okpi-sub">Luxury HK avg 71%</div></div>
-      </div>
-      <div style="padding:12px 16px 0">
-        <div style="background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;padding:15px;box-shadow:var(--shadow-sm)">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
-            <div><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">RevPAR · 6-Month Trend</div><div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--charcoal);line-height:1;margin-top:4px">HK$1,450</div><div style="font-size:11px;color:var(--green);margin-top:3px">↑ 8.4% vs last year</div></div>
-            <div style="text-align:right"><div style="font-size:10px;color:var(--light-grey)">Sep '25 → Feb '26</div><div style="font-size:11px;color:var(--bronze);margin-top:4px">Peak: Dec HK$1,820</div></div>
-          </div>
-          <div class="area-wrap"><svg viewBox="0 0 320 72" preserveAspectRatio="none"><defs><linearGradient id="aG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C9A97A" stop-opacity=".2"/><stop offset="100%" stop-color="#C9A97A" stop-opacity=".01"/></linearGradient></defs><line x1="0" y1="18" x2="320" y2="18" stroke="rgba(197,191,181,.2)" stroke-width="1" stroke-dasharray="4,4"/><line x1="0" y1="36" x2="320" y2="36" stroke="rgba(197,191,181,.2)" stroke-width="1" stroke-dasharray="4,4"/><line x1="0" y1="54" x2="320" y2="54" stroke="rgba(197,191,181,.2)" stroke-width="1" stroke-dasharray="4,4"/><path d="M0,62 C53,58 107,44 160,32 C214,36 267,16 320,10 L320,72 L0,72 Z" fill="url(#aG)"/><path d="M0,62 C53,58 107,44 160,32 C214,36 267,16 320,10" fill="none" stroke="#C9A97A" stroke-width="2.2" stroke-linecap="round"/><circle cx="320" cy="10" r="3.5" fill="#C9A97A"/><text x="0" y="70" font-size="8" fill="rgba(107,101,96,.7)" font-family="Jost">Sep</text><text x="56" y="70" font-size="8" fill="rgba(107,101,96,.7)" font-family="Jost">Oct</text><text x="112" y="70" font-size="8" fill="rgba(107,101,96,.7)" font-family="Jost">Nov</text><text x="162" y="70" font-size="8" fill="rgba(107,101,96,.7)" font-family="Jost">Dec</text><text x="218" y="70" font-size="8" fill="rgba(107,101,96,.7)" font-family="Jost">Jan</text><text x="290" y="70" font-size="8" fill="#C9A97A" font-family="Jost" font-weight="600">Feb</text></svg></div>
-        </div>
-      </div>
-      <div class="roi-dark" style="margin-top:12px">
-        <div class="roi-inner">
-          <div class="roi-lbl">Asset Performance · Hong Kong</div>
-          <div class="roi-line"><span class="roi-line-l">GOP (Feb '26)</span><span class="roi-line-v gold">HK$4.2M</span></div>
-          <div class="roi-line"><span class="roi-line-l">NOI Yield</span><span class="roi-line-v grn">6.8%</span></div>
-          <div class="roi-line"><span class="roi-line-l">Asset Value est.</span><span class="roi-line-v wh">HK$820M</span></div>
-          <div class="roi-line"><span class="roi-line-l">YTD vs Budget</span><span class="roi-line-v grn">+3.2%</span></div>
-        </div>
-      </div>
-      <div style="margin:12px 16px 0;background:linear-gradient(135deg,#0d1a0d,#1a2e0a);border-radius:16px;padding:16px;border:1px solid rgba(106,190,138,.2);position:relative;overflow:hidden">
-        <div style="position:absolute;top:0;right:0;width:100px;height:100px;background:radial-gradient(circle,rgba(106,190,138,.08) 0%,transparent 70%)"></div>
-        <div style="position:relative;z-index:1">
-          <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(106,190,138,.6);margin-bottom:10px">ServiceFlow Intelligence · March 2026</div>
-          <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:8px">Identified Savings This Month</div>
-          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:12px;color:rgba(245,240,232,.55)">F&amp;B Waste Reduction</span><span style="font-size:12px;color:#6abe8a;font-weight:500">HK$42,300</span></div>
-          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:12px;color:rgba(245,240,232,.55)">Labour Optimisation</span><span style="font-size:12px;color:#6abe8a;font-weight:500">HK$28,700</span></div>
-          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:12px;color:rgba(245,240,232,.55)">Leakage Recovery</span><span style="font-size:12px;color:#6abe8a;font-weight:500">HK$12,400</span></div>
-          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:12px;color:rgba(245,240,232,.55)">Preventive Maintenance</span><span style="font-size:12px;color:#6abe8a;font-weight:500">HK$8,200</span></div>
-          <div style="display:flex;justify-content:space-between;padding:8px 0 4px;"><span style="font-size:13px;font-weight:600;color:var(--ivory)">Total EBITDA Uplift</span><span style="font-size:16px;font-weight:700;color:#6abe8a">HK$91,600</span></div>
-          <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(201,169,122,.15)">
-            <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:7px">Incremental Valuation · 20× Multiple</div>
-            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:12px;color:rgba(245,240,232,.55)">Annualised Uplift</span><span style="font-size:12px;color:#C9A97A;font-weight:500">HK$1.1M</span></div>
-            <div style="display:flex;justify-content:space-between"><span style="font-size:12px;color:rgba(245,240,232,.55)">Asset Value Created</span><span style="font-size:14px;color:#C9A97A;font-weight:700">HK$22M</span></div>
+        <div id="ownerHK" style="display:none">
+      <div class="ow-hero-stat">
+        <div class="ow-hero-lbl">RevPAR · Feb 2026</div>
+        <div class="ow-hero-num">
+          <div class="ow-hero-big">1,450</div>
+          <div class="ow-hero-side">
+            <div class="ow-hero-unit">HK$</div>
+            <div class="ow-hero-delta">↑ 8.4%</div>
           </div>
         </div>
+        <div class="ow-hero-sub">vs target HK$1,380 · Luxury avg HK$1,190</div>
+        <div class="ow-spark"><svg viewBox="0 0 340 38" style="width:100%;height:38px"><defs><linearGradient id="spHK" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C9A97A" stop-opacity=".18"/><stop offset="100%" stop-color="#C9A97A" stop-opacity="0"/></linearGradient></defs><path d="M0,34 C56,30 113,22 170,16 C226,20 283,6 340,2 L340,38 L0,38 Z" fill="url(#spHK)"/><path d="M0,34 C56,30 113,22 170,16 C226,20 283,6 340,2" fill="none" stroke="#C9A97A" stroke-width="1.8" stroke-linecap="round"/><circle cx="340" cy="2" r="3" fill="#C9A97A"/><text x="2" y="37" font-size="7" fill="rgba(107,101,96,.4)" font-family="Jost">Sep</text><text x="270" y="37" font-size="7" fill="#C9A97A" font-family="Jost" font-weight="600">Feb ↑</text></svg></div>
+      </div>
+      <div class="ow-pills">
+        <div class="ow-pill"><div class="ow-pill-lbl">GOP</div><div class="ow-pill-val">38.2<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+2.1pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Occupancy</div><div class="ow-pill-val">78<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+4pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">NOI Yield</div><div class="ow-pill-val">6.8<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--bronze);font-weight:600">✓ Target 6%</div></div>
+      </div>
+      <div class="ow-dark-card">
+        <div class="ow-dc-label">ServiceFlow · March 2026</div>
+        <div class="ow-dc-row"><span class="ow-dc-key">F&amp;B Waste Reduction</span><span class="ow-dc-val">HK$42,300</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">Labour Optimisation</span><span class="ow-dc-val">HK$28,700</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">Leakage Recovery</span><span class="ow-dc-val">HK$12,400</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">Preventive Maintenance</span><span class="ow-dc-val">HK$8,200</span></div>
+        <div class="ow-dc-total">
+          <div><div class="ow-dc-total-lbl">EBITDA Uplift</div><div class="ow-dc-total-sub">vs pre-ServiceFlow baseline</div></div>
+          <div><span class="ow-dc-total-num">91,600</span><span class="ow-dc-total-unit"> HK$</span></div>
+        </div>
+        <div class="ow-dc-asset">
+          <div class="ow-dc-asset-lbl">Asset value created · 20× multiple</div>
+          <div class="ow-dc-asset-val">HK$22M</div>
+        </div>
+      </div>
+      <div class="ow-esg-card">
+        <div class="ow-esg-top">
+          <div><div class="ow-esg-lbl">EarthCheck · HKEX ESG</div><div class="ow-esg-score">83<span style="font-size:16px;color:var(--green)"> pts</span></div><div class="ow-esg-delta">↑ 4pts vs 2025 · Certified Gold</div></div>
+          <div class="ow-esg-right"><div class="ow-esg-right-lbl">CO₂e avoided MTD</div><div class="ow-esg-co2">48.6<span class="ow-esg-co2-unit"> t</span></div><div style="font-size:10px;color:var(--mid-grey);margin-top:2px">Scope 1+2+3</div></div>
+        </div>
+        <div class="ow-esg-bar-wrap"><div class="ow-esg-bar-labels"><span>0</span><span style="color:var(--green);font-weight:600">83 / 100</span><span>100</span></div><div class="ow-esg-bar-track"><div class="ow-esg-bar-fill" style="width:83%"></div></div></div>
+        <div class="ow-esg-foot" style="display:flex;gap:6px;flex-wrap:wrap">
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ HKEX</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ CSRD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ Audit trail live</span>
+      </div>
       </div>
     </div>
-    <div id="ownerLDN" style="display:none">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px 16px 0">
-        <div class="okpi gold"><div class="okpi-lbl">RevPAR</div><div class="okpi-val">£<span style="font-size:22px">285</span></div><div class="okpi-delta up">↑ 6.2% vs Q1 '25</div><div class="okpi-sub">Target £270 · 85 rooms</div></div>
-        <div class="okpi green"><div class="okpi-lbl">GOP Margin</div><div class="okpi-val">41.2<span class="okpi-unit">%</span></div><div class="okpi-delta up">↑ 4.2pp YoY</div><div class="okpi-sub">UK luxury avg 37%</div></div>
-        <div class="okpi petrol"><div class="okpi-lbl">ADR</div><div class="okpi-val">£<span style="font-size:22px">350</span></div><div class="okpi-delta up">↑ 8.3% vs '25</div><div class="okpi-sub">vs budget £320</div></div>
-        <div class="okpi def"><div class="okpi-lbl">Occupancy</div><div class="okpi-val">82<span class="okpi-unit">%</span></div><div class="okpi-delta up">↑ 5pp vs Q1 '25</div><div class="okpi-sub">London luxury avg 77%</div></div>
-      </div>
-      <div style="margin:10px 16px 0;background:linear-gradient(135deg,#061a10,#0d2e1a);border-radius:14px;padding:12px 14px;border:1px solid rgba(106,190,138,.2)">
-        <div style="font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(106,190,138,.55);margin-bottom:6px">London Highlight</div>
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <div><div style="font-size:12px;color:var(--ivory);font-weight:500">F&amp;B Terrace Revenue</div><div style="font-size:11px;color:rgba(245,240,232,.4);margin-top:2px">Retractable roof days · Q1 '26</div></div>
-          <div style="text-align:right"><div style="font-size:18px;font-family:'Cormorant Garamond',serif;color:#6abe8a">↑ 15%</div><div style="font-size:10px;color:rgba(245,240,232,.35)">vs covered avg</div></div>
-        </div>
-      </div>
-      <div class="roi-dark" style="margin-top:10px">
-        <div class="roi-inner">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-            <div class="roi-lbl" style="margin-bottom:0">Asset Performance · London</div>
-            <div style="display:flex;align-items:center;gap:5px;background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.3);border-radius:8px;padding:4px 8px">
-              <span style="font-size:14px">🌿</span><span style="font-size:9px;font-weight:700;letter-spacing:.08em;color:#6abe8a">FRIEND OF THE EARTH 2026</span>
-            </div>
+        <div id="ownerLDN" style="display:none">
+      <div class="ow-hero-stat">
+        <div class="ow-hero-lbl">RevPAR · Feb 2026</div>
+        <div class="ow-hero-num">
+          <div class="ow-hero-big">285</div>
+          <div class="ow-hero-side">
+            <div class="ow-hero-unit">£</div>
+            <div class="ow-hero-delta">↑ 6.2%</div>
           </div>
-          <div class="roi-line"><span class="roi-line-l">ADR (Feb '26)</span><span class="roi-line-v gold">£350</span></div>
-          <div class="roi-line"><span class="roi-line-l">GOP (Q1 '26 est.)</span><span class="roi-line-v gold">£2.9M</span></div>
-          <div class="roi-line"><span class="roi-line-l">NOI Yield</span><span class="roi-line-v grn">5.4%</span></div>
-          <div class="roi-line"><span class="roi-line-l">YTD vs Budget</span><span class="roi-line-v grn">+4.1%</span></div>
-          <div class="roi-line"><span class="roi-line-l">EarthCheck Score</span><span class="roi-line-v grn">87 pts ★</span></div>
         </div>
+        <div class="ow-hero-sub">vs target £270 · London luxury avg £241</div>
+        <div class="ow-spark"><svg viewBox="0 0 340 38" style="width:100%;height:38px"><defs><linearGradient id="spLDN" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4ab464" stop-opacity=".18"/><stop offset="100%" stop-color="#4ab464" stop-opacity="0"/></linearGradient></defs><path d="M0,36 C56,32 113,26 170,18 C226,22 283,8 340,4 L340,38 L0,38 Z" fill="url(#spLDN)"/><path d="M0,36 C56,32 113,26 170,18 C226,22 283,8 340,4" fill="none" stroke="#4ab464" stroke-width="1.8" stroke-linecap="round"/><circle cx="340" cy="4" r="3" fill="#4ab464"/><text x="2" y="37" font-size="7" fill="rgba(107,101,96,.4)" font-family="Jost">Sep</text><text x="270" y="37" font-size="7" fill="#4ab464" font-family="Jost" font-weight="600">Feb ↑</text></svg></div>
+      </div>
+      <div class="ow-pills">
+        <div class="ow-pill"><div class="ow-pill-lbl">GOP</div><div class="ow-pill-val">41.2<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+4.2pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Occupancy</div><div class="ow-pill-val">82<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+5pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">NOI Yield</div><div class="ow-pill-val">5.4<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green);font-weight:600">✓ Target 5%</div></div>
+      </div>
+      <div class="ow-dark-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;position:relative">
+          <div class="ow-dc-label" style="margin-bottom:0">ServiceFlow · Q1 2026</div>
+          <div style="display:flex;align-items:center;gap:4px;background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:4px 8px"><span style="font-size:12px">🌿</span><span style="font-size:8px;font-weight:700;letter-spacing:.08em;color:#6abe8a">FRIEND OF THE EARTH</span></div>
+        </div>
+        <div class="ow-dc-row"><span class="ow-dc-key">ADR (Feb '26)</span><span class="ow-dc-val">£350</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">GOP (Q1 est.)</span><span class="ow-dc-val">£2.9M</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">F&amp;B Terrace Revenue</span><span class="ow-dc-val">↑ 15%</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">YTD vs Budget</span><span class="ow-dc-val">+4.1%</span></div>
+        <div class="ow-dc-total">
+          <div><div class="ow-dc-total-lbl">EBITDA Uplift</div><div class="ow-dc-total-sub">vs pre-ServiceFlow baseline</div></div>
+          <div><span class="ow-dc-total-num">68,400</span><span class="ow-dc-total-unit"> HK$eq</span></div>
+        </div>
+        <div class="ow-dc-asset">
+          <div class="ow-dc-asset-lbl">Asset value created · 20× multiple</div>
+          <div class="ow-dc-asset-val">HK$16.4M</div>
+        </div>
+      </div>
+      <div class="ow-esg-card">
+        <div class="ow-esg-top">
+          <div><div class="ow-esg-lbl">EarthCheck · London</div><div class="ow-esg-score">87<span style="font-size:16px;color:var(--green)"> pts ★</span></div><div class="ow-esg-delta">↑ 6pts vs 2025 · Best in portfolio</div></div>
+          <div class="ow-esg-right"><div class="ow-esg-right-lbl">CO₂e avoided MTD</div><div class="ow-esg-co2">32.1<span class="ow-esg-co2-unit"> t</span></div><div style="font-size:10px;color:var(--mid-grey);margin-top:2px">Waste div. 82%</div></div>
+        </div>
+        <div class="ow-esg-bar-wrap"><div class="ow-esg-bar-labels"><span>0</span><span style="color:var(--green);font-weight:600">87 / 100</span><span>100</span></div><div class="ow-esg-bar-track"><div class="ow-esg-bar-fill" style="width:87%"></div></div></div>
+        <div class="ow-esg-foot" style="display:flex;gap:6px;flex-wrap:wrap">
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ CSRD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ TCFD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ HKEX</span>
+      </div>
       </div>
     </div>
-    <div id="ownerPortfolio">
-      <div style="padding:12px 16px 0">
-        <div style="background:var(--charcoal);border-radius:16px;padding:16px">
-          <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:12px">Combined Portfolio · Q1 2026</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-            <div><div style="font-size:9px;color:rgba(245,240,232,.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px">Total Rooms</div><div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--ivory)">295</div><div style="font-size:10px;color:rgba(245,240,232,.4)">HK 210 · LDN 85</div></div>
-            <div><div style="font-size:9px;color:rgba(245,240,232,.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px">Wtd. Occupancy</div><div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#6abe8a">79.2%</div><div style="font-size:10px;color:rgba(245,240,232,.4)">↑ 3.8pp YoY</div></div>
-            <div><div style="font-size:9px;color:rgba(245,240,232,.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px">Q1 GOP (est.)</div><div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#C9A97A">HK$12.6M</div><div style="font-size:10px;color:rgba(245,240,232,.4)">+ £2.9M London</div></div>
-            <div><div style="font-size:9px;color:rgba(245,240,232,.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px">Avg NOI Yield</div><div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#C9A97A">6.1%</div><div style="font-size:10px;color:rgba(245,240,232,.4)">Target 6.0% ✓</div></div>
+        <div id="ownerPortfolio">
+      <div class="ow-hero-stat">
+        <div class="ow-hero-lbl">Wtd. Occupancy · Q1 2026</div>
+        <div class="ow-hero-num">
+          <div class="ow-hero-big">79.2</div>
+          <div class="ow-hero-side">
+            <div class="ow-hero-unit">%</div>
+            <div class="ow-hero-delta">↑ 3.8pp</div>
           </div>
         </div>
+        <div class="ow-hero-sub">295 rooms total · HK 210 · London 85</div>
       </div>
-      <div style="padding:10px 16px 0">
-        <div style="background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)">
-          <div style="padding:11px 14px;border-bottom:1px solid var(--marble);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Property Comparison · Feb '26</div>
-          <div style="display:grid;grid-template-columns:90px 1fr 1fr;gap:6px;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--mid-grey)">Rooms</div><div style="font-size:12px;font-weight:500;color:var(--charcoal);text-align:center">210</div><div style="font-size:12px;font-weight:500;color:var(--charcoal);text-align:center">85</div></div>
-          <div style="display:grid;grid-template-columns:90px 1fr 1fr;gap:6px;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--mid-grey)">Occupancy</div><div style="font-size:12px;font-weight:500;color:var(--green);text-align:center">78%</div><div style="font-size:12px;font-weight:500;color:var(--green);text-align:center">82%</div></div>
-          <div style="display:grid;grid-template-columns:90px 1fr 1fr;gap:6px;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--mid-grey)">RevPAR</div><div style="font-size:12px;font-weight:500;color:var(--bronze);text-align:center">HK$1,450</div><div style="font-size:12px;font-weight:500;color:var(--petrol);text-align:center">£285</div></div>
-          <div style="display:grid;grid-template-columns:90px 1fr 1fr;gap:6px;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--mid-grey)">GOP Margin</div><div style="font-size:12px;font-weight:500;color:var(--green);text-align:center">38.2%</div><div style="font-size:12px;font-weight:500;color:var(--green);text-align:center">34.0%</div></div>
-          <div style="display:grid;grid-template-columns:90px 1fr 1fr;gap:6px;padding:10px 14px"><div style="font-size:11px;color:var(--mid-grey)">NOI Yield</div><div style="font-size:12px;font-weight:500;color:var(--bronze);text-align:center">6.8%</div><div style="font-size:12px;font-weight:500;color:var(--petrol);text-align:center">5.4%</div></div>
+      <div class="ow-pills">
+        <div class="ow-pill"><div class="ow-pill-lbl">Q1 GOP</div><div class="ow-pill-val" style="font-size:16px">HK$12.6M</div><div class="ow-pill-d" style="color:var(--green)">+ £2.9M LDN</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Avg NOI</div><div class="ow-pill-val">6.1<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--bronze);font-weight:600">✓ Target 6%</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Avg GOP</div><div class="ow-pill-val">39.7<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">↑ 3.1pp</div></div>
+      </div>
+      <!-- Property comparison table — best of Portfolio -->
+      <div style="margin:16px 16px 0;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;overflow:hidden;box-shadow:0 3px 16px rgba(42,37,32,.05)">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble);background:rgba(201,169,122,.04)">
+          <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey);font-weight:600">Metric</div>
+          <div style="font-size:10px;font-weight:600;color:var(--bronze);text-align:center">Hong Kong</div>
+          <div style="font-size:10px;font-weight:600;color:var(--green);text-align:center">London</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--charcoal);font-weight:500">Occupancy</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">78%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">82%</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--charcoal);font-weight:500">RevPAR</div><div style="font-size:12px;font-weight:500;color:var(--bronze);text-align:center">HK$1,450</div><div style="font-size:12px;font-weight:500;color:var(--green);text-align:center">£285</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--charcoal);font-weight:500">GOP Margin</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">38.2%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">41.2%</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px"><div style="font-size:11px;color:var(--charcoal);font-weight:500">NOI Yield</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">6.8%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">5.4%</div></div>
+      </div>
+      <!-- Combined EBITDA dark card -->
+      <div class="ow-dark-card">
+        <div class="ow-dc-label">Portfolio · ServiceFlow Value · March 2026</div>
+        <div class="ow-dc-row"><span class="ow-dc-key">Hong Kong EBITDA Uplift</span><span class="ow-dc-val">HK$91,600</span></div>
+        <div class="ow-dc-row"><span class="ow-dc-key">London EBITDA Uplift</span><span class="ow-dc-val">HK$68,400 eq</span></div>
+        <div class="ow-dc-total">
+          <div><div class="ow-dc-total-lbl">Combined Uplift</div><div class="ow-dc-total-sub">vs pre-ServiceFlow baseline</div></div>
+          <div><span class="ow-dc-total-num">160,000</span><span class="ow-dc-total-unit"> HK$</span></div>
+        </div>
+        <div class="ow-dc-asset">
+          <div class="ow-dc-asset-lbl">Total asset value created · 20× multiple</div>
+          <div class="ow-dc-asset-val">HK$38.4M</div>
         </div>
       </div>
-      <div style="margin:12px 16px 0;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)">
-        <div style="padding:11px 14px;border-bottom:1px solid var(--marble);background:linear-gradient(135deg,#061a0e,#0d2218);display:flex;justify-content:space-between;align-items:center">
-          <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(106,190,138,.7)">ESG Portfolio · Q1 2026</div>
-          <div style="font-size:9px;color:rgba(106,190,138,.5)">HKEX · CSRD · TCFD</div>
+      <!-- Dual ESG card -->
+      <div style="margin:12px 16px 0;background:var(--ivory);border:1.5px solid rgba(74,180,100,.2);border-radius:18px;padding:18px;box-shadow:0 3px 16px rgba(42,37,32,.05)">
+        <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:12px">EarthCheck · Portfolio ESG</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+          <div style="background:rgba(201,169,122,.06);border-radius:12px;padding:12px;text-align:center">
+            <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:4px">Hong Kong</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal)">83<span style="font-size:13px;color:var(--green)"> pts</span></div>
+            <div style="font-size:10px;color:var(--mid-grey);margin-top:2px">48.6t CO₂e avoided</div>
+            <div style="height:4px;background:var(--marble);border-radius:2px;overflow:hidden;margin-top:8px"><div style="width:83%;height:100%;background:linear-gradient(90deg,#C9A97A,#e0c090);border-radius:2px"></div></div>
+          </div>
+          <div style="background:rgba(74,103,65,.06);border-radius:12px;padding:12px;text-align:center">
+            <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:4px">London 🌿</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal)">87<span style="font-size:13px;color:var(--green)"> pts ★</span></div>
+            <div style="font-size:10px;color:var(--mid-grey);margin-top:2px">32.1t CO₂e avoided</div>
+            <div style="height:4px;background:var(--marble);border-radius:2px;overflow:hidden;margin-top:8px"><div style="width:87%;height:100%;background:linear-gradient(90deg,#4ab464,#6abe8a);border-radius:2px"></div></div>
+          </div>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
-          <div style="padding:12px 14px;border-right:1px solid var(--marble);border-bottom:1px solid var(--marble)"><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:4px">Hong Kong</div><div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--charcoal)">48.6t</div><div style="font-size:10px;color:var(--mid-grey)">CO₂e avoided MTD</div></div>
-          <div style="padding:12px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--petrol);margin-bottom:4px">London 🌿</div><div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--charcoal)">32.1t</div><div style="font-size:10px;color:var(--mid-grey)">CO₂e avoided MTD</div></div>
-          <div style="padding:12px 14px;border-right:1px solid var(--marble);border-bottom:1px solid var(--marble)"><div style="font-size:10px;color:var(--mid-grey)">Waste diversion</div><div style="font-size:16px;font-family:'Cormorant Garamond',serif;color:var(--green);margin-top:2px">76%</div></div>
-          <div style="padding:12px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:10px;color:var(--mid-grey)">Waste diversion</div><div style="font-size:16px;font-family:'Cormorant Garamond',serif;color:var(--green);margin-top:2px">82%</div></div>
-          <div style="padding:12px 14px;border-right:1px solid var(--marble)"><div style="font-size:10px;color:var(--mid-grey)">EarthCheck</div><div style="font-size:16px;font-family:'Cormorant Garamond',serif;color:var(--charcoal);margin-top:2px">83 pts</div></div>
-          <div style="padding:12px 14px"><div style="font-size:10px;color:var(--mid-grey)">EarthCheck</div><div style="font-size:16px;font-family:'Cormorant Garamond',serif;color:var(--green);margin-top:2px">87 pts ★</div></div>
-        </div>
-        <div style="padding:10px 14px;background:var(--marble)">
-          <div style="font-size:10px;font-weight:600;color:var(--charcoal);margin-bottom:6px">Regulatory Compliance</div>
-          <div style="font-size:11px;color:var(--green);margin-bottom:2px">✓ HKEX ESG Guide (2023) — Audit trail ready</div>
-          <div style="font-size:11px;color:var(--green);margin-bottom:2px">✓ CSRD (EU 2022/2464) — Data structured</div>
-          <div style="font-size:11px;color:var(--green)">✓ TCFD — Climate risk metrics live</div>
-        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ HKEX</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ CSRD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ TCFD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ Audit trail live</span>
+      </div>
       </div>
     </div>
     <div class="esg-card" style="margin:12px 16px 4px">
@@ -1589,7 +1716,38 @@ body{
       <div class="kpi-card"><div class="kl">CPOR</div><div class="kv">HK$<span style="font-size:18px">248</span></div><div class="kd dn">⚠ High</div></div>
       <div class="kpi-card"><div class="kl">Covers</div><div class="kv">84</div><div class="kd up">78% cap.</div></div>
     </div>
-    <div class="reco"><div class="reco-in"><div class="rl">Lucciola · Monday Action</div><div class="rt">Reduce Branzino al Sale prep 25% for Monday dinner. Reroute burrata to Zoku omakase to avoid Tuesday spoilage. Saves HK$680 + 3.2 kg CO₂e.</div><div class="rm">HKEX Scope-3 logged · EarthCheck tracked</div><button class="reco-cta" onclick="nav('fblog')">Log Entry →</button></div></div>
+    <!-- Pre-emptive Strike -->
+    <div style="margin:10px 16px 0;background:linear-gradient(135deg,#1a1208,#2a1e0e);border-radius:16px;padding:16px;border:1px solid rgba(201,169,122,.2);position:relative;overflow:hidden">
+      <div style="position:absolute;top:-20px;right:-20px;width:80px;height:80px;background:radial-gradient(circle,rgba(201,169,122,.08) 0%,transparent 70%)"></div>
+      <div style="position:relative;z-index:1">
+        <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px">
+          <div style="background:rgba(201,169,122,.15);border-radius:8px;padding:4px 8px;font-size:9px;font-weight:700;letter-spacing:.1em;color:#C9A97A">⚡ PRE-EMPTIVE STRIKE</div>
+          <div style="font-size:9px;color:rgba(245,240,232,.3)">AI · Weather + Occupancy signal</div>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:10px">
+          <div style="background:rgba(74,103,65,.2);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(106,190,138,.8)">🌧 Rain Mon</div>
+          <div style="background:rgba(201,169,122,.12);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(201,169,122,.8)">78% occ.</div>
+          <div style="background:rgba(245,240,232,.06);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(245,240,232,.5)">345 covers</div>
+        </div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ivory);margin-bottom:6px;line-height:1.3">Reduce Branzino prep by 25%<br><em style="color:rgba(245,240,232,.6);font-size:15px">Reroute burrata to Zoku omakase</em></div>
+        <div style="display:flex;gap:8px;margin-bottom:12px">
+          <div style="flex:1;background:rgba(106,190,138,.1);border:1px solid rgba(106,190,138,.2);border-radius:10px;padding:8px;text-align:center">
+            <div style="font-size:9px;color:rgba(106,190,138,.6);letter-spacing:.1em;text-transform:uppercase">Savings</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#6abe8a">HK$680</div>
+          </div>
+          <div style="flex:1;background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:10px;padding:8px;text-align:center">
+            <div style="font-size:9px;color:rgba(106,190,138,.5);letter-spacing:.1em;text-transform:uppercase">CO₂e</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#6abe8a">−3.2 kg</div>
+          </div>
+          <div style="flex:1;background:rgba(201,169,122,.08);border:1px solid rgba(201,169,122,.15);border-radius:10px;padding:8px;text-align:center">
+            <div style="font-size:9px;color:rgba(201,169,122,.5);letter-spacing:.1em;text-transform:uppercase">Scope-3</div>
+            <div style="font-size:10px;color:#C9A97A;margin-top:4px;font-weight:600">Auto-logged</div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:rgba(245,240,232,.35);margin-bottom:10px">EarthCheck Scope-3 · HKEX ESG · Auto-captured on action</div>
+        <button class="reco-cta" onclick="nav('fblog')" style="width:100%">Confirm & Log →</button>
+      </div>
+    </div>
     <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · Tonight</div></div>
     <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Branzino al Sale</div><div class="dc">Main · Salt-crust prep overrun</div></div><div class="wpill wh">2.2 kg</div></div>
     <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Burrata con Tartufo</div><div class="dc">Starter · Spoilage risk</div></div><div class="wpill wm">1.4 kg</div></div>
@@ -1630,7 +1788,37 @@ body{
       <div class="kpi-card"><div class="kl">POS Var</div><div class="kv">HK$<span style="font-size:18px">480</span></div><div class="kd dn">⚠ Unposted</div></div>
       <div class="kpi-card"><div class="kl">Covers</div><div class="kv">48</div><div class="kd up">94% cap.</div></div>
     </div>
-    <div class="reco"><div class="reco-in"><div class="rl">Zoku · Monday Action</div><div class="rt">Reconcile HK$480 POS variance by 09:00 Monday — pull table 12 receipt log. Wagyu portioning is excellent, maintain current ratios.</div><div class="rm">HKEX Scope-3 logged · EarthCheck tracked</div><button class="reco-cta" onclick="nav('fblog')">Log Entry →</button></div></div>
+    <!-- Pre-emptive Strike -->
+    <div style="margin:10px 16px 0;background:linear-gradient(135deg,#080f1a,#0d1a2e);border-radius:16px;padding:16px;border:1px solid rgba(74,158,181,.2);position:relative;overflow:hidden">
+      <div style="position:relative;z-index:1">
+        <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px">
+          <div style="background:rgba(74,158,181,.15);border-radius:8px;padding:4px 8px;font-size:9px;font-weight:700;letter-spacing:.1em;color:#4A9EB5">⚡ PRE-EMPTIVE STRIKE</div>
+          <div style="font-size:9px;color:rgba(245,240,232,.3)">AI · POS + Forecast signal</div>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:10px">
+          <div style="background:rgba(139,58,58,.2);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(220,100,100,.8)">⚠ HK$480 gap</div>
+          <div style="background:rgba(201,169,122,.12);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(201,169,122,.8)">94% cap.</div>
+          <div style="background:rgba(74,158,181,.08);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(74,158,181,.7)">Tues +12%</div>
+        </div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ivory);margin-bottom:6px;line-height:1.3">Reconcile POS variance by 09:00<br><em style="color:rgba(245,240,232,.6);font-size:15px">Order Wagyu +15% for Tuesday forecast</em></div>
+        <div style="display:flex;gap:8px;margin-bottom:12px">
+          <div style="flex:1;background:rgba(220,100,100,.1);border:1px solid rgba(220,100,100,.2);border-radius:10px;padding:8px;text-align:center">
+            <div style="font-size:9px;color:rgba(220,100,100,.6);letter-spacing:.1em;text-transform:uppercase">Recovered</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#dc6464">HK$480</div>
+          </div>
+          <div style="flex:1;background:rgba(74,158,181,.1);border:1px solid rgba(74,158,181,.2);border-radius:10px;padding:8px;text-align:center">
+            <div style="font-size:9px;color:rgba(74,158,181,.6);letter-spacing:.1em;text-transform:uppercase">Waste</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#4A9EB5">0.8 kg</div>
+          </div>
+          <div style="flex:1;background:rgba(201,169,122,.08);border:1px solid rgba(201,169,122,.15);border-radius:10px;padding:8px;text-align:center">
+            <div style="font-size:9px;color:rgba(201,169,122,.5);letter-spacing:.1em;text-transform:uppercase">Scope-3</div>
+            <div style="font-size:10px;color:#C9A97A;margin-top:4px;font-weight:600">Auto-logged</div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:rgba(245,240,232,.35);margin-bottom:10px">Wagyu portioning excellent — maintain ratios · EarthCheck tracked</div>
+        <button class="reco-cta" onclick="nav('fblog')" style="width:100%;background:rgba(74,158,181,.2);border-color:rgba(74,158,181,.4);color:#4A9EB5">Confirm & Log →</button>
+      </div>
+    </div>
     <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · Tonight</div></div>
     <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Wagyu A5 trim</div><div class="dc">Omakase · Portioning tight</div></div><div class="wpill wl">0.4 kg</div></div>
     <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Uni (sea urchin)</div><div class="dc">Starter · Presentation off-cuts</div></div><div class="wpill wl">0.2 kg</div></div>
@@ -2226,6 +2414,10 @@ function ptTabById(id){
   if(screen) screen.querySelectorAll('.bnav .nb').forEach(function(b){
     b.classList.toggle('on', b.getAttribute('onclick') && b.getAttribute('onclick').includes(id));
   });
+  // update heading
+  var titleMap={'ownerPortfolio':'Portfolio','ownerHK':'Hong Kong','ownerLDN':'London'};
+  var titleEl=document.getElementById('ownerTitle');
+  if(titleEl&&titleMap[id]){titleEl.innerHTML='The Hari<br><em>'+titleMap[id]+'</em>';}
 }
 function ptTab(btn){
   document.querySelectorAll('#owner .pt-btn').forEach(function(b){b.classList.remove('on')});
@@ -2234,6 +2426,9 @@ function ptTab(btn){
   document.getElementById('ownerPortfolio').style.display=(t==='Portfolio')?'':'none';
   document.getElementById('ownerHK').style.display        =(t==='Hong Kong')?'':'none';
   document.getElementById('ownerLDN').style.display       =(t==='London')?'':'none';
+  var titleMap={'Portfolio':'Portfolio','Hong Kong':'Hong Kong','London':'London'};
+  var titleEl=document.getElementById('ownerTitle');
+  if(titleEl&&titleMap[t]){titleEl.innerHTML='The Hari<br><em>'+titleMap[t]+'</em>';}
 }
 
 function showInfo(text){
