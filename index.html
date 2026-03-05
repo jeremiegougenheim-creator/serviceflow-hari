@@ -523,6 +523,17 @@ body{
 .dj-btn.primary{background:linear-gradient(135deg,#7A4500,#FF9500);color:#fff}
 .dj-btn.secondary{background:var(--marble);color:var(--mid-grey)}
 .dj-btn:active{transform:scale(.97)}
+
+/* MAINTLOG HERO */
+.maint-hero{background:linear-gradient(160deg,#141414 0%,#1C1C1C 55%,#1a1f14 100%);padding:16px 20px 20px;position:relative;overflow:hidden;flex-shrink:0}
+.maint-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 22px,rgba(255,160,30,.025) 22px,rgba(255,160,30,.025) 23px)}
+.maint-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#FF9500,#FFB340,#FF9500,transparent);opacity:.7}
+.maint-inner{position:relative;z-index:1}
+.maint-eyebrow{display:flex;align-items:center;gap:7px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:8px}
+.maint-live{width:6px;height:6px;border-radius:50%;background:#FF9500;animation:pulse 2s infinite}
+.maint-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:#F5F0E8;line-height:1.05}
+.maint-h2 em{color:#FF9500;font-style:italic}
+.maint-meta{font-size:10px;color:rgba(255,149,0,.4);margin-top:6px;letter-spacing:.06em}
 </style>
 </head>
 <body>
@@ -732,40 +743,55 @@ body{
     <button class="otab" onclick="nav('roomservice')">Room Service</button>
   </div>
   <div class="scroll">
-    <div class="chart-card">
-      <div class="cc-top"><div><h4>Lucciola Waste Trend</h4><p>kg / service · this week</p></div><div class="cc-big">8.4 kg<span>Today ↓21%</span></div></div>
-      <div class="bar-chart">
-        <div class="bw"><div class="bseg" style="height:62%"></div><span class="bl">Mon</span></div>
-        <div class="bw"><div class="bseg" style="height:78%"></div><span class="bl">Tue</span></div>
-        <div class="bw"><div class="bseg" style="height:55%"></div><span class="bl">Wed</span></div>
-        <div class="bw"><div class="bseg" style="height:88%"></div><span class="bl">Thu</span></div>
-        <div class="bw"><div class="bseg" style="height:72%"></div><span class="bl">Fri</span></div>
-        <div class="bw"><div class="bseg" style="height:80%"></div><span class="bl">Sat</span></div>
-        <div class="bw"><div class="bseg now" style="height:42%"></div><span class="bl" style="color:var(--green);font-weight:600">Sun</span></div>
+    <div class="kpi-scroll">
+      <div class="kpi-card"><div class="kl">Total Revenue</div><div class="kv">HK$<span style="font-size:18px">84k</span></div><div class="kd up">↑ 12%</div></div>
+      <div class="kpi-card"><div class="kl">Total Waste</div><div class="kv">12.4<span class="ku">kg</span></div><div class="kd up">↓ 18%</div></div>
+      <div class="kpi-card"><div class="kl">Covers</div><div class="kv">312</div><div class="kd up">78% cap.</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:8px 16px 0">
+      <div onclick="nav('lucciola')" style="background:linear-gradient(135deg,#1a1208,#2a1e08);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(201,169,122,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">Lucciola</div>
+        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,169,122,.6);margin-top:5px">Italian</div>
+        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">84 covers · ⚠ Watch</div>
+      </div>
+      <div onclick="nav('zoku')" style="background:linear-gradient(135deg,#080f1a,#0d1a2e);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(74,158,181,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">Zoku</div>
+        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(74,158,181,.6);margin-top:5px">Japanese</div>
+        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">48 covers · ⚠ POS</div>
+      </div>
+      <div onclick="nav('lounge')" style="background:linear-gradient(135deg,#1a1008,#2e1e0a);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(196,147,74,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">The Lounge</div>
+        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(196,147,74,.6);margin-top:5px">Bar &amp; Cocktails</div>
+        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">112 covers · ✓ On target</div>
+      </div>
+      <div onclick="nav('terrace')" style="background:linear-gradient(135deg,#0a1a0a,#122210);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(107,143,94,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">Terrace</div>
+        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(107,143,94,.6);margin-top:5px">Outdoor Dining</div>
+        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">68 covers · ⚠ Roof</div>
       </div>
     </div>
-    <div style="padding:14px 18px 6px"><div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400">Top Waste by Dish</div><div style="font-size:11px;color:var(--mid-grey);margin-top:2px">Lucciola · Sunday dinner service</div></div>
-    <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Branzino al Sale</div><div class="dc">Main · Salt-crust prep overrun</div></div><div class="wpill wh">2.2 kg</div></div>
-    <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Burrata con Tartufo</div><div class="dc">Starter · Spoilage</div></div><div class="wpill wm">1.4 kg</div></div>
-    <div class="dish-row"><div class="dr">3</div><div class="di"><div class="dn2">Focaccia Pugliese</div><div class="dc">Bread · Over-baked batch</div></div><div class="wpill wm">0.9 kg</div></div>
-    <div class="dish-row"><div class="dr">4</div><div class="di"><div class="dn2">Tiramisu al Bicchiere</div><div class="dc">Dessert · Plate waste</div></div><div class="wpill wl">0.4 kg</div></div>
-    <div class="dish-row" style="margin-bottom:4px"><div class="dr">5</div><div class="di"><div class="dn2">Pappardelle al Cinghiale</div><div class="dc">Pasta · Under-ordered</div></div><div class="wpill wl">0.3 kg</div></div>
-    <div class="reco">
-      <div class="reco-in">
-        <div class="rl">Monday 2 March — Action</div>
-        <div class="rt">Reduce Branzino al Sale prep 25% for Monday dinner. Move burrata to Zoku omakase to avoid Tuesday spoilage.</div>
-        <div class="rm">Est. saving: HK$680 · 3.2 kg CO₂e avoided · HKEX Scope-3 logged</div>
-        <button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button>
+    <div onclick="nav('roomservice')" style="margin:10px 16px 8px;background:linear-gradient(135deg,#12081a,#1e0a2e);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(155,127,196,.2);display:flex;align-items:center;gap:14px">
+      <div style="flex:1;text-align:center">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#F5F0E8">Room Service</div>
+        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(155,127,196,.6);margin-top:4px">In-Room Dining · 24h</div>
+        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">23 orders · HK$8,240 · ● Active</div>
+      </div>
+    </div>
+    <div class="ab-box" style="margin:4px 16px 8px">
+      <div class="ab-in">
+        <div class="ab-lbl">Monday 2 March — F&amp;B Priority Actions</div>
+        <div class="ab-item"><div class="ab-num">1</div><div class="ab-text"><strong>Lucciola:</strong> Reduce Branzino prep 25%, reroute burrata to Zoku. HK$680 saving.</div></div>
+        <div class="ab-item"><div class="ab-num">2</div><div class="ab-text"><strong>Zoku:</strong> Reconcile HK$480 POS variance by 09:00 Monday.</div></div>
+        <div class="ab-item"><div class="ab-num">3</div><div class="ab-text"><strong>Room Service:</strong> Switch bread basket to single-portion brioche. −35% waste.</div></div>
       </div>
     </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
     <div style="height:8px"></div>
   </div>
   <div class="bnav">
-    <button class="nb on" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
-    <button class="nb" onclick="nav('briefing')" aria-label="Briefing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Brief</span></button>
-    <button class="nb" onclick="nav('wastelog')" aria-label="New Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>New Log</span></button>
-    <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
+    <button class="nb" onclick="nav('wastelog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
   </div>
 </div>
 
@@ -797,6 +823,7 @@ body{
       <div class="kpi-card"><div class="kl">Avg Delivery</div><div class="kv">24<span class="ku">min</span></div><div class="kd up">↓ 3 min</div></div>
       <div class="kpi-card"><div class="kl">Waste</div><div class="kv">3.8<span class="ku">kg</span></div><div class="kd ntrl">On target</div></div>
     </div>
+    <div class="reco"><div class="reco-in"><div class="rl">Room Service · Monday Action</div><div class="rt">Replace bread basket with single-portion brioche. Switch fruit plate to seasonal cut — reduces prep waste 35%.</div><div class="rm">Est. saving: HK$320/day · EarthCheck Scope-3: −0.8 kg CO₂e</div><button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button></div></div>
     <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Live Orders · Tonight</div></div>
     <div style="margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 14px;display:flex;gap:11px;align-items:center">
       <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:13px;color:#9B7FC4;flex-shrink:0">2204</div>
@@ -817,13 +844,11 @@ body{
     <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Breakfast Set (late return)</div><div class="dc">Uneaten · Guest checked out early</div></div><div class="wpill wh">1.4 kg</div></div>
     <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Bread Basket</div><div class="dc">Complimentary · High return rate</div></div><div class="wpill wm">1.1 kg</div></div>
     <div class="dish-row"><div class="dr">3</div><div class="di"><div class="dn2">Fruit Plate</div><div class="dc">Amenity · Partial consumption</div></div><div class="wpill wl">0.8 kg</div></div>
-    <div class="reco"><div class="reco-in"><div class="rl">Room Service · Monday Action</div><div class="rt">Replace bread basket with single-portion brioche. Switch fruit plate to seasonal cut — reduces prep waste 35%.</div><div class="rm">Est. saving: HK$320/day · EarthCheck Scope-3: −0.8 kg CO₂e</div><button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button></div></div>
     <div style="height:8px"></div>
   </div>
   <div class="bnav">
-    <button class="nb" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
-    <button class="nb on" onclick="nav('wastelog')" aria-label="New Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
-    <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
+    <button class="nb on" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
+    <button class="nb" onclick="nav('wastelog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
   </div>
 </div>
 
@@ -982,9 +1007,9 @@ body{
     <div style="height:8px"></div>
   </div>
   <div class="bnav">
-    <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
-    <button class="nb on" onclick="nav('housekeeping')" aria-label="Housekeeping"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3h16a1 1 0 011 1v7a9 9 0 01-18 0V4a1 1 0 011-1z"/></svg><span>Housekeeping</span></button>
-    <button class="nb" onclick="nav('briefing')" aria-label="Briefing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Brief</span></button>
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('housekeeping')" aria-label="Housekeeping"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3h16a1 1 0 011 1v7a9 9 0 01-18 0V4a1 1 0 011-1z"/><path d="M8 21h8m-4-3v3"/></svg><span>Rooms</span></button>
+    <button class="nb" onclick="nav('hklog')" aria-label="Add Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
   </div>
 </div>
 
@@ -1119,21 +1144,8 @@ body{
         <div class="job-action"><button class="job-sb done">Done</button><div class="job-age">18:30</div></div>
       </div>
 
-      <div style="padding:8px 16px 4px">
-        <button onclick="showFaultForm()" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:12px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log New Fault
-        </button>
-      </div>
-      <div id="newFaultForm" style="display:none;margin:0 16px 16px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)">
-        <div class="fl" style="margin-bottom:10px">New Fault Report</div>
-        <input class="tinp" placeholder="Location (e.g. Room 2204, Lobby)">
-        <input class="tinp" placeholder="Description of fault">
-        <div class="chips">
-          <div class="chip on" onclick="sel(this,'fp')" style="color:var(--red-alert)">High</div>
-          <div class="chip" onclick="sel(this,'fp')">Medium</div>
-          <div class="chip" onclick="sel(this,'fp')">Low</div>
-        </div>
-        <button onclick="submitFault()" style="width:100%;padding:12px;background:linear-gradient(135deg,#7A4500,#FF9500);border:none;border-radius:11px;color:#fff;font-size:12px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.08em;text-transform:uppercase">Submit Fault →</button>
+      <div style="padding:8px 16px 8px">
+        <button onclick="nav('maintlog')" style="width:100%;padding:12px;background:linear-gradient(135deg,#1C1C1C,#2a1800);border:1px solid rgba(255,149,0,.25);border-radius:13px;font-size:12px;color:#FF9500;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:500"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ Log New Fault</button>
       </div>
     </div>
 
@@ -1162,7 +1174,8 @@ body{
       <div style="padding:8px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Coming Up</div>
       <div class="pmr"><div class="pmd-date"><div class="pmd-day">09</div><div class="pmd-mon">Mar</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Otis full lift service · All 4 banks</div><div class="pmd-sub">Annual contract · Full day</div></div><div class="pmd-chip sc" style="flex-shrink:0;margin-top:2px">Mon 9</div></div>
       <div class="pmr"><div class="pmd-date"><div class="pmd-day">15</div><div class="pmd-mon">Mar</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Chiller service — Unit 2 B1</div><div class="pmd-sub">Annual · Carrier technician · 6hr</div></div><div class="pmd-chip sc" style="flex-shrink:0;margin-top:2px">Sat 15</div></div>
-      <div style="height:16px"></div>
+      <div style="padding:8px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:12px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log PM Entry</button></div>
+      <div style="height:8px"></div>
     </div>
 
     <!-- ENERGY TAB -->
@@ -1200,7 +1213,8 @@ body{
       <div class="cont-row"><div class="cont-dot on2"></div><div class="cont-b"><div class="cont-name">K. Wong — In-house Maintenance</div><div class="cont-ref">HVAC-RF-2026-0301 · Floor 30</div></div><div class="cont-badge on2">On Site</div></div>
       <div class="cont-row"><div class="cont-dot pend"></div><div class="cont-b"><div class="cont-name">Otis Elevator HK</div><div class="cont-ref">HK-9921 · ETA 08:00 Mon</div></div><div class="cont-badge pend">Pending</div></div>
       <div class="cont-row"><div class="cont-dot dn2"></div><div class="cont-b"><div class="cont-name">Jardine Engineering — BMS</div><div class="cont-ref">JEC-BMS-441 · Completed 18:30</div></div><div class="cont-badge dn2">Done</div></div>
-      <div style="height:16px"></div>
+      <div style="padding:8px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:12px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log Energy Reading</button></div>
+      <div style="height:8px"></div>
     </div>
 
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
@@ -1208,9 +1222,9 @@ body{
   </div>
 
   <div class="bnav">
-    <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
-    <button class="nb on" onclick="nav('maintenance')" aria-label="Maintenance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span>Maint.</span></button>
-    <button class="nb" onclick="nav('briefing')" aria-label="Briefing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Brief</span></button>
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('maintenance')" aria-label="Maintenance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span>Maint.</span></button>
+    <button class="nb" onclick="nav('maintlog')" aria-label="Add Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
   </div>
 </div>
 
@@ -1355,12 +1369,286 @@ body{
         </div>
       </div>
     </div>
+    <div class="esg-card" style="margin:12px 16px 4px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2D4F" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div><div class="esg-lbl">HKEX ESG · Portfolio</div><div class="esg-val">CO₂e: 1.84t today · 48.2t MTD · EarthCheck 83 pts</div></div>
+    </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
     <div style="height:8px"></div>
   </div>
   <div class="bnav">
-    <button class="nb on" onclick="nav('owner')" aria-label="Overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span>Overview</span></button>
-    <button class="nb" onclick="nav('briefing')" aria-label="Brief"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Brief</span></button>
+    <button class="nb on" onclick="ptTabById('ownerHK')" aria-label="Hong Kong"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>HK</span></button>
+    <button class="nb" onclick="ptTabById('ownerLDN')" aria-label="London"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg><span>London</span></button>
+    <button class="nb" onclick="ptTabById('ownerPortfolio')" aria-label="Portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span>Portfolio</span></button>
+  </div>
+</div>
+
+
+<!-- ═══ LUCCIOLA ═══ -->
+<div class="screen" id="lucciola">
+  <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
+  <div style="background:linear-gradient(160deg,#1a1208 0%,#2a1e0e 60%,#0e100a 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(201,169,122,.03) 50px,rgba(201,169,122,.03) 51px)"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#C9A97A,transparent)"></div>
+    <div style="position:relative;z-index:1">
+      <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Lucciola</div>
+      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Italian Fine Dining · 84 covers tonight</div>
+    </div>
+  </div>
+  <div class="otabs">
+    <button class="otab on">Lucciola</button>
+    <button class="otab" onclick="nav('zoku')">Zoku</button>
+    <button class="otab" onclick="nav('lounge')">The Lounge</button>
+    <button class="otab" onclick="nav('terrace')">Terrace</button>
+    <button class="otab" onclick="nav('roomservice')">Room Service</button>
+  </div>
+  <div class="scroll">
+    <div class="kpi-scroll">
+      <div class="kpi-card"><div class="kl">Revenue</div><div class="kv">HK$<span style="font-size:18px">28k</span></div><div class="kd up">↑ 8%</div></div>
+      <div class="kpi-card"><div class="kl">Waste</div><div class="kv">8.4<span class="ku">kg</span></div><div class="kd up">↓ 21%</div></div>
+      <div class="kpi-card"><div class="kl">CPOR</div><div class="kv">HK$<span style="font-size:18px">248</span></div><div class="kd dn">⚠ High</div></div>
+      <div class="kpi-card"><div class="kl">Covers</div><div class="kv">84</div><div class="kd up">78% cap.</div></div>
+    </div>
+    <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · Tonight</div></div>
+    <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Branzino al Sale</div><div class="dc">Main · Salt-crust prep overrun</div></div><div class="wpill wh">2.2 kg</div></div>
+    <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Burrata con Tartufo</div><div class="dc">Starter · Spoilage risk</div></div><div class="wpill wm">1.4 kg</div></div>
+    <div class="dish-row"><div class="dr">3</div><div class="di"><div class="dn2">Focaccia Pugliese</div><div class="dc">Bread · Over-baked batch</div></div><div class="wpill wm">0.9 kg</div></div>
+    <div class="dish-row"><div class="dr">4</div><div class="di"><div class="dn2">Tiramisu al Bicchiere</div><div class="dc">Dessert · Plate waste</div></div><div class="wpill wl">0.4 kg</div></div>
+    <div class="reco"><div class="reco-in"><div class="rl">Lucciola · Monday Action</div><div class="rt">Reduce Branzino al Sale prep 25% for Monday dinner. Reroute burrata to Zoku omakase to avoid Tuesday spoilage. Saves HK$680 + 3.2 kg CO₂e.</div><div class="rm">HKEX Scope-3 logged · EarthCheck tracked</div><button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button></div></div>
+    <div style="height:8px"></div>
+  </div>
+  <div class="bnav">
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
+    <button class="nb" onclick="nav('wastelog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
+  </div>
+</div>
+
+<!-- ═══ ZOKU ═══ -->
+<div class="screen" id="zoku">
+  <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
+  <div style="background:linear-gradient(160deg,#080f1a 0%,#0d1a2e 60%,#081212 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(74,158,181,.03) 50px,rgba(74,158,181,.03) 51px)"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#4A9EB5,transparent)"></div>
+    <div style="position:relative;z-index:1">
+      <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Zoku</div>
+      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Japanese Omakase · 48 covers tonight</div>
+    </div>
+  </div>
+  <div class="otabs">
+    <button class="otab" onclick="nav('lucciola')">Lucciola</button>
+    <button class="otab on">Zoku</button>
+    <button class="otab" onclick="nav('lounge')">The Lounge</button>
+    <button class="otab" onclick="nav('terrace')">Terrace</button>
+    <button class="otab" onclick="nav('roomservice')">Room Service</button>
+  </div>
+  <div class="scroll">
+    <div class="kpi-scroll">
+      <div class="kpi-card"><div class="kl">Revenue</div><div class="kv">HK$<span style="font-size:18px">41k</span></div><div class="kd up">↑ 15%</div></div>
+      <div class="kpi-card"><div class="kl">Waste</div><div class="kv">0.8<span class="ku">kg</span></div><div class="kd up">Best week</div></div>
+      <div class="kpi-card"><div class="kl">POS Var</div><div class="kv">HK$<span style="font-size:18px">480</span></div><div class="kd dn">⚠ Unposted</div></div>
+      <div class="kpi-card"><div class="kl">Covers</div><div class="kv">48</div><div class="kd up">94% cap.</div></div>
+    </div>
+    <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · Tonight</div></div>
+    <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Wagyu A5 trim</div><div class="dc">Omakase · Portioning tight</div></div><div class="wpill wl">0.4 kg</div></div>
+    <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Uni (sea urchin)</div><div class="dc">Starter · Presentation off-cuts</div></div><div class="wpill wl">0.2 kg</div></div>
+    <div class="dish-row"><div class="dr">3</div><div class="di"><div class="dn2">Miso soup</div><div class="dc">Complimentary · Low uptake</div></div><div class="wpill wl">0.2 kg</div></div>
+    <div class="reco"><div class="reco-in"><div class="rl">Zoku · Monday Action</div><div class="rt">Reconcile HK$480 POS variance by 09:00 Monday — pull table 12 receipt log. Wagyu portioning is excellent, maintain current ratios.</div><div class="rm">HKEX Scope-3 logged · EarthCheck tracked</div><button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button></div></div>
+    <div style="height:8px"></div>
+  </div>
+  <div class="bnav">
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
+    <button class="nb" onclick="nav('wastelog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
+  </div>
+</div>
+
+<!-- ═══ THE LOUNGE ═══ -->
+<div class="screen" id="lounge">
+  <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
+  <div style="background:linear-gradient(160deg,#1a1008 0%,#2e1e0a 60%,#100e08 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(196,147,74,.03) 50px,rgba(196,147,74,.03) 51px)"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#C4934A,transparent)"></div>
+    <div style="position:relative;z-index:1">
+      <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">The Lounge</div>
+      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Bar & Cocktails · 112 covers tonight</div>
+    </div>
+  </div>
+  <div class="otabs">
+    <button class="otab" onclick="nav('lucciola')">Lucciola</button>
+    <button class="otab" onclick="nav('zoku')">Zoku</button>
+    <button class="otab on">The Lounge</button>
+    <button class="otab" onclick="nav('terrace')">Terrace</button>
+    <button class="otab" onclick="nav('roomservice')">Room Service</button>
+  </div>
+  <div class="scroll">
+    <div class="kpi-scroll">
+      <div class="kpi-card"><div class="kl">Revenue</div><div class="kv">HK$<span style="font-size:18px">18k</span></div><div class="kd ntrl">On target</div></div>
+      <div class="kpi-card"><div class="kl">Waste</div><div class="kv">1.4<span class="ku">kg</span></div><div class="kd ntrl">On target</div></div>
+      <div class="kpi-card"><div class="kl">Bar Loss</div><div class="kv">HK$<span style="font-size:18px">320</span></div><div class="kd up">↓ 12%</div></div>
+      <div class="kpi-card"><div class="kl">Covers</div><div class="kv">112</div><div class="kd up">Busy</div></div>
+    </div>
+    <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · Tonight</div></div>
+    <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Garnish plate</div><div class="dc">Bar · Over-prepared daily</div></div><div class="wpill wm">0.6 kg</div></div>
+    <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Cheese board</div><div class="dc">Late-night · Low uptake</div></div><div class="wpill wm">0.5 kg</div></div>
+    <div class="dish-row"><div class="dr">3</div><div class="di"><div class="dn2">Fruit infusions</div><div class="dc">Cocktail prep · Daily excess</div></div><div class="wpill wl">0.3 kg</div></div>
+    <div class="reco"><div class="reco-in"><div class="rl">The Lounge · Monday Action</div><div class="rt">Reduce garnish prep to per-shift batches. Cheese board available until 23:00 only — saves HK$180/week in spoilage.</div><div class="rm">HKEX Scope-3 logged · EarthCheck tracked</div><button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button></div></div>
+    <div style="height:8px"></div>
+  </div>
+  <div class="bnav">
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
+    <button class="nb" onclick="nav('wastelog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
+  </div>
+</div>
+
+<!-- ═══ TERRACE ═══ -->
+<div class="screen" id="terrace">
+  <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
+  <div style="background:linear-gradient(160deg,#0a1a0a 0%,#122210 60%,#0a100a 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(107,143,94,.03) 50px,rgba(107,143,94,.03) 51px)"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#6B8F5E,transparent)"></div>
+    <div style="position:relative;z-index:1">
+      <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Terrace</div>
+      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Outdoor Dining · 68 covers tonight</div>
+    </div>
+  </div>
+  <div class="otabs">
+    <button class="otab" onclick="nav('lucciola')">Lucciola</button>
+    <button class="otab" onclick="nav('zoku')">Zoku</button>
+    <button class="otab" onclick="nav('lounge')">The Lounge</button>
+    <button class="otab on">Terrace</button>
+    <button class="otab" onclick="nav('roomservice')">Room Service</button>
+  </div>
+  <div class="scroll">
+    <div class="kpi-scroll">
+      <div class="kpi-card"><div class="kl">Revenue</div><div class="kv">HK$<span style="font-size:18px">14k</span></div><div class="kd dn">↓ 8% rain</div></div>
+      <div class="kpi-card"><div class="kl">Waste</div><div class="kv">4.2<span class="ku">kg</span></div><div class="kd dn">⚠ High</div></div>
+      <div class="kpi-card"><div class="kl">Roof Motor</div><div class="kv">⚠</div><div class="kd dn">Slow close</div></div>
+      <div class="kpi-card"><div class="kl">Covers</div><div class="kv">68</div><div class="kd ntrl">62% cap.</div></div>
+    </div>
+    <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · Tonight</div></div>
+    <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Terrace set menu</div><div class="dc">Weather cancellations · Full prep</div></div><div class="wpill wh">1.8 kg</div></div>
+    <div class="dish-row"><div class="dr">2</div><div class="di"><div class="dn2">Bread service</div><div class="dc">Outdoor · Wind losses</div></div><div class="wpill wm">1.1 kg</div></div>
+    <div class="dish-row"><div class="dr">3</div><div class="di"><div class="dn2">Salad components</div><div class="dc">Wilting · Heat exposure</div></div><div class="wpill wm">0.9 kg</div></div>
+    <div class="dish-row"><div class="dr">4</div><div class="di"><div class="dn2">Dessert display</div><div class="dc">Outdoor · Presentation waste</div></div><div class="wpill wl">0.4 kg</div></div>
+    <div class="reco"><div class="reco-in"><div class="rl">Terrace · Monday Action</div><div class="rt">Rain forecast Monday — reduce terrace set menu prep 40%. Retractable roof motor service 12:00 Monday. Switch bread to covered basket.</div><div class="rm">HKEX Scope-3 logged · EarthCheck tracked</div><button class="reco-cta" onclick="nav('wastelog')">Log Waste Entry →</button></div></div>
+    <div style="height:8px"></div>
+  </div>
+  <div class="bnav">
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('fbmodule')" aria-label="F&B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg><span>F&amp;B</span></button>
+    <button class="nb" onclick="nav('wastelog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
+  </div>
+</div>
+
+<!-- ═══ HOUSEKEEPING LOG ═══ -->
+<div class="screen" id="hklog">
+  <div class="sbar br"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
+  <div class="hk-hero">
+    <div class="hk-inner">
+      <button class="back lt" onclick="nav('housekeeping')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Housekeeping</button>
+      <div class="hk-h2">Log Room Update</div>
+      <div class="hk-sub">330 Lockhart Road · Any floor · Any room type</div>
+    </div>
+  </div>
+  <div class="scroll">
+    <div style="padding:14px 16px 0">
+      <div class="fl">Room Number</div>
+      <input class="tinp" placeholder="e.g. 2204, 3001">
+      <div class="fl">Status</div>
+      <div class="chips">
+        <div class="chip on" onclick="sel(this,'hs')">Completed</div>
+        <div class="chip" onclick="sel(this,'hs')">In Progress</div>
+        <div class="chip" onclick="sel(this,'hs')">Blocked</div>
+        <div class="chip" onclick="sel(this,'hs')">Inspection Req.</div>
+      </div>
+      <div class="fl">Room Category</div>
+      <div class="chips">
+        <div class="chip on" onclick="sel(this,'hc')">Stayover</div>
+        <div class="chip" onclick="sel(this,'hc')">Departure</div>
+        <div class="chip" onclick="sel(this,'hc')">VIP / Suite</div>
+        <div class="chip" onclick="sel(this,'hc')">Deep Clean</div>
+      </div>
+      <div class="fl">Time Taken (min)</div>
+      <div class="qty-row">
+        <button class="qty-btn" onclick="chgHK(-5)">−</button>
+        <div class="qty-disp" id="hkQty">25 <span class="qty-unit">min</span></div>
+        <button class="qty-btn" onclick="chgHK(5)">+</button>
+      </div>
+      <div class="fl">Issues Found (optional)</div>
+      <div class="chips">
+        <div class="chip" onclick="sel(this,'hi')">Maintenance req.</div>
+        <div class="chip" onclick="sel(this,'hi')">Linen shortage</div>
+        <div class="chip" onclick="sel(this,'hi')">Guest item left</div>
+        <div class="chip" onclick="sel(this,'hi')">Minibar variance</div>
+      </div>
+      <div class="fl">Notes (optional)</div>
+      <input class="tinp" placeholder="e.g. Guest requested extra pillows…">
+      <div style="height:8px"></div>
+    </div>
+  </div>
+  <button class="submit-btn" style="background:linear-gradient(135deg,var(--bronze-dark),var(--bronze))" onclick="showToast('Room status logged ✓');nav('housekeeping')">Submit → Room Status Logged</button>
+  <div class="bnav">
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('housekeeping')" aria-label="Housekeeping"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3h16a1 1 0 011 1v7a9 9 0 01-18 0V4a1 1 0 011-1z"/><path d="M8 21h8m-4-3v3"/></svg><span>Rooms</span></button>
+    <button class="nb" onclick="nav('hklog')" aria-label="Add Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
+  </div>
+</div>
+
+<!-- ═══ MAINTENANCE LOG ═══ -->
+<div class="screen" id="maintlog">
+  <div class="sbar en"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
+  <div class="maint-hero">
+    <div class="maint-inner">
+      <button class="back" style="color:#FF9500;margin-bottom:8px" onclick="nav('maintenance')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Maintenance</button>
+      <div class="maint-eyebrow"><div class="maint-live"></div>Engineering Log</div>
+      <div class="maint-h2">Log New<br><em>Entry</em></div>
+      <div class="maint-meta">Fault · Inspection · PM · Reading</div>
+    </div>
+  </div>
+  <div class="scroll">
+    <div style="padding:14px 16px 0">
+      <div class="fl">Entry Type</div>
+      <div class="chips">
+        <div class="chip on" onclick="sel(this,'mt')">New Fault</div>
+        <div class="chip" onclick="sel(this,'mt')">PM Completed</div>
+        <div class="chip" onclick="sel(this,'mt')">Inspection</div>
+        <div class="chip" onclick="sel(this,'mt')">Meter Reading</div>
+      </div>
+      <div class="fl">Location</div>
+      <input class="tinp" placeholder="e.g. Room 2204, Plant Room B1, Lobby">
+      <div class="fl">Description</div>
+      <input class="tinp" placeholder="e.g. AC unit not cooling, filter blocked">
+      <div class="fl">Priority</div>
+      <div class="chips">
+        <div class="chip on" onclick="sel(this,'mp')" style="color:var(--red-alert)">High</div>
+        <div class="chip" onclick="sel(this,'mp')">Medium</div>
+        <div class="chip" onclick="sel(this,'mp')">Low</div>
+        <div class="chip" onclick="sel(this,'mp')">Info Only</div>
+      </div>
+      <div class="fl">Assigned To (optional)</div>
+      <div class="chips">
+        <div class="chip" onclick="sel(this,'ma')">K. Wong</div>
+        <div class="chip" onclick="sel(this,'ma')">M. Chan</div>
+        <div class="chip" onclick="sel(this,'ma')">P. Lam</div>
+        <div class="chip" onclick="sel(this,'ma')">Contractor</div>
+      </div>
+      <div class="fl">Notes (optional)</div>
+      <input class="tinp" placeholder="e.g. Fault code ERR-D4, guest in room…">
+      <button class="voice-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>Tap to dictate</button>
+      <div style="height:8px"></div>
+    </div>
+  </div>
+  <button class="submit-btn" style="background:linear-gradient(135deg,#7A4500,#FF9500)" onclick="showToast('Maintenance entry logged ✓');nav('maintenance')">Submit → Logged to BMS</button>
+  <div class="bnav">
+    <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
+    <button class="nb" onclick="nav('maintenance')" aria-label="Maintenance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span>Maint.</span></button>
+    <button class="nb" onclick="nav('maintlog')" aria-label="Add Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>+ Log</span></button>
   </div>
 </div>
 
@@ -1487,6 +1775,8 @@ function sel(el,g){
 
 // ── QTY ──
 var qty=1.0;
+var hkQty=25;
+function chgHK(d){hkQty=Math.max(5,Math.min(120,hkQty+d));var el=document.getElementById('hkQty');if(el)el.innerHTML=hkQty+' <span class="qty-unit">min</span>';}
 function chg(d){
   qty=Math.max(0.5,Math.round((qty+d)*2)/2);
   document.getElementById('qd').innerHTML=qty.toFixed(1)+' <span class="qty-unit">kg</span>';
@@ -1560,6 +1850,20 @@ function hkFilter(btn,filter){
 }
 
 // ── OWNER PORTFOLIO TOGGLE ──
+function ptTabById(id){
+  ['ownerHK','ownerLDN','ownerPortfolio'].forEach(function(d){
+    document.getElementById(d).style.display=d===id?'block':'none';
+  });
+  // sync toggle buttons
+  document.querySelectorAll('.pt-btn').forEach(function(b){
+    b.classList.toggle('on', b.getAttribute('onclick') && b.getAttribute('onclick').includes(id));
+  });
+  // sync bnav
+  var screen=document.getElementById('owner');
+  if(screen) screen.querySelectorAll('.bnav .nb').forEach(function(b){
+    b.classList.toggle('on', b.getAttribute('onclick') && b.getAttribute('onclick').includes(id));
+  });
+}
 function ptTab(btn){
   document.querySelectorAll('#owner .pt-btn').forEach(function(b){b.classList.remove('on')});
   btn.classList.add('on');
