@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><style>*{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style>
 <title>ServiceFlow — The Hari Hong Kong</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -102,7 +102,7 @@ body{
 .chip{padding:8px 14px;border-radius:20px;border:1px solid var(--marble-dark);background:var(--warm-white);font-size:12px;color:var(--charcoal);cursor:pointer;transition:all .15s;font-family:'Jost',sans-serif}
 .chip.on{background:var(--green);border-color:var(--green);color:var(--ivory)}
 .chip:active{transform:scale(.95)}
-.fl{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:8px}
+.fl{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:8px}
 
 /* FORM INPUTS */
 .tinp{width:100%;background:var(--marble);border:1px solid transparent;border-radius:14px;padding:13px 15px;font-size:14px;color:var(--charcoal);outline:none;font-family:'Jost',sans-serif;transition:border-color .2s;margin-bottom:13px}
@@ -435,15 +435,15 @@ body{
 .hari-mono{width:48px;height:48px;background:var(--charcoal);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .hari-wm h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;color:var(--charcoal);letter-spacing:.12em;text-transform:uppercase;line-height:1}
 .hari-wm p{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);margin-top:4px}
-.hari-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--mid-grey);line-height:1.4;border-top:1px solid var(--marble);padding-top:10px}
+.hari-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--mid-grey);line-height:1.5;border-top:1px solid var(--marble);padding-top:12px}
 .role-section{padding:16px 20px 0}
-.role-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--light-grey);margin-bottom:11px}
-.role-card{background:#FDFAF6;border:1px solid var(--marble-dark);border-radius:14px;padding:13px 15px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:12px;box-shadow:0 2px 14px rgba(42,37,32,.1);margin-bottom:9px}
+.role-eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:14px;font-weight:600}
+.role-card{background:#FDFAF6;border:1px solid var(--marble-dark);border-radius:16px;padding:15px 16px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:14px;box-shadow:0 2px 14px rgba(42,37,32,.08);margin-bottom:10px}
 .role-card:active{transform:scale(.98);background:var(--ivory);border-color:var(--bronze-light)}
 .role-icon{width:38px;height:38px;border-radius:11px;background:var(--marble);border:1px solid var(--marble-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .role-icon svg{width:17px;height:17px}
-.role-info h3{font-size:13px;font-weight:500;color:var(--charcoal)}
-.role-info p{font-size:11px;color:var(--mid-grey);margin-top:2px}
+.role-info h3{font-size:16px;font-weight:600;color:var(--charcoal)}
+.role-info p{font-size:13px;color:var(--mid-grey);margin-top:3px;line-height:1.4}
 .role-chev{margin-left:auto;color:var(--light-grey)}
 .ssb{margin:12px 20px 20px;background:var(--charcoal);border-radius:14px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between}
 .ssb-l h4{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:400;color:var(--ivory);letter-spacing:.06em}
@@ -554,7 +554,7 @@ body{
 .ow-pill:first-child{border-radius:12px 0 0 12px}
 .ow-pill:last-child{border-radius:0 12px 12px 0;border-left:none}
 .ow-pill:not(:first-child):not(:last-child){border-left:none}
-.ow-pill-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px;font-weight:500}
+.ow-pill-lbl{font-size:11px;letter-spacing:0;text-transform:none;color:var(--charcoal);margin-bottom:5px;font-weight:700}
 .ow-pill-val{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--charcoal)}
 .ow-pill-d{font-size:10px;margin-top:2px}
 .ow-dark-card{margin:16px 16px 0;background:var(--charcoal);border-radius:18px;padding:20px;position:relative;overflow:hidden}
@@ -1623,7 +1623,7 @@ body{
       <!-- Property comparison table — best of Portfolio -->
       <div style="margin:16px 16px 0;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;overflow:hidden;box-shadow:0 3px 16px rgba(42,37,32,.05)">
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble);background:rgba(201,169,122,.04)">
-          <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey);font-weight:600">Metric</div>
+          <div style="font-size:11px;letter-spacing:0;text-transform:none;color:var(--charcoal);font-weight:700">Metric</div>
           <div style="font-size:10px;font-weight:600;color:var(--bronze);text-align:center">Hong Kong</div>
           <div style="font-size:10px;font-weight:600;color:var(--green);text-align:center">London</div>
         </div>
@@ -2148,13 +2148,13 @@ body{
   </div>
   <div class="scroll">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px 16px 0">
-      <div style="background:linear-gradient(135deg,#0d1a0d,#122210);border-radius:14px;padding:14px;border:1px solid rgba(106,190,138,.3)">
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6abe8a;margin-bottom:6px">Phase 1 · Completed</div>
+      <div style="background:linear-gradient(135deg,#1a1208,#2a1e0e);border-radius:14px;padding:14px;border:1px solid rgba(201,169,122,.3)">
+        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#C9A97A;margin-bottom:6px">Phase 1 · In Development</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ivory);margin-bottom:8px">The Hari<br>Hong Kong</div>
-        <div style="font-size:11px;color:rgba(106,190,138,.8);margin-bottom:2px">✓ Pilot live</div>
-        <div style="font-size:11px;color:rgba(106,190,138,.8);margin-bottom:2px">✓ HK$91k/mo savings</div>
-        <div style="font-size:11px;color:rgba(106,190,138,.8);margin-bottom:2px">✓ HKEX compliant</div>
-        <div style="font-size:11px;color:rgba(106,190,138,.8)">✓ Benchmark set</div>
+        <div style="font-size:11px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ Prototype built</div>
+        <div style="font-size:11px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ Concept validated</div>
+        <div style="font-size:11px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ HKEX logic mapped</div>
+        <div style="font-size:10px;color:#C9A97A;margin-top:6px;font-weight:600">Pilot target: Q3 2026</div>
       </div>
       <div style="background:linear-gradient(135deg,#080f1a,#0d1a2e);border-radius:14px;padding:14px;border:1px solid rgba(27,45,79,.4)">
         <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(106,190,138,.5);margin-bottom:6px">Phase 2 · Q3 2026</div>
