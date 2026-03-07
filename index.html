@@ -48,6 +48,7 @@ body{
   overflow:hidden;
 }
 .screen.active{opacity:1;pointer-events:all;transform:translateX(0)}
+#splash.active{overflow-y:auto;}
 .screen.out{opacity:0;transform:translateX(-20px)}
 
 .scroll{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -609,7 +610,7 @@ body{
 <div class="toast" id="toast">✓ Logged successfully</div>
 
 <!-- ═══ S1 · SPLASH / ROLE SELECTOR ═══ -->
-<div class="screen active" id="splash" style="overflow-y:auto;flex-direction:column;display:flex">
+<div class="screen active" id="splash">
   <div class="splash-band">
     <div style="position:absolute;top:28px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:5px;z-index:3">
       <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;letter-spacing:.22em;color:#C9A97A;text-transform:uppercase;text-align:center">THE HARI</div>
@@ -925,7 +926,7 @@ body{
 
 
 <!-- ═══ ROOM SERVICE ═══ -->
-<div class="screen" id="roomservice" style="background:var(--warm-white)">
+<div class="screen" id="roomservice">
   <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
   <div style="background:linear-gradient(160deg,#12081a 0%,#1e0a2e 60%,#0a1018 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
     <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(155,127,196,.03) 50px,rgba(155,127,196,.03) 51px)"></div>
@@ -1613,7 +1614,7 @@ body{
       </div>
       </div>
     </div>
-        <div id="ownerPortfolio">
+        <div id="ownerPortfolio" style="display:block">
       <div class="ow-hero-stat">
         <div class="ow-hero-lbl">Wtd. Occupancy · Q1 2026</div>
         <div class="ow-hero-num">
@@ -1701,7 +1702,7 @@ body{
 
 
 <!-- ═══ LUCCIOLA ═══ -->
-<div class="screen" id="lucciola" style="background:var(--warm-white)">
+<div class="screen" id="lucciola">
   <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
   <div style="background:linear-gradient(160deg,#1a1208 0%,#2a1e0e 60%,#0e100a 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
     <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(201,169,122,.03) 50px,rgba(201,169,122,.03) 51px)"></div>
@@ -1773,7 +1774,7 @@ body{
 </div>
 
 <!-- ═══ ZOKU ═══ -->
-<div class="screen" id="zoku" style="background:var(--warm-white)">
+<div class="screen" id="zoku">
   <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
   <div style="background:linear-gradient(160deg,#080f1a 0%,#0d1a2e 60%,#081212 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
     <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(74,158,181,.03) 50px,rgba(74,158,181,.03) 51px)"></div>
@@ -1843,7 +1844,7 @@ body{
 </div>
 
 <!-- ═══ THE LOUNGE ═══ -->
-<div class="screen" id="lounge" style="background:var(--warm-white)">
+<div class="screen" id="lounge">
   <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
   <div style="background:linear-gradient(160deg,#1a1008 0%,#2e1e0a 60%,#100e08 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
     <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(196,147,74,.03) 50px,rgba(196,147,74,.03) 51px)"></div>
@@ -1883,7 +1884,7 @@ body{
 </div>
 
 <!-- ═══ TERRACE ═══ -->
-<div class="screen" id="terrace" style="background:var(--warm-white)">
+<div class="screen" id="terrace">
   <div class="sbar gn"><span class="stime">23:14</span><div class="sicons">●●● 🔋</div></div>
   <div style="background:linear-gradient(160deg,#0a1a0a 0%,#122210 60%,#0a100a 100%);padding:14px 20px 18px;position:relative;overflow:hidden;flex-shrink:0">
     <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(107,143,94,.03) 50px,rgba(107,143,94,.03) 51px)"></div>
@@ -2297,6 +2298,8 @@ function nav(id){
   setTimeout(function(){c.classList.remove('out');transitioning=false},320);
   n.classList.add('active');
   var sc=n.querySelector('.scroll');if(sc)sc.scrollTo(0,0);
+  // Initialize owner tabs on entry
+  if(id==='owner'){ptTabById('ownerPortfolio');}
   cur=id;
 }
 
