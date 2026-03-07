@@ -67,14 +67,14 @@ body{
 .ld-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
 .ld-mark{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#F5F0E8;animation:fadeUp .8s ease forwards;opacity:0;transform:translateY(14px)}
 .ld-rule{width:0;height:1px;background:linear-gradient(90deg,transparent,#C9A97A,transparent);margin:12px auto 10px;animation:ruleIn .7s ease .5s forwards}
-.ld-sub{font-family:'Jost',sans-serif;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:rgba(201,169,122,.5);animation:fadeUp .6s ease .4s forwards;opacity:0;transform:translateY(6px)}
+.ld-sub{font-family:'Jost',sans-serif;font-size:16px;letter-spacing:.34em;text-transform:uppercase;color:rgba(201,169,122,.5);animation:fadeUp .6s ease .4s forwards;opacity:0;transform:translateY(6px)}
 @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 @keyframes ruleIn{to{width:110px}}
 .ld-bar-wrap{width:220px;height:2px;background:rgba(201,169,122,.12);border-radius:2px;overflow:hidden;margin-top:44px}
 .ld-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#7A5A32,#C9A97A,#E8D090);background-size:200% 100%;animation:shimmer 1.8s linear infinite;transition:width .25s ease;box-shadow:0 0 10px rgba(201,169,122,.4)}
 @keyframes shimmer{0%{background-position:200%}100%{background-position:-200%}}
-.ld-pct{margin-top:12px;font-size:11px;color:#C9A97A;font-family:monospace;letter-spacing:.14em;animation:fadeUp .5s ease .6s forwards;opacity:0}
-.ld-foot{position:absolute;bottom:28px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.18);text-align:center}
+.ld-pct{margin-top:12px;font-size:17px;color:#C9A97A;font-family:monospace;letter-spacing:.14em;animation:fadeUp .5s ease .6s forwards;opacity:0}
+.ld-foot{position:absolute;bottom:28px;font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.18);text-align:center}
 
 /* STATUS BAR */
 .sbar{height:44px;padding:14px 24px 0;display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
@@ -83,40 +83,40 @@ body{
 .sbar.br{background:var(--bronze-dark)}.sbar.br .stime{color:var(--ivory)}.sbar.br .sicons{color:rgba(245,240,232,.4)}
 .sbar.en{background:#141414}.sbar.en .stime{color:#F5F0E8}.sbar.en .sicons{color:rgba(245,240,232,.35)}
 .sbar.ow{background:#1B2D4F}.sbar.ow .stime{color:var(--ivory)}.sbar.ow .sicons{color:rgba(245,240,232,.35)}
-.stime{font-weight:600;font-size:15px;color:var(--charcoal)}.sicons{font-size:12px;color:var(--mid-grey)}
+.stime{font-weight:600;font-size:17px;color:var(--charcoal)}.sicons{font-size:17px;color:var(--mid-grey)}
 
 /* BOTTOM NAV */
 .bnav{height:74px;background:var(--warm-white);border-top:1px solid var(--marble);display:flex;align-items:center;justify-content:space-around;padding:0 4px 12px;flex-shrink:0}
 .nb{display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;padding:6px 6px;border-radius:12px;border:none;background:none;color:var(--light-grey);font-family:'Jost',sans-serif;transition:color .2s;flex:1}
-.nb.on{color:var(--bronze)}.nb svg{width:20px;height:20px}.nb span{font-size:9px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+.nb.on{color:var(--bronze)}.nb svg{width:20px;height:20px}.nb span{font-size:16px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
 
 /* BACK BTN */
-.back{display:flex;align-items:center;gap:6px;background:none;border:none;color:var(--bronze);font-family:'Jost',sans-serif;font-size:12px;cursor:pointer;padding:0;margin-bottom:12px;letter-spacing:.03em}
+.back{display:flex;align-items:center;gap:6px;background:none;border:none;color:var(--bronze);font-family:'Jost',sans-serif;font-size:17px;cursor:pointer;padding:0;margin-bottom:12px;letter-spacing:.03em}
 .back.lt{color:rgba(201,169,122,.8)}.back svg{width:15px;height:15px}
 
 /* TOAST */
-.toast{position:absolute;top:70px;left:50%;transform:translateX(-50%) translateY(-10px);background:var(--green-dark);color:var(--ivory);padding:10px 18px;border-radius:12px;font-size:13px;font-weight:500;white-space:nowrap;opacity:0;transition:all .3s;z-index:300;box-shadow:var(--shadow)}
+.toast{position:absolute;top:70px;left:50%;transform:translateX(-50%) translateY(-10px);background:var(--green-dark);color:var(--ivory);padding:10px 18px;border-radius:12px;font-size:16px;font-weight:500;white-space:nowrap;opacity:0;transition:all .3s;z-index:300;box-shadow:var(--shadow)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
 /* CHIPS */
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.chip{padding:8px 14px;border-radius:20px;border:1px solid var(--marble-dark);background:var(--warm-white);font-size:12px;color:var(--charcoal);cursor:pointer;transition:all .15s;font-family:'Jost',sans-serif}
+.chip{padding:8px 14px;border-radius:20px;border:1px solid var(--marble-dark);background:var(--warm-white);font-size:17px;color:var(--charcoal);cursor:pointer;transition:all .15s;font-family:'Jost',sans-serif}
 .chip.on{background:var(--green);border-color:var(--green);color:var(--ivory)}
 .chip:active{transform:scale(.95)}
-.fl{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:8px}
+.fl{font-size:16px;letter-spacing:.15em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:8px}
 
 /* FORM INPUTS */
-.tinp{width:100%;background:var(--marble);border:1px solid transparent;border-radius:14px;padding:13px 15px;font-size:14px;color:var(--charcoal);outline:none;font-family:'Jost',sans-serif;transition:border-color .2s;margin-bottom:13px}
+.tinp{width:100%;background:var(--marble);border:1px solid transparent;border-radius:14px;padding:13px 15px;font-size:17px;color:var(--charcoal);outline:none;font-family:'Jost',sans-serif;transition:border-color .2s;margin-bottom:13px}
 .tinp:focus{border-color:var(--bronze);background:var(--ivory)}
 
 /* SECTION HEADER */
 .sec-h{padding:0 18px 10px;display:flex;justify-content:space-between;align-items:center}
 .sec-h h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--charcoal)}
-.sec-h .sa{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif}
+.sec-h .sa{font-size:17px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif}
 .divider{height:1px;margin:2px 20px 12px;background:linear-gradient(90deg,transparent,var(--marble-dark),transparent)}
 
 /* BADGE */
-.badge{display:inline-flex;align-items:center;gap:5px;border-radius:20px;padding:4px 11px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.badge{display:inline-flex;align-items:center;gap:5px;border-radius:20px;padding:4px 11px;font-size:17px;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
 .badge-g{background:var(--green-pale);color:var(--green)}
 .badge-b{background:var(--bronze-pale);color:var(--bronze-dark)}
 .pulse-dot{width:6px;height:6px;border-radius:50%;animation:pulse 2s infinite}
@@ -126,10 +126,10 @@ body{
 .kpi-scroll{display:flex;gap:10px;padding:0 16px;overflow-x:auto;scrollbar-width:none;margin-bottom:16px}
 .kpi-scroll::-webkit-scrollbar{display:none}
 .kpi-card{background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;padding:13px 14px;box-shadow:var(--shadow-sm);flex-shrink:0;min-width:104px}
-.kl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mid-grey)}
+.kl{font-size:17px;letter-spacing:.06em;text-transform:uppercase;color:var(--mid-grey)}
 .kv{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--charcoal);line-height:1.1;margin-top:3px}
-.ku{font-family:'Jost',sans-serif;font-size:13px;color:var(--mid-grey)}
-.kd{font-size:12px;margin-top:3px}
+.ku{font-family:'Jost',sans-serif;font-size:16px;color:var(--mid-grey)}
+.kd{font-size:17px;margin-top:3px}
 .up{color:var(--green)}.dn{color:var(--red-alert)}.ntrl{color:var(--bronze)}
 
 /* THREAT CARDS */
@@ -138,9 +138,9 @@ body{
 .t-ico{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .t-ico.g{background:var(--green-pale)}.t-ico.b{background:var(--bronze-pale)}.t-ico.r{background:rgba(139,58,58,.08)}
 .t-body{flex:1}
-.t-out{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid-grey)}
-.t-ttl{font-size:14px;font-weight:500;color:var(--charcoal);margin-top:2px;line-height:1.35}
-.t-sub{font-size:12px;color:var(--mid-grey);margin-top:3px}
+.t-out{font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid-grey)}
+.t-ttl{font-size:17px;font-weight:500;color:var(--charcoal);margin-top:2px;line-height:1.35}
+.t-sub{font-size:17px;color:var(--mid-grey);margin-top:3px}
 .sev{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:5px}
 .sh{background:var(--red-alert)}.sm{background:#C4934A}.sl{background:var(--green)}
 
@@ -152,15 +152,15 @@ body{
 .act-card.c-br{background:linear-gradient(135deg,var(--bronze-dark),var(--bronze));border-color:transparent}
 .act-card.c-pt{background:linear-gradient(135deg,var(--petrol),#243A62);border-color:transparent}
 .act-card.c-mr{background:var(--marble);border-color:var(--marble-dark)}
-.act-card h4{font-size:13px;font-weight:600;color:var(--charcoal);line-height:1.3}
-.act-card p{font-size:12px;color:var(--mid-grey)}
+.act-card h4{font-size:16px;font-weight:600;color:var(--charcoal);line-height:1.3}
+.act-card p{font-size:17px;color:var(--mid-grey)}
 .act-card.c-gn h4,.act-card.c-br h4,.act-card.c-pt h4{color:var(--ivory)}
 .act-card.c-gn p,.act-card.c-br p,.act-card.c-pt p{color:rgba(245,240,232,.5)}
 
 /* OUTLET TABS */
 .otabs{display:flex;background:var(--warm-white);border-bottom:1px solid var(--marble);overflow-x:auto;scrollbar-width:none;flex-shrink:0}
 .otabs::-webkit-scrollbar{display:none}
-.otab{padding:11px 15px;font-size:12px;letter-spacing:.06em;font-family:'Jost',sans-serif;cursor:pointer;border:none;background:none;color:var(--mid-grey);border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;flex-shrink:0}
+.otab{padding:11px 15px;font-size:17px;letter-spacing:.06em;font-family:'Jost',sans-serif;cursor:pointer;border:none;background:none;color:var(--mid-grey);border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;flex-shrink:0}
 .otab.on{color:var(--bronze);border-bottom-color:var(--bronze)}
 
 /* BAR CHART */
@@ -174,8 +174,8 @@ body{
 .room-card{margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:11px;cursor:pointer;box-shadow:var(--shadow-sm);transition:all .2s}
 .room-card:active{transform:scale(.98)}
 .rnum{width:40px;height:40px;border-radius:11px;background:var(--marble);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;flex-shrink:0;color:var(--charcoal)}
-.ri{flex:1}.ri-t{font-size:14px;font-weight:500;color:var(--charcoal)}.ri-d{font-size:12px;color:var(--mid-grey);margin-top:2px}
-.rs{padding:3px 9px;border-radius:7px;font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.ri{flex:1}.ri-t{font-size:17px;font-weight:500;color:var(--charcoal)}.ri-d{font-size:17px;color:var(--mid-grey);margin-top:2px}
+.rs{padding:3px 9px;border-radius:7px;font-size:16px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
 .rs-dep{background:rgba(139,58,58,.1);color:var(--red-alert)}
 .rs-stay{background:var(--bronze-pale);color:var(--bronze-dark)}
 .rs-vip{background:var(--green-pale);color:var(--green)}
@@ -187,38 +187,38 @@ body{
 .mi-card:active{transform:scale(.98)}
 .pbar{width:4px;border-radius:2px;align-self:stretch;flex-shrink:0}
 .ph{background:var(--red-alert)}.pm{background:#C4934A}.pl{background:var(--green)}
-.mi-b{flex:1}.mi-t{font-size:13px;font-weight:500;color:var(--charcoal)}.mi-l{font-size:11px;color:var(--mid-grey);margin-top:2px}
+.mi-b{flex:1}.mi-t{font-size:16px;font-weight:500;color:var(--charcoal)}.mi-l{font-size:17px;color:var(--mid-grey);margin-top:2px}
 .mi-tags{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap}
-.mtag{font-size:10px;padding:2px 7px;border-radius:6px;background:var(--marble);color:var(--mid-grey)}
+.mtag{font-size:17px;padding:2px 7px;border-radius:6px;background:var(--marble);color:var(--mid-grey)}
 
 /* ENGINEERING / MAINTENANCE JOBS */
 .eng-job{margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 13px;display:flex;gap:10px;cursor:pointer;box-shadow:var(--shadow-sm);transition:all .2s}
 .eng-job:active{transform:scale(.98)}
-.job-body{flex:1}.job-title{font-size:13px;font-weight:500;color:var(--charcoal);line-height:1.3}
-.job-loc{font-size:11px;color:var(--mid-grey);margin-top:2px}
+.job-body{flex:1}.job-title{font-size:16px;font-weight:500;color:var(--charcoal);line-height:1.3}
+.job-loc{font-size:17px;color:var(--mid-grey);margin-top:2px}
 .job-tags{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap;align-items:center}
-.jtag{font-size:10px;padding:2px 7px;border-radius:6px;background:var(--marble);color:var(--mid-grey)}
+.jtag{font-size:17px;padding:2px 7px;border-radius:6px;background:var(--marble);color:var(--mid-grey)}
 .jtag.crit{background:rgba(255,69,58,.08);color:#FF453A}
 .jtag.warn{background:rgba(255,149,0,.1);color:#FF9500}
 .jtag.good{background:rgba(52,199,89,.08);color:#34C759}
 .job-action{display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;flex-shrink:0}
-.job-sb{font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:7px;border:1px solid;cursor:pointer;font-family:'Jost',sans-serif;font-weight:500;background:none;transition:all .15s}
+.job-sb{font-size:16px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:7px;border:1px solid;cursor:pointer;font-family:'Jost',sans-serif;font-weight:500;background:none;transition:all .15s}
 .job-sb.open{color:#FF453A;border-color:rgba(255,69,58,.3)}
 .job-sb.progress{color:#FF9500;border-color:rgba(255,149,0,.3)}
 .job-sb.done{color:#34C759;border-color:rgba(52,199,89,.3)}
-.job-age{font-size:10px;color:var(--light-grey)}
-.eng-assign{font-size:10px;color:var(--light-grey);background:var(--marble);border:1px solid var(--marble-dark);border-radius:5px;padding:2px 5px;font-family:'Jost',sans-serif;cursor:pointer;outline:none}
+.job-age{font-size:17px;color:var(--light-grey)}
+.eng-assign{font-size:17px;color:var(--light-grey);background:var(--marble);border:1px solid var(--marble-dark);border-radius:5px;padding:2px 5px;font-family:'Jost',sans-serif;cursor:pointer;outline:none}
 
 /* PLANT DETAIL */
 .pdc{margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 13px;box-shadow:var(--shadow-sm);display:flex;align-items:flex-start;gap:11px;position:relative;overflow:hidden}
 .pdc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;border-radius:14px 0 0 14px}
 .pdc.ok::before{background:#34C759}.pdc.warn::before{background:#FF9500}.pdc.crit::before{background:#FF453A}
-.pdc-l{flex:1}.pdc-name{font-size:14px;font-weight:500;color:var(--charcoal);margin-bottom:2px}.pdc-loc{font-size:12px;color:var(--mid-grey);margin-bottom:6px}
+.pdc-l{flex:1}.pdc-name{font-size:17px;font-weight:500;color:var(--charcoal);margin-bottom:2px}.pdc-loc{font-size:17px;color:var(--mid-grey);margin-bottom:6px}
 .pdc-readings{display:flex;gap:10px;flex-wrap:wrap}
 .pdc-r{display:flex;flex-direction:column;gap:1px}
-.pdc-rl{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--mid-grey)}.pdc-rv{font-size:13px;font-weight:500;color:var(--charcoal)}
+.pdc-rl{font-size:17px;letter-spacing:.05em;text-transform:uppercase;color:var(--mid-grey)}.pdc-rv{font-size:16px;font-weight:500;color:var(--charcoal)}
 .pdc-rv.ok{color:#34C759}.pdc-rv.warn{color:#FF9500}.pdc-rv.crit{color:#FF453A}
-.pdc-status{font-size:12px;font-weight:600;padding:3px 9px;border-radius:7px;flex-shrink:0;margin-top:2px}
+.pdc-status{font-size:17px;font-weight:600;padding:3px 9px;border-radius:7px;flex-shrink:0;margin-top:2px}
 .pdc-status.ok{background:rgba(52,199,89,.1);color:#34C759}
 .pdc-status.warn{background:rgba(255,149,0,.1);color:#FF9500}
 .pdc-status.crit{background:rgba(255,69,58,.08);color:#FF453A}
@@ -229,83 +229,83 @@ body{
 .pmr.wn{border-color:rgba(255,149,0,.2)}
 .pmd-date{text-align:center;min-width:32px;flex-shrink:0;padding-top:2px}
 .pmd-day{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--charcoal);line-height:1}
-.pmd-mon{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)}
+.pmd-mon{font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)}
 .pmd-vdiv{width:1px;background:var(--marble-dark);align-self:stretch;flex-shrink:0}
-.pmd-body{flex:1}.pmd-title{font-size:12px;font-weight:500;color:var(--charcoal);margin-bottom:2px}.pmd-sub{font-size:11px;color:var(--mid-grey);margin-bottom:5px}
-.pmd-chip{font-size:9px;padding:2px 8px;border-radius:7px;font-weight:500}
+.pmd-body{flex:1}.pmd-title{font-size:17px;font-weight:500;color:var(--charcoal);margin-bottom:2px}.pmd-sub{font-size:17px;color:var(--mid-grey);margin-bottom:5px}
+.pmd-chip{font-size:16px;padding:2px 8px;border-radius:7px;font-weight:500}
 .pmd-chip.ov{background:rgba(255,69,58,.1);color:#FF453A}.pmd-chip.due{background:rgba(255,149,0,.1);color:#FF9500}.pmd-chip.sc{background:var(--marble);color:var(--mid-grey)}
 
 /* CONTRACTOR ROW */
 .cont-row{margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:12px;padding:11px 13px;display:flex;align-items:center;gap:11px;box-shadow:var(--shadow-sm)}
 .cont-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .cont-dot.on2{background:#34C759}.cont-dot.pend{background:#FF9500;animation:pulse 1.8s infinite}.cont-dot.dn2{background:var(--light-grey)}
-.cont-b{flex:1}.cont-name{font-size:12px;font-weight:500;color:var(--charcoal)}.cont-ref{font-size:11px;color:var(--mid-grey);margin-top:1px;font-family:monospace;letter-spacing:.04em}
-.cont-badge{font-size:9px;padding:3px 8px;border-radius:7px;font-weight:500}
+.cont-b{flex:1}.cont-name{font-size:17px;font-weight:500;color:var(--charcoal)}.cont-ref{font-size:17px;color:var(--mid-grey);margin-top:1px;font-family:monospace;letter-spacing:.04em}
+.cont-badge{font-size:16px;padding:3px 8px;border-radius:7px;font-weight:500}
 .cont-badge.on2{background:rgba(52,199,89,.1);color:#34C759}.cont-badge.pend{background:rgba(255,149,0,.1);color:#FF9500}.cont-badge.dn2{background:var(--marble);color:var(--mid-grey)}
 
 /* OWNER KPI */
 .okpi{background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;padding:14px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
 .okpi::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:16px 16px 0 0}
 .okpi.gold::after{background:linear-gradient(90deg,#7A5A32,#C9A97A)}.okpi.green::after{background:linear-gradient(90deg,#2E4229,#6B8F5E)}.okpi.petrol::after{background:linear-gradient(90deg,#1B2D4F,#243A62)}.okpi.def::after{background:linear-gradient(90deg,var(--marble-dark),var(--marble))}
-.okpi-lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px}
+.okpi-lbl{font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px}
 .okpi-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--charcoal);line-height:1}
-.okpi-unit{font-family:'Jost',sans-serif;font-size:12px;color:var(--mid-grey)}
-.okpi-delta{font-size:11px;margin-top:5px}.okpi-sub{font-size:10px;color:var(--light-grey);margin-top:2px}
+.okpi-unit{font-family:'Jost',sans-serif;font-size:17px;color:var(--mid-grey)}
+.okpi-delta{font-size:17px;margin-top:5px}.okpi-sub{font-size:17px;color:var(--light-grey);margin-top:2px}
 
 /* ROI DARK CARD */
 .roi-dark{background:var(--charcoal);border-radius:18px;padding:16px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;margin:0 16px 12px}
 .roi-dark::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(108deg,transparent 0,transparent 40px,rgba(201,169,122,.03) 40px,rgba(201,169,122,.03) 41px)}
 .roi-inner{position:relative;z-index:1}
-.roi-lbl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(201,169,122,.45);margin-bottom:10px}
+.roi-lbl{font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:rgba(201,169,122,.45);margin-bottom:10px}
 .roi-line{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(245,240,232,.06)}
 .roi-line:last-child{border-bottom:none}
-.roi-line-l{font-size:12px;color:rgba(245,240,232,.5)}
+.roi-line-l{font-size:17px;color:rgba(245,240,232,.5)}
 .roi-line-v{font-family:'Cormorant Garamond',serif;font-size:19px}
 .roi-line-v.gold{color:#C9A97A}.roi-line-v.grn{color:#6abe8a}.roi-line-v.wh{color:var(--ivory)}
 
 /* BRIEFING */
 .b-outlet{margin:0 16px 10px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm)}
 .bo-head{padding:12px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--marble);cursor:pointer}
-.bo-head h4{font-size:13px;font-weight:600;color:var(--charcoal)}
-.bo-status{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:8px;font-weight:600}
+.bo-head h4{font-size:16px;font-weight:600;color:var(--charcoal)}
+.bo-status{font-size:17px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:8px;font-weight:600}
 .bs-att{background:rgba(139,58,58,.1);color:var(--red-alert)}.bs-good{background:var(--green-pale);color:var(--green)}.bs-watch{background:rgba(139,106,42,.1);color:var(--amber-alert)}
 .bullet{padding:11px 16px;border-bottom:1px solid var(--marble);display:flex;gap:9px;align-items:flex-start}
 .bullet:last-child{border-bottom:none}
-.bt{font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;border-radius:5px;flex-shrink:0;margin-top:2px;font-weight:600}
+.bt{font-size:16px;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;border-radius:5px;flex-shrink:0;margin-top:2px;font-weight:600}
 .bt-p{background:var(--green-pale);color:var(--green)}.bt-l{background:var(--bronze-pale);color:var(--bronze-dark)}.bt-k{background:rgba(139,58,58,.1);color:var(--red-alert)}
-.blt{font-size:13px;color:var(--charcoal);line-height:1.5;flex:1}
+.blt{font-size:16px;color:var(--charcoal);line-height:1.5;flex:1}
 
 /* ACTION BOX DARK */
 .ab-box{margin:12px 16px 0;background:var(--charcoal);border-radius:16px;padding:16px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
 .ab-box::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(108deg,transparent 0,transparent 40px,rgba(201,169,122,.04) 40px,rgba(201,169,122,.04) 41px)}
 .ab-in{position:relative;z-index:1}
-.ab-lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-light);margin-bottom:11px}
+.ab-lbl{font-size:17px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-light);margin-bottom:11px}
 .ab-item{display:flex;gap:9px;margin-bottom:10px}.ab-item:last-child{margin-bottom:0}
-.ab-num{width:21px;height:21px;border-radius:50%;background:rgba(201,169,122,.15);border:1px solid rgba(201,169,122,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--bronze-light);flex-shrink:0}
-.ab-text{font-size:12px;color:rgba(245,240,232,.65);line-height:1.5;flex:1}
+.ab-num{width:21px;height:21px;border-radius:50%;background:rgba(201,169,122,.15);border:1px solid rgba(201,169,122,.3);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;color:var(--bronze-light);flex-shrink:0}
+.ab-text{font-size:17px;color:rgba(245,240,232,.65);line-height:1.5;flex:1}
 .ab-text strong{color:var(--ivory);font-weight:500}
 
 /* RECO CARD */
 .reco{margin:12px 16px 20px;background:var(--charcoal);border-radius:16px;padding:16px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
 .reco::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(108deg,transparent 0,transparent 40px,rgba(201,169,122,.04) 40px,rgba(201,169,122,.04) 41px)}
 .reco-in{position:relative;z-index:1}
-.reco .rl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(201,169,122,.75);margin-bottom:7px}
-.reco .rt{font-size:14px;font-weight:400;color:var(--ivory);line-height:1.55}
-.reco .rm{font-size:11px;color:rgba(245,240,232,.38);margin-top:7px}
-.reco-cta{margin-top:12px;width:100%;background:rgba(245,240,232,.08);border:1px solid rgba(201,169,122,.25);border-radius:9px;padding:10px;color:var(--bronze-light);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:'Jost',sans-serif;transition:background .2s}
+.reco .rl{font-size:17px;letter-spacing:.1em;text-transform:uppercase;color:rgba(201,169,122,.75);margin-bottom:7px}
+.reco .rt{font-size:17px;font-weight:400;color:var(--ivory);line-height:1.55}
+.reco .rm{font-size:17px;color:rgba(245,240,232,.38);margin-top:7px}
+.reco-cta{margin-top:12px;width:100%;background:rgba(245,240,232,.08);border:1px solid rgba(201,169,122,.25);border-radius:9px;padding:10px;color:var(--bronze-light);font-size:17px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:'Jost',sans-serif;transition:background .2s}
 .reco-cta:active{background:rgba(201,169,122,.12)}
 
 /* SCORE ROW */
 .score-row{display:flex;gap:8px;padding:12px 16px 0}
 .score-card{flex:1;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:11px 8px;box-shadow:var(--shadow-sm);text-align:center}
-.sc-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey)}
+.sc-lbl{font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey)}
 .sc-val{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;margin-top:3px}
 .sc-g{color:var(--green)}.sc-b{color:var(--bronze)}.sc-r{color:var(--red-alert)}.sc-p{color:var(--petrol)}
 
 /* ESG CARD */
 .esg-card{margin:12px 16px 20px;background:var(--petrol-pale);border:1px solid rgba(27,45,79,.12);border-radius:14px;padding:13px 15px;display:flex;align-items:center;gap:11px}
-.esg-lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--petrol)}
-.esg-val{font-size:12px;color:var(--charcoal);margin-top:2px}
+.esg-lbl{font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--petrol)}
+.esg-val{font-size:17px;color:var(--charcoal);margin-top:2px}
 
 /* AREA CHART */
 .area-wrap{position:relative;height:72px}
@@ -318,7 +318,7 @@ body{
 .ms.h{background:rgba(139,58,58,.08);border:1px solid rgba(139,58,58,.15)}.ms.m{background:rgba(139,106,42,.08);border:1px solid rgba(139,106,42,.15)}.ms.l{background:var(--green-pale);border:1px solid rgba(74,103,65,.15)}.ms.cl{background:rgba(197,191,181,.12);border:1px solid rgba(197,191,181,.3)}
 .ms-n{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400}
 .ms.h .ms-n{color:var(--red-alert)}.ms.m .ms-n{color:var(--amber-alert)}.ms.l .ms-n{color:var(--green)}.ms.cl .ms-n{color:var(--mid-grey)}
-.ms-l{font-size:9px;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+.ms-l{font-size:16px;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
 .ms.h .ms-l{color:var(--red-alert)}.ms.m .ms-l{color:var(--amber-alert)}.ms.l .ms-l{color:var(--green)}.ms.cl .ms-l{color:var(--light-grey)}
 .ms-selected{box-shadow:0 0 0 2px currentColor}
 
@@ -329,7 +329,7 @@ body{
 .fs-seg:active{background:rgba(255,255,255,.04)}
 .fs-num{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;line-height:1}
 .fs-num.h{color:#FF453A}.fs-num.m{color:#FF9500}.fs-num.l{color:#34C759}.fs-num.cl{color:var(--mid-grey)}
-.fs-lbl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+.fs-lbl{font-size:16px;letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
 .fs-lbl.h{color:#FF453A}.fs-lbl.m{color:#FF9500}.fs-lbl.l{color:#34C759}.fs-lbl.cl{color:var(--light-grey)}
 
 /* MAINTENANCE HERO */
@@ -337,11 +337,11 @@ body{
 .eng-hero-bg::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 22px,rgba(255,160,30,.025) 22px,rgba(255,160,30,.025) 23px),repeating-linear-gradient(0deg,transparent 0,transparent 22px,rgba(255,160,30,.025) 22px,rgba(255,160,30,.025) 23px)}
 .eng-hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#FF9500,#FFB340,#FF9500,transparent);opacity:.7}
 .eng-inner{position:relative;z-index:1}
-.eng-eyebrow{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:7px;display:flex;align-items:center;gap:6px}
+.eng-eyebrow{font-size:16px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:7px;display:flex;align-items:center;gap:6px}
 .eng-live{width:6px;height:6px;border-radius:50%;background:#FF9500;animation:pulse 1.4s infinite}
 .eng-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:#F5F0E8;line-height:1.05;margin-bottom:4px}
 .eng-h2 em{font-style:italic;color:#FFB340}
-.eng-meta{font-size:11px;color:rgba(245,240,232,.28);display:flex;gap:7px;align-items:center}
+.eng-meta{font-size:17px;color:rgba(245,240,232,.28);display:flex;gap:7px;align-items:center}
 .eng-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(255,149,0,.35)}
 
 /* OWNER HERO */
@@ -349,64 +349,64 @@ body{
 .own-hero-bg::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(110deg,transparent 0,transparent 48px,rgba(201,169,122,.04) 48px,rgba(201,169,122,.04) 49px)}
 .own-hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#C9A97A,#E8D090,#C9A97A,transparent);opacity:.65}
 .own-inner{position:relative;z-index:1}
-.own-eyebrow{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(201,169,122,.45);margin-bottom:8px}
+.own-eyebrow{font-size:16px;letter-spacing:.28em;text-transform:uppercase;color:rgba(201,169,122,.45);margin-bottom:8px}
 .own-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:30px;color:var(--ivory);line-height:1.05;margin-bottom:4px}
 .own-h2 em{font-style:italic;color:#C9A97A}
-.own-meta{font-size:11px;color:rgba(245,240,232,.32);display:flex;align-items:center;gap:6px;margin-top:3px}
+.own-meta{font-size:17px;color:rgba(245,240,232,.32);display:flex;align-items:center;gap:6px;margin-top:3px}
 .own-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(201,169,122,.4)}
 .port-toggle{display:flex;background:rgba(245,240,232,.06);border-radius:18px;border:1px solid rgba(201,169,122,.15);padding:3px;margin-top:14px}
-.pt-btn{flex:1;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:5px;border-radius:15px;color:rgba(245,240,232,.4);cursor:pointer;transition:all .2s;font-family:'Jost',sans-serif;border:none;background:none}
+.pt-btn{flex:1;text-align:center;font-size:17px;letter-spacing:.1em;text-transform:uppercase;padding:5px;border-radius:15px;color:rgba(245,240,232,.4);cursor:pointer;transition:all .2s;font-family:'Jost',sans-serif;border:none;background:none}
 .pt-btn.on{background:rgba(201,169,122,.22);color:#C9A97A;border:1px solid rgba(201,169,122,.45);box-shadow:0 1px 6px rgba(201,169,122,.15)}
 
 /* ALERT */
 .alert-strip{margin:14px 16px 12px;background:var(--charcoal);border:1px solid rgba(201,169,122,.2);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:11px;cursor:pointer;box-shadow:var(--shadow-sm)}
 .alert-strip:active{transform:scale(.99)}
 .a-pulse{width:8px;height:8px;border-radius:50%;background:var(--bronze-light);flex-shrink:0;animation:pulse 2s infinite}
-.a-text h4{font-size:12px;font-weight:600;color:var(--ivory);letter-spacing:.08em;text-transform:uppercase}
-.a-text p{font-size:12px;color:rgba(245,240,232,.55);margin-top:2px}
+.a-text h4{font-size:17px;font-weight:600;color:var(--ivory);letter-spacing:.08em;text-transform:uppercase}
+.a-text p{font-size:17px;color:rgba(245,240,232,.55);margin-top:2px}
 .alert-banner{margin:8px 0 12px;background:linear-gradient(90deg,rgba(201,169,122,.07),rgba(201,169,122,.13));border:1px solid rgba(201,169,122,.28);border-radius:11px;padding:9px 13px;display:flex;align-items:center;gap:9px;animation:slideDown .4s ease}
 @keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 .ab-dot{width:6px;height:6px;border-radius:50%;background:#5aba7a;flex-shrink:0;animation:pulse 2s infinite}
-.ab-text2{flex:1;font-size:11px;color:var(--bronze-light);line-height:1.4}
+.ab-text2{flex:1;font-size:17px;color:var(--bronze-light);line-height:1.4}
 .ab-close{font-size:16px;color:var(--light-grey);cursor:pointer;background:none;border:none;padding:0;font-family:'Jost',sans-serif}
 
 /* INTEL LEAD */
 .intel-lead{margin:12px 16px 0;background:var(--marble);border-radius:14px;padding:13px 15px;display:flex;align-items:center;gap:13px}
 .il-star{width:38px;height:38px;border-radius:11px;background:var(--bronze-pale);border:1px solid rgba(160,120,74,.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
-.il-lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey)}
-.il-name{font-size:14px;font-weight:500;color:var(--charcoal);margin-top:2px}
-.il-sub{font-size:11px;color:var(--mid-grey);margin-top:2px}
+.il-lbl{font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey)}
+.il-name{font-size:17px;font-weight:500;color:var(--charcoal);margin-top:2px}
+.il-sub{font-size:17px;color:var(--mid-grey);margin-top:2px}
 
 /* LIVE BADGE */
-.live-badge{display:flex;align-items:center;gap:5px;background:rgba(201,169,122,.1);border:1px solid rgba(201,169,122,.25);padding:4px 9px;border-radius:18px;font-size:10px;color:#C9A97A;letter-spacing:.1em}
+.live-badge{display:flex;align-items:center;gap:5px;background:rgba(201,169,122,.1);border:1px solid rgba(201,169,122,.25);padding:4px 9px;border-radius:18px;font-size:17px;color:#C9A97A;letter-spacing:.1em}
 .live-dot{width:5px;height:5px;border-radius:50%;background:#5aba7a;animation:pulse 2s infinite}
 
 /* KPI GRID */
 .kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px 16px}
 .kpi-tile{background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:13px;box-shadow:var(--shadow-sm)}
-.ktl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--light-grey)}.ktv{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--charcoal);line-height:1.1;margin-top:3px}.ktu{font-family:'Jost',sans-serif;font-size:12px;color:var(--mid-grey)}.ktt{font-size:11px;margin-top:3px}
+.ktl{font-size:17px;letter-spacing:.1em;text-transform:uppercase;color:var(--light-grey)}.ktv{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--charcoal);line-height:1.1;margin-top:3px}.ktu{font-family:'Jost',sans-serif;font-size:17px;color:var(--mid-grey)}.ktt{font-size:17px;margin-top:3px}
 
 /* FILTER BAR */
 .filter-bar{display:flex;gap:7px;padding:0 16px 10px;overflow-x:auto;scrollbar-width:none}
 .filter-bar::-webkit-scrollbar{display:none}
-.fc{padding:5px 13px;border-radius:18px;flex-shrink:0;font-size:11px;cursor:pointer;border:1px solid var(--marble-dark);background:var(--warm-white);color:var(--mid-grey);font-family:'Jost',sans-serif;transition:all .15s}
+.fc{padding:5px 13px;border-radius:18px;flex-shrink:0;font-size:17px;cursor:pointer;border:1px solid var(--marble-dark);background:var(--warm-white);color:var(--mid-grey);font-family:'Jost',sans-serif;transition:all .15s}
 .fc.on{background:var(--bronze);border-color:var(--bronze);color:var(--ivory)}
 .fc:active{transform:scale(.95)}
 
 /* CHART CARD */
 .chart-card{margin:12px 16px 0;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;padding:16px;box-shadow:var(--shadow-sm)}
 .cc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
-.cc-top h4{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)}
-.cc-top p{font-size:11px;color:var(--mid-grey);margin-top:2px}
+.cc-top h4{font-size:17px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)}
+.cc-top p{font-size:17px;color:var(--mid-grey);margin-top:2px}
 .cc-big{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:var(--green);line-height:1;text-align:right}
-.cc-big span{font-family:'Jost',sans-serif;font-size:10px;color:var(--mid-grey);display:block;margin-top:2px;text-align:right}
+.cc-big span{font-family:'Jost',sans-serif;font-size:17px;color:var(--mid-grey);display:block;margin-top:2px;text-align:right}
 
 /* DISH */
 .dish-row{margin:0 16px;padding:11px 0;border-bottom:1px solid var(--marble);display:flex;align-items:center;gap:10px}
 .dish-row:last-of-type{border-bottom:none}
-.dr{width:18px;font-size:11px;color:var(--light-grey);text-align:center;font-weight:500}
-.di{flex:1}.dn2{font-size:14px;font-weight:500;color:var(--charcoal)}.dc{font-size:12px;color:var(--mid-grey);margin-top:2px}
-.wpill{padding:4px 9px;border-radius:9px;font-size:11px;font-weight:600}
+.dr{width:18px;font-size:17px;color:var(--light-grey);text-align:center;font-weight:500}
+.di{flex:1}.dn2{font-size:17px;font-weight:500;color:var(--charcoal)}.dc{font-size:17px;color:var(--mid-grey);margin-top:2px}
+.wpill{padding:4px 9px;border-radius:9px;font-size:17px;font-weight:600}
 .wh{background:rgba(139,58,58,.1);color:var(--red-alert)}.wm{background:rgba(139,106,42,.1);color:var(--amber-alert)}.wl{background:var(--green-pale);color:var(--green)}
 
 /* WASTE FORM */
@@ -414,41 +414,41 @@ body{
 .qty-btn{width:42px;height:42px;border-radius:11px;background:var(--marble);border:none;font-size:20px;color:var(--charcoal);cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Jost',sans-serif;transition:background .15s}
 .qty-btn:active{background:var(--marble-dark)}
 .qty-disp{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;color:var(--charcoal);flex:1;text-align:center}
-.qty-unit{font-family:'Jost',sans-serif;font-size:13px;color:var(--mid-grey)}
+.qty-unit{font-family:'Jost',sans-serif;font-size:16px;color:var(--mid-grey)}
 .voice-btn{width:100%;padding:13px 15px;background:var(--marble);border:1.5px solid var(--marble-dark);border-radius:13px;display:flex;align-items:center;gap:10px;cursor:pointer;font-family:'Jost',sans-serif;margin-bottom:16px;box-shadow:inset 0 1px 3px rgba(42,37,32,.06)}
 .voice-btn .vb-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .voice-btn .vb-text{flex:1;text-align:left}
-.voice-btn .vb-main{font-size:13px;font-weight:500;line-height:1.2}
-.voice-btn .vb-sub{font-size:10px;margin-top:2px;opacity:.55}
+.voice-btn .vb-main{font-size:16px;font-weight:500;line-height:1.2}
+.voice-btn .vb-sub{font-size:17px;margin-top:2px;opacity:.55}
 .voice-top{padding:15px;border-width:2px;margin-bottom:18px}
-.submit-btn{width:calc(100% - 32px);margin:0 16px 20px;background:linear-gradient(135deg,var(--bronze-dark),var(--bronze));border:none;border-radius:14px;padding:15px;color:var(--ivory);font-size:13px;font-weight:600;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;font-family:'Jost',sans-serif;box-shadow:0 8px 22px rgba(122,90,50,.32);transition:all .2s;flex-shrink:0}
+.submit-btn{width:calc(100% - 32px);margin:0 16px 20px;background:linear-gradient(135deg,var(--bronze-dark),var(--bronze));border:none;border-radius:14px;padding:15px;color:var(--ivory);font-size:16px;font-weight:600;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;font-family:'Jost',sans-serif;box-shadow:0 8px 22px rgba(122,90,50,.32);transition:all .2s;flex-shrink:0}
 .submit-btn:active{transform:scale(.98)}
 
 /* ROLE SELECTOR / SPLASH */
-.splash-band{position:absolute;top:0;left:0;right:0;height:28%;background:linear-gradient(180deg,#1B2D4F 0%,#243A62 55%,#2E3A28 100%);overflow:hidden}
+.splash-band{width:100%;background:linear-gradient(180deg,#1B2D4F 0%,#243A62 55%,#2E3A28 100%);overflow:hidden;position:relative;flex-shrink:0;min-height:220px}
 .splash-canopy{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--bronze),var(--bronze-light),var(--bronze),transparent)}
 /* Fixed card — sits above the scrollable role list */
-.splash-card{position:absolute;top:calc(22% - 10px);left:20px;right:20px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;padding:14px 18px 14px;box-shadow:0 -4px 20px rgba(42,37,32,.12),var(--shadow);z-index:10}
+.splash-card{margin:0 16px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;padding:16px 18px;box-shadow:0 -4px 20px rgba(42,37,32,.12),var(--shadow);position:relative;z-index:10;margin-top:-28px}
 /* Scrollable area starts BELOW the fixed card */
-.splash-body{position:absolute;left:0;right:0;bottom:0;overflow-y:auto;scrollbar-width:none}
-.splash-body::-webkit-scrollbar{display:none}
+.splash-body{padding-top:8px}
+
 .hari-logo-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .hari-mono{width:48px;height:48px;background:var(--charcoal);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .hari-wm h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;color:var(--charcoal);letter-spacing:.12em;text-transform:uppercase;line-height:1}
-.hari-wm p{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);margin-top:4px}
-.hari-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--mid-grey);line-height:1.5;border-top:1px solid var(--marble);padding-top:12px}
+.hari-wm p{font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);margin-top:4px}
+.hari-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--mid-grey);line-height:1.5;border-top:1px solid var(--marble);padding-top:12px}
 .role-section{padding:16px 20px 0}
-.role-eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:14px;font-weight:600}
+.role-eyebrow{font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:14px;font-weight:600}
 .role-card{background:#FDFAF6;border:1px solid var(--marble-dark);border-radius:16px;padding:15px 16px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:14px;box-shadow:0 2px 14px rgba(42,37,32,.08);margin-bottom:10px}
 .role-card:active{transform:scale(.98);background:var(--ivory);border-color:var(--bronze-light)}
 .role-icon{width:38px;height:38px;border-radius:11px;background:var(--marble);border:1px solid var(--marble-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .role-icon svg{width:17px;height:17px}
 .role-info h3{font-size:16px;font-weight:600;color:var(--charcoal)}
-.role-info p{font-size:14px;color:var(--mid-grey);margin-top:3px;line-height:1.5}
+.role-info p{font-size:17px;color:var(--mid-grey);margin-top:3px;line-height:1.5}
 .role-chev{margin-left:auto;color:var(--light-grey)}
 .ssb{margin:12px 20px 20px;background:var(--charcoal);border-radius:14px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between}
-.ssb-l h4{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:400;color:var(--ivory);letter-spacing:.06em}
-.ssb-l p{font-size:11px;color:rgba(245,240,232,.4);margin-top:2px}
+.ssb-l h4{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:400;color:var(--ivory);letter-spacing:.06em}
+.ssb-l p{font-size:17px;color:rgba(245,240,232,.4);margin-top:2px}
 .ssb-dots{display:flex;gap:5px}
 .ssb-dot{width:6px;height:6px;border-radius:50%;background:var(--bronze);animation:pulse 2s infinite}
 .ssb-dot:nth-child(2){animation-delay:.4s;background:var(--green-light)}
@@ -461,10 +461,10 @@ body{
 .dash-inner{position:relative;z-index:1}
 .dash-logo-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 .dash-mono{width:30px;height:30px;background:rgba(245,240,232,.08);border:1px solid rgba(201,169,122,.3);border-radius:3px;display:flex;align-items:center;justify-content:center}
-.dash-hn{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:400;color:var(--ivory);letter-spacing:.12em;text-transform:uppercase}
+.dash-hn{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:400;color:var(--ivory);letter-spacing:.12em;text-transform:uppercase}
 .dash-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05}
 .dash-h2 em{font-style:italic;color:var(--bronze-light)}
-.dash-meta{font-size:11px;color:rgba(245,240,232,.38);margin-top:5px;display:flex;align-items:center;gap:7px}
+.dash-meta{font-size:17px;color:rgba(245,240,232,.38);margin-top:5px;display:flex;align-items:center;gap:7px}
 .dm-dot{width:3px;height:3px;border-radius:50%;background:rgba(245,240,232,.25)}
 
 /* F&B HERO */
@@ -472,14 +472,14 @@ body{
 .fb-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0,transparent 50px,rgba(245,240,232,.025) 50px,rgba(245,240,232,.025) 51px)}
 .fb-inner{position:relative;z-index:1}
 .fb-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.1}
-.fb-sub{font-size:11px;color:rgba(245,240,232,.38);margin-top:4px}
+.fb-sub{font-size:17px;color:rgba(245,240,232,.38);margin-top:4px}
 
 /* HOUSEKEEPING HERO */
 .hk-hero{background:linear-gradient(180deg,var(--bronze-dark) 0%,var(--bronze) 100%);padding:16px 20px 20px;position:relative;overflow:hidden;flex-shrink:0}
 .hk-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(112deg,transparent 0,transparent 48px,rgba(245,240,232,.04) 48px,rgba(245,240,232,.04) 49px)}
 .hk-inner{position:relative;z-index:1}
 .hk-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:24px;color:var(--ivory);line-height:1.1}
-.hk-sub{font-size:11px;color:rgba(245,240,232,.45);margin-top:4px}
+.hk-sub{font-size:17px;color:rgba(245,240,232,.45);margin-top:4px}
 
 /* BRIEFING HERO */
 .brief-hero{background:linear-gradient(170deg,var(--charcoal) 0%,#302820 100%);padding:16px 20px 20px;position:relative;overflow:hidden;flex-shrink:0}
@@ -487,19 +487,19 @@ body{
 .brief-inner{position:relative;z-index:1}
 .brief-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:var(--ivory);line-height:1.05}
 .brief-h2 em{font-style:italic;color:var(--bronze-light)}
-.brief-sub{font-size:11px;color:rgba(245,240,232,.32);margin-top:4px}
+.brief-sub{font-size:17px;color:rgba(245,240,232,.32);margin-top:4px}
 
 /* WASTE HERO */
 .wl-hero{background:var(--charcoal);padding:16px 20px 20px;position:relative;overflow:hidden;flex-shrink:0}
 .wl-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(105deg,transparent 0,transparent 44px,rgba(160,120,74,.06) 44px,rgba(160,120,74,.06) 45px)}
 .wl-inner{position:relative;z-index:1}
 .wl-h2{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--ivory);line-height:1.1}
-.wl-sub{font-size:11px;color:rgba(245,240,232,.35);margin-top:4px}
-.timer-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(160,120,74,.15);border-radius:18px;padding:4px 12px;margin-top:10px;font-size:11px;color:var(--bronze-light);letter-spacing:.08em}
+.wl-sub{font-size:17px;color:rgba(245,240,232,.35);margin-top:4px}
+.timer-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(160,120,74,.15);border-radius:18px;padding:4px 12px;margin-top:10px;font-size:17px;color:var(--bronze-light);letter-spacing:.08em}
 .tp-dot{width:5px;height:5px;border-radius:50%;background:var(--bronze-light);animation:pulse 1.4s infinite}
 
 /* BACK TO ROLES LINK */
-.roles-link{display:block;text-align:center;padding:12px 16px 2px;font-size:11px;color:var(--light-grey);cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.02em}
+.roles-link{display:block;text-align:center;padding:12px 16px 2px;font-size:17px;color:var(--light-grey);cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.02em}
 .roles-link:hover{color:var(--bronze)}
 .roles-link span{text-decoration:underline;text-underline-offset:3px}
 
@@ -519,13 +519,13 @@ body{
 /* DETAIL JOB CARD */
 .detail-job{margin:10px 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)}
 .dj-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
-.dj-title{font-size:14px;font-weight:500;color:var(--charcoal);line-height:1.35;flex:1;margin-right:10px}
+.dj-title{font-size:17px;font-weight:500;color:var(--charcoal);line-height:1.35;flex:1;margin-right:10px}
 .dj-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
 .dj-cell{background:var(--marble);border-radius:9px;padding:9px}
-.dj-cell-l{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--light-grey)}
-.dj-cell-v{font-size:12px;font-weight:500;color:var(--charcoal);margin-top:2px}
+.dj-cell-l{font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--light-grey)}
+.dj-cell-v{font-size:17px;font-weight:500;color:var(--charcoal);margin-top:2px}
 .dj-actions{display:flex;gap:8px}
-.dj-btn{flex:1;padding:9px;border-radius:10px;border:none;font-size:11px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em;text-transform:uppercase;transition:all .15s}
+.dj-btn{flex:1;padding:9px;border-radius:10px;border:none;font-size:17px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em;text-transform:uppercase;transition:all .15s}
 .dj-btn.primary{background:linear-gradient(135deg,#7A4500,#FF9500);color:#fff}
 .dj-btn.secondary{background:var(--marble);color:var(--mid-grey)}
 .dj-btn:active{transform:scale(.97)}
@@ -535,58 +535,58 @@ body{
 .maint-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 22px,rgba(255,160,30,.025) 22px,rgba(255,160,30,.025) 23px)}
 .maint-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#FF9500,#FFB340,#FF9500,transparent);opacity:.7}
 .maint-inner{position:relative;z-index:1}
-.maint-eyebrow{display:flex;align-items:center;gap:7px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:8px}
+.maint-eyebrow{display:flex;align-items:center;gap:7px;font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:8px}
 .maint-live{width:6px;height:6px;border-radius:50%;background:#FF9500;animation:pulse 2s infinite}
 .maint-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:#F5F0E8;line-height:1.05}
 .maint-h2 em{color:#FF9500;font-style:italic}
-.maint-meta{font-size:10px;color:rgba(255,149,0,.4);margin-top:6px;letter-spacing:.06em}
+.maint-meta{font-size:17px;color:rgba(255,149,0,.4);margin-top:6px;letter-spacing:.06em}
 
 .ow-hero-stat{padding:22px 20px 0}
-.ow-hero-lbl{font-size:11px;letter-spacing:.06em;text-transform:none;color:var(--charcoal);margin-bottom:8px;font-weight:700}
+.ow-hero-lbl{font-size:17px;letter-spacing:.06em;text-transform:none;color:var(--charcoal);margin-bottom:8px;font-weight:700}
 .ow-hero-num{display:flex;align-items:flex-end;gap:8px}
 .ow-hero-big{font-family:'Cormorant Garamond',serif;font-size:54px;font-weight:400;color:var(--charcoal);line-height:1}
 .ow-hero-side{padding-bottom:9px}
-.ow-hero-unit{font-size:12px;color:var(--mid-grey)}
-.ow-hero-delta{font-size:13px;font-weight:600;color:var(--green);margin-top:3px}
-.ow-hero-sub{font-size:11px;color:var(--mid-grey);margin-top:5px}
+.ow-hero-unit{font-size:17px;color:var(--mid-grey)}
+.ow-hero-delta{font-size:16px;font-weight:600;color:var(--green);margin-top:3px}
+.ow-hero-sub{font-size:17px;color:var(--mid-grey);margin-top:5px}
 .ow-spark{margin-top:12px;line-height:0}
 .ow-pills{display:flex;padding:16px 16px 0}
 .ow-pill{flex:1;text-align:center;padding:13px 6px;background:var(--warm-white);border:1px solid var(--marble-dark)}
 .ow-pill:first-child{border-radius:12px 0 0 12px}
 .ow-pill:last-child{border-radius:0 12px 12px 0;border-left:none}
 .ow-pill:not(:first-child):not(:last-child){border-left:none}
-.ow-pill-lbl{font-size:11px;letter-spacing:0;text-transform:none;color:var(--charcoal);margin-bottom:5px;font-weight:700}
+.ow-pill-lbl{font-size:17px;letter-spacing:0;text-transform:none;color:var(--charcoal);margin-bottom:5px;font-weight:700}
 .ow-pill-val{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--charcoal)}
-.ow-pill-d{font-size:10px;margin-top:2px}
+.ow-pill-d{font-size:17px;margin-top:2px}
 .ow-dark-card{margin:16px 16px 0;background:var(--charcoal);border-radius:18px;padding:20px;position:relative;overflow:hidden}
 .ow-dark-card::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(201,169,122,.07) 0%,transparent 70%)}
-.ow-dc-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.85);margin-bottom:14px;position:relative;font-weight:500}
+.ow-dc-label{font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.85);margin-bottom:14px;position:relative;font-weight:500}
 .ow-dc-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(245,240,232,.06);position:relative}
 .ow-dc-row:last-of-type{border-bottom:none}
-.ow-dc-key{font-size:12px;color:rgba(245,240,232,.7)}
-.ow-dc-val{font-size:12px;font-weight:500;color:rgba(245,240,232,.8)}
+.ow-dc-key{font-size:17px;color:rgba(245,240,232,.7)}
+.ow-dc-val{font-size:17px;font-weight:500;color:rgba(245,240,232,.8)}
 .ow-dc-total{margin-top:14px;padding-top:14px;border-top:1px solid rgba(201,169,122,.2);display:flex;justify-content:space-between;align-items:center;position:relative}
-.ow-dc-total-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#C9A97A;font-weight:600}
-.ow-dc-total-sub{font-size:10px;color:rgba(245,240,232,.5);margin-top:2px}
+.ow-dc-total-lbl{font-size:17px;letter-spacing:.1em;text-transform:uppercase;color:#C9A97A;font-weight:600}
+.ow-dc-total-sub{font-size:17px;color:rgba(245,240,232,.5);margin-top:2px}
 .ow-dc-total-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:400;color:#fff;line-height:1}
-.ow-dc-total-unit{font-size:13px;color:#C9A97A;font-weight:600}
+.ow-dc-total-unit{font-size:16px;color:#C9A97A;font-weight:600}
 .ow-dc-asset{margin-top:12px;background:rgba(201,169,122,.08);border-radius:11px;padding:11px 14px;display:flex;justify-content:space-between;align-items:center;position:relative}
-.ow-dc-asset-lbl{font-size:11px;color:rgba(245,240,232,.6)}
+.ow-dc-asset-lbl{font-size:17px;color:rgba(245,240,232,.6)}
 .ow-dc-asset-val{font-family:'Cormorant Garamond',serif;font-size:26px;color:#C9A97A;font-weight:500}
 .ow-esg-card{margin:12px 16px 0;background:var(--ivory);border:1.5px solid rgba(74,180,100,.2);border-radius:18px;padding:18px;box-shadow:0 3px 16px rgba(42,37,32,.05)}
 .ow-esg-top{display:flex;justify-content:space-between;align-items:flex-start}
-.ow-esg-lbl{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:5px}
+.ow-esg-lbl{font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:5px}
 .ow-esg-score{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:400;color:var(--charcoal);line-height:1}
-.ow-esg-delta{font-size:11px;color:var(--green);margin-top:4px}
+.ow-esg-delta{font-size:17px;color:var(--green);margin-top:4px}
 .ow-esg-right{text-align:right}
-.ow-esg-right-lbl{font-size:10px;color:var(--mid-grey);margin-bottom:6px;font-weight:500}
+.ow-esg-right-lbl{font-size:17px;color:var(--mid-grey);margin-bottom:6px;font-weight:500}
 .ow-esg-co2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--charcoal)}
-.ow-esg-co2-unit{font-size:11px;color:var(--mid-grey)}
+.ow-esg-co2-unit{font-size:17px;color:var(--mid-grey)}
 .ow-esg-bar-wrap{margin-top:14px}
-.ow-esg-bar-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--light-grey);margin-bottom:5px}
+.ow-esg-bar-labels{display:flex;justify-content:space-between;font-size:17px;color:var(--light-grey);margin-bottom:5px}
 .ow-esg-bar-track{height:5px;background:var(--marble);border-radius:3px;overflow:hidden}
 .ow-esg-bar-fill{height:100%;background:linear-gradient(90deg,#4ab464,#6abe8a);border-radius:3px}
-.ow-esg-foot{margin-top:11px;font-size:10px;color:var(--mid-grey)}
+.ow-esg-foot{margin-top:11px;font-size:17px;color:var(--mid-grey)}
 </style>
 </head>
 <body>
@@ -609,14 +609,14 @@ body{
 <div class="toast" id="toast">✓ Logged successfully</div>
 
 <!-- ═══ S1 · SPLASH / ROLE SELECTOR ═══ -->
-<div class="screen active" id="splash">
+<div class="screen active" id="splash" style="overflow-y:auto;flex-direction:column;display:flex">
   <div class="splash-band">
     <div style="position:absolute;top:28px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:5px;z-index:3">
       <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;letter-spacing:.22em;color:#C9A97A;text-transform:uppercase;text-align:center">THE HARI</div>
       <div style="width:100px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,122,.7),transparent)"></div>
-      <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:.32em;color:rgba(201,169,122,.55);text-transform:uppercase">HONG KONG · LONDON</div>
+      <div style="font-family:'Jost',sans-serif;font-size:16px;letter-spacing:.32em;color:rgba(201,169,122,.55);text-transform:uppercase">HONG KONG · LONDON</div>
     </div>
-    <svg style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);width:260px;height:120px;opacity:.55" viewBox="0 0 260 120" fill="none">
+    <svg style="position:absolute;bottom:0px;left:50%;transform:translateX(-50%);width:260px;height:120px;opacity:.55" viewBox="0 0 260 120" fill="none">
       <line x1="10" y1="108" x2="250" y2="108" stroke="rgba(201,169,122,.4)" stroke-width="1"/>
       <path d="M12 20 L48 20 L30 54 Z" fill="rgba(245,240,232,.04)" stroke="rgba(201,169,122,.7)" stroke-width="1.2"/>
       <line x1="12" y1="20" x2="48" y2="20" stroke="rgba(201,169,122,.7)" stroke-width="1.4"/>
@@ -685,7 +685,7 @@ body{
       <div class="role-card" style="opacity:.5;border-color:rgba(27,45,79,.2);cursor:default">
         <div class="role-icon" style="background:var(--petrol);border-color:rgba(27,45,79,.3)"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,.6)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20"/></svg></div>
         <div class="role-info"><h3 style="color:var(--mid-grey)">New Hotel</h3><p>Expansion · Confidential</p></div>
-        <div style="font-size:9px;font-weight:700;letter-spacing:.1em;padding:3px 8px;background:rgba(27,45,79,.15);border-radius:6px;color:var(--petrol);white-space:nowrap">2028</div>
+        <div style="font-size:16px;font-weight:700;letter-spacing:.1em;padding:3px 8px;background:rgba(27,45,79,.15);border-radius:6px;color:var(--petrol);white-space:nowrap">2028</div>
       </div>
     </div>
     <div class="ssb">
@@ -753,35 +753,35 @@ body{
     </div>
     <div class="divider"></div>
     <div style="padding:0 16px 4px">
-      <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:10px">Guest Sentiment Bridge</div>
+      <div style="font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:10px">Guest Sentiment Bridge</div>
       <!-- NPS card 1 -->
       <div style="background:var(--ivory);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;margin-bottom:8px;box-shadow:var(--shadow-sm)">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
-          <div style="font-size:11px;font-weight:500;color:var(--charcoal)">Hari Suite · AC fast-track ✓</div>
-          <div style="background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:3px 8px;font-size:11px;font-weight:700;color:var(--green)">NPS +5</div>
+          <div style="font-size:17px;font-weight:500;color:var(--charcoal)">Hari Suite · AC fast-track ✓</div>
+          <div style="background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:3px 8px;font-size:17px;font-weight:700;color:var(--green)">NPS +5</div>
         </div>
-        <div style="font-size:11px;color:var(--mid-grey);line-height:1.5;margin-bottom:8px">"AC repaired within 40 min — best service recovery I've experienced." — Guest, Room 3002</div>
+        <div style="font-size:17px;color:var(--mid-grey);line-height:1.5;margin-bottom:8px">"AC repaired within 40 min — best service recovery I've experienced." — Guest, Room 3002</div>
         <div style="display:flex;gap:6px">
-          <div style="font-size:10px;color:var(--bronze);background:rgba(160,120,74,.08);border-radius:6px;padding:3px 7px">Maintenance → Guest sat.</div>
-          <div style="font-size:10px;color:var(--green);background:rgba(74,103,65,.08);border-radius:6px;padding:3px 7px">Resolved 18:30</div>
+          <div style="font-size:17px;color:var(--bronze);background:rgba(160,120,74,.08);border-radius:6px;padding:3px 7px">Maintenance → Guest sat.</div>
+          <div style="font-size:17px;color:var(--green);background:rgba(74,103,65,.08);border-radius:6px;padding:3px 7px">Resolved 18:30</div>
         </div>
       </div>
       <!-- NPS card 2 -->
       <div style="background:var(--ivory);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;margin-bottom:8px;box-shadow:var(--shadow-sm)">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
-          <div style="font-size:11px;font-weight:500;color:var(--charcoal)">Lucciola waste cut → fresher dishes</div>
-          <div style="background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:3px 8px;font-size:11px;font-weight:700;color:var(--green)">NPS +3</div>
+          <div style="font-size:17px;font-weight:500;color:var(--charcoal)">Lucciola waste cut → fresher dishes</div>
+          <div style="background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:3px 8px;font-size:17px;font-weight:700;color:var(--green)">NPS +3</div>
         </div>
-        <div style="font-size:11px;color:var(--mid-grey);line-height:1.5;margin-bottom:8px">"Branzino was perfectly cooked — clearly made to order." — Table 8, dinner service</div>
+        <div style="font-size:17px;color:var(--mid-grey);line-height:1.5;margin-bottom:8px">"Branzino was perfectly cooked — clearly made to order." — Table 8, dinner service</div>
         <div style="display:flex;gap:6px">
-          <div style="font-size:10px;color:var(--green);background:rgba(74,103,65,.08);border-radius:6px;padding:3px 7px">F&amp;B Intelligence → quality</div>
-          <div style="font-size:10px;color:var(--bronze);background:rgba(160,120,74,.08);border-radius:6px;padding:3px 7px">−2.2 kg waste</div>
+          <div style="font-size:17px;color:var(--green);background:rgba(74,103,65,.08);border-radius:6px;padding:3px 7px">F&amp;B Intelligence → quality</div>
+          <div style="font-size:17px;color:var(--bronze);background:rgba(160,120,74,.08);border-radius:6px;padding:3px 7px">−2.2 kg waste</div>
         </div>
       </div>
       <!-- Tonight's NPS total -->
       <div style="background:var(--charcoal);border-radius:14px;padding:14px;display:flex;justify-content:space-between;align-items:center">
-        <div><div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-bottom:4px">Tonight's NPS</div><div style="font-size:11px;color:rgba(245,240,232,.5)">Operational actions → guest sat.</div></div>
-        <div style="text-align:right"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--ivory);line-height:1">72</div><div style="font-size:10px;color:var(--green)">↑ 8pts vs last Sunday</div></div>
+        <div><div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-bottom:4px">Tonight's NPS</div><div style="font-size:17px;color:rgba(245,240,232,.5)">Operational actions → guest sat.</div></div>
+        <div style="text-align:right"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--ivory);line-height:1">72</div><div style="font-size:17px;color:var(--green)">↑ 8pts vs last Sunday</div></div>
       </div>
     </div>
     <div class="divider"></div>
@@ -849,53 +849,53 @@ body{
     </div>
     <div style="margin:0 16px 10px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm)">
       <div style="padding:11px 14px;border-bottom:1px solid var(--marble);background:var(--charcoal);display:flex;justify-content:space-between;align-items:center">
-        <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.7)">48-Hour Forecast</div>
-        <div style="font-size:9px;color:rgba(245,240,232,.3)">ServiceFlow AI</div>
+        <div style="font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.7)">48-Hour Forecast</div>
+        <div style="font-size:16px;color:rgba(245,240,232,.3)">ServiceFlow AI</div>
       </div>
       <div style="padding:12px 14px;border-bottom:1px solid var(--marble)">
-        <div style="font-size:11px;font-weight:600;color:var(--charcoal);margin-bottom:6px">Tomorrow · Tuesday 3 March</div>
-        <div style="font-size:11px;color:var(--mid-grey);margin-bottom:3px">Covers forecast: <strong style="color:var(--charcoal)">345</strong> <span style="color:var(--green)">↑ 8% vs today</span></div>
-        <div style="font-size:11px;color:var(--mid-grey);margin-bottom:3px">🌧 Rain forecast → Terrace <span style="color:var(--red-alert)">−25%</span></div>
-        <div style="font-size:11px;color:var(--mid-grey);margin-bottom:6px">Action: Shift terrace prep to Zoku &amp; Lucciola</div>
-        <div style="background:var(--green-pale);border-radius:8px;padding:6px 10px;font-size:11px;color:var(--green);font-weight:500">Waste avoided if actioned: <strong>HK$920</strong></div>
+        <div style="font-size:17px;font-weight:600;color:var(--charcoal);margin-bottom:6px">Tomorrow · Tuesday 3 March</div>
+        <div style="font-size:17px;color:var(--mid-grey);margin-bottom:3px">Covers forecast: <strong style="color:var(--charcoal)">345</strong> <span style="color:var(--green)">↑ 8% vs today</span></div>
+        <div style="font-size:17px;color:var(--mid-grey);margin-bottom:3px">🌧 Rain forecast → Terrace <span style="color:var(--red-alert)">−25%</span></div>
+        <div style="font-size:17px;color:var(--mid-grey);margin-bottom:6px">Action: Shift terrace prep to Zoku &amp; Lucciola</div>
+        <div style="background:var(--green-pale);border-radius:8px;padding:6px 10px;font-size:17px;color:var(--green);font-weight:500">Waste avoided if actioned: <strong>HK$920</strong></div>
       </div>
       <div style="padding:12px 14px">
-        <div style="font-size:11px;font-weight:600;color:var(--charcoal);margin-bottom:6px">Wednesday 4 March</div>
-        <div style="font-size:11px;color:var(--mid-grey);margin-bottom:3px">Private function: <strong style="color:var(--charcoal)">50 covers</strong> · Chesham Suite</div>
-        <div style="font-size:11px;color:var(--mid-grey)">Suggested: Order Branzino <strong style="color:var(--bronze)">+20%</strong> · Pre-stage by Tuesday AM</div>
+        <div style="font-size:17px;font-weight:600;color:var(--charcoal);margin-bottom:6px">Wednesday 4 March</div>
+        <div style="font-size:17px;color:var(--mid-grey);margin-bottom:3px">Private function: <strong style="color:var(--charcoal)">50 covers</strong> · Chesham Suite</div>
+        <div style="font-size:17px;color:var(--mid-grey)">Suggested: Order Branzino <strong style="color:var(--bronze)">+20%</strong> · Pre-stage by Tuesday AM</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:8px 16px 0">
       <div onclick="nav('lucciola')" style="background:linear-gradient(135deg,#1a1208,#2a1e08);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(201,169,122,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">Lucciola</div>
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,169,122,.6);margin-top:5px">Italian</div>
-        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">84 covers · ⚠ Watch</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,169,122,.6);margin-top:5px">Italian</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-top:3px">84 covers · ⚠ Watch</div>
       </div>
       <div onclick="nav('zoku')" style="background:linear-gradient(135deg,#080f1a,#0d1a2e);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(74,158,181,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">Zoku</div>
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(74,158,181,.6);margin-top:5px">Japanese</div>
-        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">48 covers · ⚠ POS</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(74,158,181,.6);margin-top:5px">Japanese</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-top:3px">48 covers · ⚠ POS</div>
       </div>
       <div onclick="nav('lounge')" style="background:linear-gradient(135deg,#1a1008,#2e1e0a);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(196,147,74,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">The Lounge</div>
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(196,147,74,.6);margin-top:5px">Bar &amp; Cocktails</div>
-        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">112 covers · ✓ On target</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(196,147,74,.6);margin-top:5px">Bar &amp; Cocktails</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-top:3px">112 covers · ✓ On target</div>
       </div>
       <div onclick="nav('terrace')" style="background:linear-gradient(135deg,#0a1a0a,#122210);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(107,143,94,.2);min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#F5F0E8;font-weight:400">Terrace</div>
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(107,143,94,.6);margin-top:5px">Outdoor Dining</div>
-        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">68 covers · ⚠ Roof</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(107,143,94,.6);margin-top:5px">Outdoor Dining</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-top:3px">68 covers · ⚠ Roof</div>
       </div>
     </div>
     <div onclick="nav('roomservice')" style="margin:10px 16px 8px;background:linear-gradient(135deg,#12081a,#1e0a2e);border-radius:16px;padding:14px;cursor:pointer;border:1px solid rgba(155,127,196,.2);display:flex;align-items:center;gap:14px">
       <div style="flex:1;text-align:center">
         <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#F5F0E8">Room Service</div>
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(155,127,196,.6);margin-top:4px">In-Room Dining · 24h</div>
-        <div style="font-size:10px;color:rgba(245,240,232,.3);margin-top:3px">23 orders · HK$8,240 · ● Active</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(155,127,196,.6);margin-top:4px">In-Room Dining · 24h</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-top:3px">23 orders · HK$8,240 · ● Active</div>
       </div>
     </div>
     <div style="padding:0 16px 4px">
-      <button onclick="nav('fblog')" style="width:100%;padding:14px;background:linear-gradient(135deg,#0d1a0d,#1a2e0a);border:1px solid rgba(74,103,65,.3);border-radius:14px;font-size:13px;color:var(--green);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log F&amp;B Entry</button>
+      <button onclick="nav('fblog')" style="width:100%;padding:14px;background:linear-gradient(135deg,#0d1a0d,#1a2e0a);border:1px solid rgba(74,103,65,.3);border-radius:14px;font-size:16px;color:var(--green);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log F&amp;B Entry</button>
     </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
     <div style="height:8px"></div>
@@ -917,8 +917,8 @@ body{
     <div style="position:relative;z-index:1">
       <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Room Service</div>
-      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">In-Room Dining · 24 Hours · All Floors</div>
-      <div style="display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:18px;font-size:10px;letter-spacing:.1em;margin-top:8px;background:rgba(155,127,196,.12);border:1px solid rgba(155,127,196,.3);color:#9B7FC4">● 23 Active Orders</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.38);margin-top:2px">In-Room Dining · 24 Hours · All Floors</div>
+      <div style="display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:18px;font-size:17px;letter-spacing:.1em;margin-top:8px;background:rgba(155,127,196,.12);border:1px solid rgba(155,127,196,.3);color:#9B7FC4">● 23 Active Orders</div>
     </div>
   </div>
   <div class="otabs">
@@ -938,19 +938,19 @@ body{
     <div class="reco"><div class="reco-in"><div class="rl">Room Service · Monday Action</div><div class="rt">Replace bread basket with single-portion brioche. Switch fruit plate to seasonal cut — reduces prep waste 35%.</div><div class="rm">Est. saving: HK$320/day · EarthCheck Scope-3: −0.8 kg CO₂e</div><button class="reco-cta" onclick="nav('fblog')">Log Entry →</button></div></div>
     <div style="padding:4px 18px 8px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Live Orders · Tonight</div></div>
     <div style="margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 14px;display:flex;gap:11px;align-items:center">
-      <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:13px;color:#9B7FC4;flex-shrink:0">2204</div>
-      <div style="flex:1"><div style="font-size:12px;font-weight:500;color:var(--charcoal)">Club Sandwich + Sparkling</div><div style="font-size:11px;color:var(--mid-grey);margin-top:1px">Ordered 23:02 · HK$380</div></div>
-      <div style="font-size:9px;padding:3px 8px;border-radius:7px;background:rgba(255,149,0,.1);color:#FF9500;font-weight:600">En Route</div>
+      <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;color:#9B7FC4;flex-shrink:0">2204</div>
+      <div style="flex:1"><div style="font-size:17px;font-weight:500;color:var(--charcoal)">Club Sandwich + Sparkling</div><div style="font-size:17px;color:var(--mid-grey);margin-top:1px">Ordered 23:02 · HK$380</div></div>
+      <div style="font-size:16px;padding:3px 8px;border-radius:7px;background:rgba(255,149,0,.1);color:#FF9500;font-weight:600">En Route</div>
     </div>
     <div style="margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 14px;display:flex;gap:11px;align-items:center">
-      <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:13px;color:#9B7FC4;flex-shrink:0">3001</div>
-      <div style="flex:1"><div style="font-size:12px;font-weight:500;color:var(--charcoal)">Chesham Suite — Late Dinner</div><div style="font-size:11px;color:var(--mid-grey);margin-top:1px">Ordered 22:30 · HK$1,240 · VIP</div></div>
-      <div style="font-size:9px;padding:3px 8px;border-radius:7px;background:var(--green-pale);color:var(--green);font-weight:600">VIP</div>
+      <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;color:#9B7FC4;flex-shrink:0">3001</div>
+      <div style="flex:1"><div style="font-size:17px;font-weight:500;color:var(--charcoal)">Chesham Suite — Late Dinner</div><div style="font-size:17px;color:var(--mid-grey);margin-top:1px">Ordered 22:30 · HK$1,240 · VIP</div></div>
+      <div style="font-size:16px;padding:3px 8px;border-radius:7px;background:var(--green-pale);color:var(--green);font-weight:600">VIP</div>
     </div>
     <div style="margin:0 16px 8px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px 14px;display:flex;gap:11px;align-items:center">
-      <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:13px;color:#9B7FC4;flex-shrink:0">1506</div>
-      <div style="flex:1"><div style="font-size:12px;font-weight:500;color:var(--charcoal)">Wonton Soup + Green Tea</div><div style="font-size:11px;color:var(--mid-grey);margin-top:1px">Ordered 22:48 · HK$220</div></div>
-      <div style="font-size:9px;padding:3px 8px;border-radius:7px;background:rgba(52,199,89,.08);color:#34C759;font-weight:600">Delivered</div>
+      <div style="width:38px;height:38px;background:rgba(155,127,196,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;color:#9B7FC4;flex-shrink:0">1506</div>
+      <div style="flex:1"><div style="font-size:17px;font-weight:500;color:var(--charcoal)">Wonton Soup + Green Tea</div><div style="font-size:17px;color:var(--mid-grey);margin-top:1px">Ordered 22:48 · HK$220</div></div>
+      <div style="font-size:16px;padding:3px 8px;border-radius:7px;background:rgba(52,199,89,.08);color:#34C759;font-weight:600">Delivered</div>
     </div>
     <div style="padding:6px 18px 4px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px">Top Waste · In-Room Dining</div></div>
     <div class="dish-row"><div class="dr">1</div><div class="di"><div class="dn2">Breakfast Set (late return)</div><div class="dc">Uneaten · Guest checked out early</div></div><div class="wpill wh">1.4 kg</div></div>
@@ -971,9 +971,9 @@ body{
   <div class="fb-hero" style="padding:16px 20px 20px">
     <div style="position:relative;z-index:1">
       <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B Intelligence</button>
-      <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-bottom:6px">F&amp;B · Live Log</div>
+      <div style="font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-bottom:6px">F&amp;B · Live Log</div>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:var(--ivory);line-height:1.05">Log F&amp;B<br><em style="color:rgba(245,240,232,.6)">Entry</em></div>
-      <div style="font-size:11px;color:rgba(245,240,232,.35);margin-top:5px">Waste · Revenue · Cover count · Incident</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.35);margin-top:5px">Waste · Revenue · Cover count · Incident</div>
     </div>
   </div>
   <div class="scroll">
@@ -981,7 +981,7 @@ body{
       <button class="voice-btn voice-top" style="color:var(--green)">
         <div class="vb-icon" style="background:rgba(74,103,65,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
         <div class="vb-text">
-          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-main" style="font-size:17px;font-weight:600">Tap to dictate</div>
           <div class="vb-sub">English or Chinese · Auto-fills form</div>
         </div>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
@@ -1025,7 +1025,7 @@ body{
       <div style="height:8px"></div>
     </div>
   </div>
-  <div style="padding:6px 16px 0;text-align:center;font-size:10px;color:var(--mid-grey)">✓ HKEX Scope-3 &amp; EarthCheck auto-captured on submit</div>
+  <div style="padding:6px 16px 0;text-align:center;font-size:17px;color:var(--mid-grey)">✓ HKEX Scope-3 &amp; EarthCheck auto-captured on submit</div>
   <button class="submit-btn" style="background:linear-gradient(135deg,var(--green-dark),var(--green))" onclick="showToast('Entry logged ✓');nav('fbmodule')">Submit Entry →</button>
   <div class="bnav">
     <button class="nb on" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Home</span></button>
@@ -1049,7 +1049,7 @@ body{
       <button class="voice-btn voice-top" style="color:#A0784A">
         <div class="vb-icon" style="background:rgba(160,120,74,.1)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A0784A" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
         <div class="vb-text">
-          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-main" style="font-size:17px;font-weight:600">Tap to dictate</div>
           <div class="vb-sub">English or Chinese · Auto-fills form</div>
         </div>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
@@ -1094,7 +1094,7 @@ body{
   <div class="brief-hero">
     <div class="brief-inner">
       <button class="back lt" onclick="nav('dashboard')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Dashboard</button>
-      <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,169,122,.45);margin-bottom:7px">Nightly Briefing · 1 March 2026</div>
+      <div style="font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,169,122,.45);margin-bottom:7px">Nightly Briefing · 1 March 2026</div>
       <div class="brief-h2">Triple-Threat<br><em>Intelligence Report</em></div>
       <div class="brief-sub">The Hari Hong Kong · Wan Chai · ServiceFlow</div>
     </div>
@@ -1113,7 +1113,7 @@ body{
         <div class="ab-item"><div class="ab-num">2</div><div class="ab-text"><strong>Reconcile Zoku POS variance</strong> by 09:00. Pull table 12 receipt log. <span style="color:#6abe8a;font-weight:600">→ HK$480 recovered</span></div></div>
         <div class="ab-item"><div class="ab-num">3</div><div class="ab-text"><strong>Rebalance floor 28–30 housekeeping</strong> — dedicated suite attendant, 50-min allowance. <span style="color:#6abe8a;font-weight:600">→ HK$320 labour saved</span></div></div>
         <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(201,169,122,.15);display:flex;justify-content:space-between;align-items:center">
-          <span style="font-size:11px;color:rgba(245,240,232,.4);letter-spacing:.06em">Tonight's estimated value</span>
+          <span style="font-size:17px;color:rgba(245,240,232,.4);letter-spacing:.06em">Tonight's estimated value</span>
           <span style="font-size:16px;font-weight:700;color:#6abe8a">HK$1,480</span>
         </div>
       </div>
@@ -1192,7 +1192,7 @@ body{
       <div class="room-card" data-cat="done"><div class="rnum">0612</div><div class="ri"><div class="ri-t">Classic Queen · Floor 6</div><div class="ri-d">Completed 15:10 · All checks passed</div></div><div class="rs rs-done">Done</div></div>
     </div>
     <div style="padding:0 16px 4px">
-      <button onclick="nav('hklog')" style="width:100%;padding:14px;background:linear-gradient(135deg,var(--bronze-dark),#2a1800);border:1px solid rgba(160,120,74,.3);border-radius:14px;font-size:13px;color:var(--bronze-light);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--bronze-light)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log Room Update</button>
+      <button onclick="nav('hklog')" style="width:100%;padding:14px;background:linear-gradient(135deg,var(--bronze-dark),#2a1800);border:1px solid rgba(160,120,74,.3);border-radius:14px;font-size:16px;color:var(--bronze-light);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--bronze-light)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log Room Update</button>
     </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
     <div style="height:8px"></div>
@@ -1244,22 +1244,22 @@ body{
     <!-- FAULTS TAB -->
     <div id="mp-faults">
       <div style="margin:8px 16px 4px;background:linear-gradient(135deg,#141414,#1a1f08);border-radius:16px;padding:16px;border:1px solid rgba(255,149,0,.15)">
-        <div style="font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:10px">Asset Longevity Index</div>
+        <div style="font-size:16px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:10px">Asset Longevity Index</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
-          <div><div style="font-size:10px;color:rgba(245,240,232,.4);margin-bottom:3px">PM Completion</div><div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#FF9500">92%</div><div style="font-size:10px;color:rgba(255,149,0,.5)">Target 95%</div></div>
-          <div><div style="font-size:10px;color:rgba(245,240,232,.4);margin-bottom:3px">Reactive / Planned</div><div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#6abe8a">30:70</div><div style="font-size:10px;color:rgba(106,190,138,.5)">Avg 50:50 ✓</div></div>
+          <div><div style="font-size:17px;color:rgba(245,240,232,.4);margin-bottom:3px">PM Completion</div><div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#FF9500">92%</div><div style="font-size:17px;color:rgba(255,149,0,.5)">Target 95%</div></div>
+          <div><div style="font-size:17px;color:rgba(245,240,232,.4);margin-bottom:3px">Reactive / Planned</div><div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#6abe8a">30:70</div><div style="font-size:17px;color:rgba(106,190,138,.5)">Avg 50:50 ✓</div></div>
         </div>
         <div style="padding-top:10px;border-top:1px solid rgba(255,149,0,.1)">
-          <div style="font-size:11px;color:rgba(245,240,232,.5);margin-bottom:4px">Est. asset life extension vs reactive baseline</div>
+          <div style="font-size:17px;color:rgba(245,240,232,.5);margin-bottom:4px">Est. asset life extension vs reactive baseline</div>
           <div style="display:flex;justify-content:space-between;align-items:center">
             <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--ivory)">+4.2 years</div>
-            <div style="text-align:right"><div style="font-size:10px;color:rgba(245,240,232,.35)">Incremental asset value</div><div style="font-size:16px;color:#C9A97A;font-weight:700">HK$8.2M</div></div>
+            <div style="text-align:right"><div style="font-size:17px;color:rgba(245,240,232,.35)">Incremental asset value</div><div style="font-size:16px;color:#C9A97A;font-weight:700">HK$8.2M</div></div>
           </div>
         </div>
       </div>
       <div style="padding:10px 16px 6px;display:flex;justify-content:space-between;align-items:center">
-        <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)" id="faultFilterLabel">All Faults</div>
-        <button onclick="filterFaults('all')" style="font-size:10px;color:var(--bronze);background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.06em" id="faultClearBtn" style="display:none">Show All</button>
+        <div style="font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)" id="faultFilterLabel">All Faults</div>
+        <button onclick="filterFaults('all')" style="font-size:17px;color:var(--bronze);background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.06em" id="faultClearBtn" style="display:none">Show All</button>
       </div>
 
       <div class="eng-job fault-item" data-priority="high" data-status="open" onclick="nav('faultDetail');showFaultDetail(0)">
@@ -1350,19 +1350,19 @@ body{
       </div>
 
       <div style="padding:8px 16px 8px">
-        <button onclick="nav('maintlog')" style="width:100%;padding:12px;background:linear-gradient(135deg,#1C1C1C,#2a1800);border:1px solid rgba(255,149,0,.25);border-radius:13px;font-size:12px;color:#FF9500;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:500"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log New Fault</button>
+        <button onclick="nav('maintlog')" style="width:100%;padding:12px;background:linear-gradient(135deg,#1C1C1C,#2a1800);border:1px solid rgba(255,149,0,.25);border-radius:13px;font-size:17px;color:#FF9500;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:500"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log New Fault</button>
       </div>
     </div>
 
     <!-- PLANT TAB -->
     <div id="mp-plant" style="display:none">
-      <div style="padding:12px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">HVAC Systems</div>
+      <div style="padding:12px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">HVAC Systems</div>
       <div class="pdc warn"><div class="pdc-l"><div class="pdc-name">Rooftop HVAC Unit</div><div class="pdc-loc">Plant Room RF · Floors 25–30</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Pressure</span><span class="pdc-rv warn">82%</span></div><div class="pdc-r"><span class="pdc-rl">Temp Out</span><span class="pdc-rv">18°C</span></div><div class="pdc-r"><span class="pdc-rl">Runtime</span><span class="pdc-rv">14h 22m</span></div></div></div><div class="pdc-status warn">⚠ Low</div></div>
       <div class="pdc ok"><div class="pdc-l"><div class="pdc-name">Main AHU — B1</div><div class="pdc-loc">Plant Room B1 · Floors 1–15</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Pressure</span><span class="pdc-rv">96%</span></div><div class="pdc-r"><span class="pdc-rl">Temp Out</span><span class="pdc-rv">16°C</span></div><div class="pdc-r"><span class="pdc-rl">Runtime</span><span class="pdc-rv">18h 05m</span></div></div></div><div class="pdc-status ok">Normal</div></div>
-      <div style="padding:10px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Lift Systems</div>
+      <div style="padding:10px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Lift Systems</div>
       <div class="pdc crit"><div class="pdc-l"><div class="pdc-name">Lift Bank B — Floors 1–15</div><div class="pdc-loc">Public area · Otis ref: HK-9921</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Status</span><span class="pdc-rv crit">Door fault</span></div><div class="pdc-r"><span class="pdc-rl">Fault code</span><span class="pdc-rv crit">ERR-D4</span></div></div></div><div class="pdc-status crit">Fault</div></div>
       <div class="pdc ok"><div class="pdc-l"><div class="pdc-name">Lift Bank A — All Floors</div><div class="pdc-loc">Main guest lifts · 4 cars</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Status</span><span class="pdc-rv ok">All running</span></div><div class="pdc-r"><span class="pdc-rl">Avg wait</span><span class="pdc-rv">28s</span></div></div></div><div class="pdc-status ok">Normal</div></div>
-      <div style="padding:10px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Utilities</div>
+      <div style="padding:10px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Utilities</div>
       <div class="pdc ok"><div class="pdc-l"><div class="pdc-name">Chiller Plant — B1</div><div class="pdc-loc">Main cooling · 2 units online</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Flow</span><span class="pdc-rv">6.2°C</span></div><div class="pdc-r"><span class="pdc-rl">Return</span><span class="pdc-rv">12.1°C</span></div><div class="pdc-r"><span class="pdc-rl">Load</span><span class="pdc-rv">68%</span></div></div></div><div class="pdc-status ok">Normal</div></div>
       <div class="pdc ok"><div class="pdc-l"><div class="pdc-name">Hot Water System</div><div class="pdc-loc">B1 · All floors</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Flow</span><span class="pdc-rv">62°C</span></div><div class="pdc-r"><span class="pdc-rl">Pressure</span><span class="pdc-rv">3.2 bar</span></div><div class="pdc-r"><span class="pdc-rl">Legionella</span><span class="pdc-rv ok">In range</span></div></div></div><div class="pdc-status ok">Normal</div></div>
       <div style="height:16px"></div>
@@ -1370,16 +1370,16 @@ body{
 
     <!-- PM SCHEDULE TAB -->
     <div id="mp-pm" style="display:none">
-      <div style="padding:12px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#FF453A">Overdue</div>
+      <div style="padding:12px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#FF453A">Overdue</div>
       <div class="pmr ov"><div class="pmd-date"><div class="pmd-day">26</div><div class="pmd-mon">Feb</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">LED dimmer check · Corridor F22 &amp; F24</div><div class="pmd-sub">Renewable lighting system · 2hr · 1 person</div><div class="jtag crit" style="display:inline-block;margin-top:4px">4 days overdue</div></div><div class="pmd-chip ov" style="flex-shrink:0;margin-top:2px">Overdue</div></div>
       <div class="pmr ov"><div class="pmd-date"><div class="pmd-day">27</div><div class="pmd-mon">Feb</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Boiler annual inspection — B1</div><div class="pmd-sub">Regulatory compliance · 3hr · 2 persons</div><div class="jtag crit" style="display:inline-block;margin-top:4px">3 days overdue</div></div><div class="pmd-chip ov" style="flex-shrink:0;margin-top:2px">Overdue</div></div>
-      <div style="padding:8px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#FF9500">This Week — Planned</div>
+      <div style="padding:8px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#FF9500">This Week — Planned</div>
       <div class="pmr wn"><div class="pmd-date"><div class="pmd-day">04</div><div class="pmd-mon">Mar</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Fire suppression test · B1 &amp; Roof</div><div class="pmd-sub">Quarterly HKFD compliance · 4hr · 2 persons</div></div><div class="pmd-chip due" style="flex-shrink:0;margin-top:2px">Wed</div></div>
       <div class="pmr wn"><div class="pmd-date"><div class="pmd-day">06</div><div class="pmd-mon">Mar</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Cooling tower water treatment</div><div class="pmd-sub">Bi-monthly · Legionella risk · 3hr</div></div><div class="pmd-chip due" style="flex-shrink:0;margin-top:2px">Fri</div></div>
-      <div style="padding:8px 16px 7px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Coming Up</div>
+      <div style="padding:8px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Coming Up</div>
       <div class="pmr"><div class="pmd-date"><div class="pmd-day">09</div><div class="pmd-mon">Mar</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Otis full lift service · All 4 banks</div><div class="pmd-sub">Annual contract · Full day</div></div><div class="pmd-chip sc" style="flex-shrink:0;margin-top:2px">Mon 9</div></div>
       <div class="pmr"><div class="pmd-date"><div class="pmd-day">15</div><div class="pmd-mon">Mar</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Chiller service — Unit 2 B1</div><div class="pmd-sub">Annual · Carrier technician · 6hr</div></div><div class="pmd-chip sc" style="flex-shrink:0;margin-top:2px">Sat 15</div></div>
-      <div style="padding:8px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:12px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log PM Entry</button></div>
+      <div style="padding:8px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:17px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log PM Entry</button></div>
       <div style="height:8px"></div>
     </div>
 
@@ -1387,8 +1387,8 @@ body{
     <div id="mp-energy" style="display:none">
       <div style="margin:12px 16px 10px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:16px;padding:16px;box-shadow:var(--shadow-sm)">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
-          <div><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:4px">Today · Total Consumption</div><div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;color:var(--charcoal);line-height:1">3,842 <span style="font-family:'Jost',sans-serif;font-size:13px;color:var(--mid-grey)">kWh</span></div><div style="font-size:11px;color:var(--green);margin-top:3px">↓ 12% vs EarthCheck baseline</div></div>
-          <div style="text-align:right"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--green)">83</div><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)">EarthCheck</div></div>
+          <div><div style="font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:4px">Today · Total Consumption</div><div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;color:var(--charcoal);line-height:1">3,842 <span style="font-family:'Jost',sans-serif;font-size:16px;color:var(--mid-grey)">kWh</span></div><div style="font-size:17px;color:var(--green);margin-top:3px">↓ 12% vs EarthCheck baseline</div></div>
+          <div style="text-align:right"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--green)">83</div><div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)">EarthCheck</div></div>
         </div>
         <div style="display:flex;align-items:flex-end;gap:5px;height:52px;margin-bottom:7px">
           <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;height:100%"><div style="width:100%;border-radius:3px 3px 0 0;background:var(--marble);align-self:flex-end;height:65%"></div><span style="font-size:8px;color:var(--light-grey)">Mon</span></div>
@@ -1400,9 +1400,9 @@ body{
           <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;height:100%"><div style="width:100%;border-radius:3px 3px 0 0;background:linear-gradient(180deg,#4A6741,#34C759);align-self:flex-end;height:52%"></div><span style="font-size:8px;color:#34C759;font-weight:600">Sun</span></div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">
-          <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,240</div><div style="font-size:9px;color:var(--mid-grey);margin-top:2px">kWh HVAC</div></div>
-          <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">890</div><div style="font-size:9px;color:var(--mid-grey);margin-top:2px">kWh F&amp;B</div></div>
-          <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,712</div><div style="font-size:9px;color:var(--mid-grey);margin-top:2px">kWh Rooms</div></div>
+          <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,240</div><div style="font-size:16px;color:var(--mid-grey);margin-top:2px">kWh HVAC</div></div>
+          <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">890</div><div style="font-size:16px;color:var(--mid-grey);margin-top:2px">kWh F&amp;B</div></div>
+          <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,712</div><div style="font-size:16px;color:var(--mid-grey);margin-top:2px">kWh Rooms</div></div>
         </div>
       </div>
       <div class="roi-dark">
@@ -1410,7 +1410,7 @@ body{
           <div class="roi-lbl">Carbon Tracking · Scope 1 &amp; 2</div>
           <div class="roi-line"><span class="roi-line-l">Today's CO₂e</span><span class="roi-line-v gold">1.84 tCO₂e</span></div>
           <div class="roi-line"><span class="roi-line-l">Month to date</span><span class="roi-line-v grn">48.2 tCO₂e</span></div>
-          <div class="roi-line"><span class="roi-line-l">vs EarthCheck target</span><span class="roi-line-v grn" style="font-family:'Jost',sans-serif;font-size:14px">↓ 11.4% ahead</span></div>
+          <div class="roi-line"><span class="roi-line-l">vs EarthCheck target</span><span class="roi-line-v grn" style="font-family:'Jost',sans-serif;font-size:17px">↓ 11.4% ahead</span></div>
           <div class="roi-line"><span class="roi-line-l">HKEX Scope 3 (F&amp;B)</span><span class="roi-line-v gold">28.4 t this yr</span></div>
         </div>
       </div>
@@ -1418,7 +1418,7 @@ body{
       <div class="cont-row"><div class="cont-dot on2"></div><div class="cont-b"><div class="cont-name">K. Wong — In-house Maintenance</div><div class="cont-ref">HVAC-RF-2026-0301 · Floor 30</div></div><div class="cont-badge on2">On Site</div></div>
       <div class="cont-row"><div class="cont-dot pend"></div><div class="cont-b"><div class="cont-name">Otis Elevator HK</div><div class="cont-ref">HK-9921 · ETA 08:00 Mon</div></div><div class="cont-badge pend">Pending</div></div>
       <div class="cont-row"><div class="cont-dot dn2"></div><div class="cont-b"><div class="cont-name">Jardine Engineering — BMS</div><div class="cont-ref">JEC-BMS-441 · Completed 18:30</div></div><div class="cont-badge dn2">Done</div></div>
-      <div style="padding:8px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:12px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log Energy Reading</button></div>
+      <div style="padding:8px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:12px;background:var(--marble);border:1.5px dashed var(--light-grey);border-radius:13px;font-size:17px;color:var(--mid-grey);font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Log Energy Reading</button></div>
       <div style="height:8px"></div>
     </div>
 
@@ -1439,47 +1439,47 @@ body{
   <div class="detail-hero red" id="faultDetailHero">
     <div class="detail-inner">
       <button class="back" style="color:#FF9500;margin-bottom:10px" onclick="nav('maintenance')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Maintenance</button>
-      <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:6px" id="fdBadge">HIGH PRIORITY</div>
+      <div style="font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,149,0,.5);margin-bottom:6px" id="fdBadge">HIGH PRIORITY</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:#F5F0E8;line-height:1.1" id="fdTitle">Lift B door sensor</div>
-      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:5px" id="fdLocation">Public area · Otis ref: HK-9921</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.38);margin-top:5px" id="fdLocation">Public area · Otis ref: HK-9921</div>
     </div>
   </div>
   <div class="scroll">
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:12px 16px">
       <div style="background:#1C1C1C;border-radius:11px;padding:10px;text-align:center">
-        <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:3px">Status</div>
-        <div style="font-size:11px;font-weight:600" id="fdStatus">Open</div>
+        <div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:3px">Status</div>
+        <div style="font-size:17px;font-weight:600" id="fdStatus">Open</div>
       </div>
       <div style="background:#1C1C1C;border-radius:11px;padding:10px;text-align:center">
-        <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:3px">Reported</div>
-        <div style="font-size:11px;color:#F5F0E8" id="fdTime">20:12</div>
+        <div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:3px">Reported</div>
+        <div style="font-size:17px;color:#F5F0E8" id="fdTime">20:12</div>
       </div>
       <div style="background:#1C1C1C;border-radius:11px;padding:10px;text-align:center">
-        <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:3px">Open</div>
-        <div style="font-size:11px;color:#FF9500" id="fdAge">4h 02m</div>
+        <div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:3px">Open</div>
+        <div style="font-size:17px;color:#FF9500" id="fdAge">4h 02m</div>
       </div>
     </div>
     <div style="margin:0 16px 10px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)">
-      <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey);margin-bottom:8px">Fault Details</div>
-      <div style="font-size:13px;color:var(--charcoal);line-height:1.6" id="fdDescription">Lift Bank B (floors 1–15) door sensor intermittently failing. Door does not close consistently on F7 and F9. Fault code ERR-D4. Guest-facing — lift B out of service until resolved. Otis engineer scheduled 08:00 Monday.</div>
+      <div style="font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey);margin-bottom:8px">Fault Details</div>
+      <div style="font-size:16px;color:var(--charcoal);line-height:1.6" id="fdDescription">Lift Bank B (floors 1–15) door sensor intermittently failing. Door does not close consistently on F7 and F9. Fault code ERR-D4. Guest-facing — lift B out of service until resolved. Otis engineer scheduled 08:00 Monday.</div>
     </div>
     <div style="margin:0 16px 10px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)">
-      <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey);margin-bottom:10px">Assignment</div>
+      <div style="font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey);margin-bottom:10px">Assignment</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
-        <div style="background:var(--marble);border-radius:9px;padding:9px"><div style="font-size:9px;color:var(--light-grey);letter-spacing:.1em;text-transform:uppercase">Assigned To</div><div style="font-size:12px;font-weight:500;color:var(--charcoal);margin-top:2px" id="fdAssigned">Otis HK</div></div>
-        <div style="background:var(--marble);border-radius:9px;padding:9px"><div style="font-size:9px;color:var(--light-grey);letter-spacing:.1em;text-transform:uppercase">ETA</div><div style="font-size:12px;font-weight:500;color:var(--charcoal);margin-top:2px" id="fdETA">08:00 Mon</div></div>
+        <div style="background:var(--marble);border-radius:9px;padding:9px"><div style="font-size:16px;color:var(--light-grey);letter-spacing:.1em;text-transform:uppercase">Assigned To</div><div style="font-size:17px;font-weight:500;color:var(--charcoal);margin-top:2px" id="fdAssigned">Otis HK</div></div>
+        <div style="background:var(--marble);border-radius:9px;padding:9px"><div style="font-size:16px;color:var(--light-grey);letter-spacing:.1em;text-transform:uppercase">ETA</div><div style="font-size:17px;font-weight:500;color:var(--charcoal);margin-top:2px" id="fdETA">08:00 Mon</div></div>
       </div>
       <div style="display:flex;gap:8px">
-        <button onclick="cycleFaultStatus()" style="flex:1;padding:10px;background:linear-gradient(135deg,#7A4500,#FF9500);border:none;border-radius:10px;color:#fff;font-size:11px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em;text-transform:uppercase">Update Status</button>
-        <button onclick="nav('maintenance')" style="flex:1;padding:10px;background:var(--marble);border:none;border-radius:10px;color:var(--mid-grey);font-size:11px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em;text-transform:uppercase">Back</button>
+        <button onclick="cycleFaultStatus()" style="flex:1;padding:10px;background:linear-gradient(135deg,#7A4500,#FF9500);border:none;border-radius:10px;color:#fff;font-size:17px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em;text-transform:uppercase">Update Status</button>
+        <button onclick="nav('maintenance')" style="flex:1;padding:10px;background:var(--marble);border:none;border-radius:10px;color:var(--mid-grey);font-size:17px;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em;text-transform:uppercase">Back</button>
       </div>
     </div>
     <div style="margin:0 16px 10px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)">
-      <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey);margin-bottom:8px">Activity Log</div>
+      <div style="font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--light-grey);margin-bottom:8px">Activity Log</div>
       <div id="fdLog" style="display:flex;flex-direction:column;gap:8px"></div>
       <div style="margin-top:10px;display:flex;gap:8px">
         <input id="fdNoteInput" class="tinp" style="margin-bottom:0;flex:1" placeholder="Add a note…">
-        <button onclick="addFaultNote()" style="padding:0 14px;background:var(--bronze);border:none;border-radius:10px;color:#fff;font-size:12px;font-family:'Jost',sans-serif;cursor:pointer">Add</button>
+        <button onclick="addFaultNote()" style="padding:0 14px;background:var(--bronze);border:none;border-radius:10px;color:#fff;font-size:17px;font-family:'Jost',sans-serif;cursor:pointer">Add</button>
       </div>
     </div>
     <div style="height:8px"></div>
@@ -1523,9 +1523,9 @@ body{
         <div class="ow-spark"><svg viewBox="0 0 340 38" style="width:100%;height:38px"><defs><linearGradient id="spHK" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C9A97A" stop-opacity=".18"/><stop offset="100%" stop-color="#C9A97A" stop-opacity="0"/></linearGradient></defs><path d="M0,34 C56,30 113,22 170,16 C226,20 283,6 340,2 L340,38 L0,38 Z" fill="url(#spHK)"/><path d="M0,34 C56,30 113,22 170,16 C226,20 283,6 340,2" fill="none" stroke="#C9A97A" stroke-width="1.8" stroke-linecap="round"/><circle cx="340" cy="2" r="3" fill="#C9A97A"/><text x="2" y="37" font-size="7" fill="rgba(107,101,96,.4)" font-family="Jost">Sep</text><text x="270" y="37" font-size="7" fill="#C9A97A" font-family="Jost" font-weight="600">Feb ↑</text></svg></div>
       </div>
       <div class="ow-pills">
-        <div class="ow-pill"><div class="ow-pill-lbl">GOP</div><div class="ow-pill-val">38.2<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+2.1pp</div></div>
-        <div class="ow-pill"><div class="ow-pill-lbl">Occupancy</div><div class="ow-pill-val">78<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+4pp</div></div>
-        <div class="ow-pill"><div class="ow-pill-lbl">NOI Yield</div><div class="ow-pill-val">6.8<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--bronze);font-weight:600">✓ Target 6%</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">GOP</div><div class="ow-pill-val">38.2<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+2.1pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Occupancy</div><div class="ow-pill-val">78<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+4pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">NOI Yield</div><div class="ow-pill-val">6.8<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--bronze);font-weight:600">✓ Target 6%</div></div>
       </div>
       <div class="ow-dark-card">
         <div class="ow-dc-label">ServiceFlow · March 2026</div>
@@ -1545,13 +1545,13 @@ body{
       <div class="ow-esg-card">
         <div class="ow-esg-top">
           <div><div class="ow-esg-lbl">EarthCheck · HKEX ESG</div><div class="ow-esg-score">83<span style="font-size:16px;color:var(--green)"> pts</span></div><div class="ow-esg-delta">↑ 4pts vs 2025 · Certified Gold</div></div>
-          <div class="ow-esg-right"><div class="ow-esg-right-lbl">CO₂e avoided MTD</div><div class="ow-esg-co2">48.6<span class="ow-esg-co2-unit"> t</span></div><div style="font-size:10px;color:var(--mid-grey);margin-top:2px">Scope 1+2+3</div></div>
+          <div class="ow-esg-right"><div class="ow-esg-right-lbl">CO₂e avoided MTD</div><div class="ow-esg-co2">48.6<span class="ow-esg-co2-unit"> t</span></div><div style="font-size:17px;color:var(--mid-grey);margin-top:2px">Scope 1+2+3</div></div>
         </div>
         <div class="ow-esg-bar-wrap"><div class="ow-esg-bar-labels"><span>0</span><span style="color:var(--green);font-weight:600">83 / 100</span><span>100</span></div><div class="ow-esg-bar-track"><div class="ow-esg-bar-fill" style="width:83%"></div></div></div>
         <div class="ow-esg-foot" style="display:flex;gap:6px;flex-wrap:wrap">
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ HKEX</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ CSRD</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ Audit trail live</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ HKEX</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ CSRD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ Audit trail live</span>
       </div>
       </div>
     </div>
@@ -1569,14 +1569,14 @@ body{
         <div class="ow-spark"><svg viewBox="0 0 340 38" style="width:100%;height:38px"><defs><linearGradient id="spLDN" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4ab464" stop-opacity=".18"/><stop offset="100%" stop-color="#4ab464" stop-opacity="0"/></linearGradient></defs><path d="M0,36 C56,32 113,26 170,18 C226,22 283,8 340,4 L340,38 L0,38 Z" fill="url(#spLDN)"/><path d="M0,36 C56,32 113,26 170,18 C226,22 283,8 340,4" fill="none" stroke="#4ab464" stroke-width="1.8" stroke-linecap="round"/><circle cx="340" cy="4" r="3" fill="#4ab464"/><text x="2" y="37" font-size="7" fill="rgba(107,101,96,.4)" font-family="Jost">Sep</text><text x="270" y="37" font-size="7" fill="#4ab464" font-family="Jost" font-weight="600">Feb ↑</text></svg></div>
       </div>
       <div class="ow-pills">
-        <div class="ow-pill"><div class="ow-pill-lbl">GOP</div><div class="ow-pill-val">41.2<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+4.2pp</div></div>
-        <div class="ow-pill"><div class="ow-pill-lbl">Occupancy</div><div class="ow-pill-val">82<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+5pp</div></div>
-        <div class="ow-pill"><div class="ow-pill-lbl">NOI Yield</div><div class="ow-pill-val">5.4<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green);font-weight:600">✓ Target 5%</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">GOP</div><div class="ow-pill-val">41.2<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+4.2pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Occupancy</div><div class="ow-pill-val">82<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--green)">+5pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">NOI Yield</div><div class="ow-pill-val">5.4<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--green);font-weight:600">✓ Target 5%</div></div>
       </div>
       <div class="ow-dark-card">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;position:relative">
           <div class="ow-dc-label" style="margin-bottom:0">ServiceFlow · Q1 2026</div>
-          <div style="display:flex;align-items:center;gap:4px;background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:4px 8px"><span style="font-size:12px">🌿</span><span style="font-size:8px;font-weight:700;letter-spacing:.08em;color:#6abe8a">FRIEND OF THE EARTH</span></div>
+          <div style="display:flex;align-items:center;gap:4px;background:rgba(106,190,138,.12);border:1px solid rgba(106,190,138,.25);border-radius:8px;padding:4px 8px"><span style="font-size:17px">🌿</span><span style="font-size:8px;font-weight:700;letter-spacing:.08em;color:#6abe8a">FRIEND OF THE EARTH</span></div>
         </div>
         <div class="ow-dc-row"><span class="ow-dc-key">ADR (Feb '26)</span><span class="ow-dc-val">£350</span></div>
         <div class="ow-dc-row"><span class="ow-dc-key">GOP (Q1 est.)</span><span class="ow-dc-val">£2.9M</span></div>
@@ -1594,13 +1594,13 @@ body{
       <div class="ow-esg-card">
         <div class="ow-esg-top">
           <div><div class="ow-esg-lbl">EarthCheck · London</div><div class="ow-esg-score">87<span style="font-size:16px;color:var(--green)"> pts ★</span></div><div class="ow-esg-delta">↑ 6pts vs 2025 · Best in portfolio</div></div>
-          <div class="ow-esg-right"><div class="ow-esg-right-lbl">CO₂e avoided MTD</div><div class="ow-esg-co2">32.1<span class="ow-esg-co2-unit"> t</span></div><div style="font-size:10px;color:var(--mid-grey);margin-top:2px">Waste div. 82%</div></div>
+          <div class="ow-esg-right"><div class="ow-esg-right-lbl">CO₂e avoided MTD</div><div class="ow-esg-co2">32.1<span class="ow-esg-co2-unit"> t</span></div><div style="font-size:17px;color:var(--mid-grey);margin-top:2px">Waste div. 82%</div></div>
         </div>
         <div class="ow-esg-bar-wrap"><div class="ow-esg-bar-labels"><span>0</span><span style="color:var(--green);font-weight:600">87 / 100</span><span>100</span></div><div class="ow-esg-bar-track"><div class="ow-esg-bar-fill" style="width:87%"></div></div></div>
         <div class="ow-esg-foot" style="display:flex;gap:6px;flex-wrap:wrap">
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ CSRD</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ TCFD</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ HKEX</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ CSRD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ TCFD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ HKEX</span>
       </div>
       </div>
     </div>
@@ -1618,20 +1618,20 @@ body{
       </div>
       <div class="ow-pills">
         <div class="ow-pill"><div class="ow-pill-lbl">Q1 GOP</div><div class="ow-pill-val" style="font-size:16px">HK$12.6M</div><div class="ow-pill-d" style="color:var(--green)">+ £2.9M LDN</div></div>
-        <div class="ow-pill"><div class="ow-pill-lbl">Avg NOI</div><div class="ow-pill-val">6.1<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--bronze);font-weight:600">✓ Target 6%</div></div>
-        <div class="ow-pill"><div class="ow-pill-lbl">Avg GOP</div><div class="ow-pill-val">39.7<span style="font-size:12px">%</span></div><div class="ow-pill-d" style="color:var(--green)">↑ 3.1pp</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Avg NOI</div><div class="ow-pill-val">6.1<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--bronze);font-weight:600">✓ Target 6%</div></div>
+        <div class="ow-pill"><div class="ow-pill-lbl">Avg GOP</div><div class="ow-pill-val">39.7<span style="font-size:17px">%</span></div><div class="ow-pill-d" style="color:var(--green)">↑ 3.1pp</div></div>
       </div>
       <!-- Property comparison table — best of Portfolio -->
       <div style="margin:16px 16px 0;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:18px;overflow:hidden;box-shadow:0 3px 16px rgba(42,37,32,.05)">
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble);background:rgba(201,169,122,.04)">
-          <div style="font-size:11px;letter-spacing:0;text-transform:none;color:var(--charcoal);font-weight:700">Metric</div>
-          <div style="font-size:10px;font-weight:600;color:var(--bronze);text-align:center">Hong Kong</div>
-          <div style="font-size:10px;font-weight:600;color:var(--green);text-align:center">London</div>
+          <div style="font-size:17px;letter-spacing:0;text-transform:none;color:var(--charcoal);font-weight:700">Metric</div>
+          <div style="font-size:17px;font-weight:600;color:var(--bronze);text-align:center">Hong Kong</div>
+          <div style="font-size:17px;font-weight:600;color:var(--green);text-align:center">London</div>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--charcoal);font-weight:500">Occupancy</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">78%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">82%</div></div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--charcoal);font-weight:500">RevPAR</div><div style="font-size:12px;font-weight:500;color:var(--bronze);text-align:center">HK$1,450</div><div style="font-size:12px;font-weight:500;color:var(--green);text-align:center">£285</div></div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:11px;color:var(--charcoal);font-weight:500">GOP Margin</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">38.2%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">41.2%</div></div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px"><div style="font-size:11px;color:var(--charcoal);font-weight:500">NOI Yield</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">6.8%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">5.4%</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:17px;color:var(--charcoal);font-weight:500">Occupancy</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">78%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">82%</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:17px;color:var(--charcoal);font-weight:500">RevPAR</div><div style="font-size:17px;font-weight:500;color:var(--bronze);text-align:center">HK$1,450</div><div style="font-size:17px;font-weight:500;color:var(--green);text-align:center">£285</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px;border-bottom:1px solid var(--marble)"><div style="font-size:17px;color:var(--charcoal);font-weight:500">GOP Margin</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">38.2%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">41.2%</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:10px 14px"><div style="font-size:17px;color:var(--charcoal);font-weight:500">NOI Yield</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">6.8%</div><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal);text-align:center">5.4%</div></div>
       </div>
       <!-- Combined EBITDA dark card -->
       <div class="ow-dark-card">
@@ -1649,26 +1649,26 @@ body{
       </div>
       <!-- Dual ESG card -->
       <div style="margin:12px 16px 0;background:var(--ivory);border:1.5px solid rgba(74,180,100,.2);border-radius:18px;padding:18px;box-shadow:0 3px 16px rgba(42,37,32,.05)">
-        <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:12px">EarthCheck · Portfolio ESG</div>
+        <div style="font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:12px">EarthCheck · Portfolio ESG</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
           <div style="background:rgba(201,169,122,.06);border-radius:12px;padding:12px;text-align:center">
-            <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:4px">Hong Kong</div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal)">83<span style="font-size:13px;color:var(--green)"> pts</span></div>
-            <div style="font-size:10px;color:var(--mid-grey);margin-top:2px">48.6t CO₂e avoided</div>
+            <div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:4px">Hong Kong</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal)">83<span style="font-size:16px;color:var(--green)"> pts</span></div>
+            <div style="font-size:17px;color:var(--mid-grey);margin-top:2px">48.6t CO₂e avoided</div>
             <div style="height:4px;background:var(--marble);border-radius:2px;overflow:hidden;margin-top:8px"><div style="width:83%;height:100%;background:linear-gradient(90deg,#C9A97A,#e0c090);border-radius:2px"></div></div>
           </div>
           <div style="background:rgba(74,103,65,.06);border-radius:12px;padding:12px;text-align:center">
-            <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:4px">London 🌿</div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal)">87<span style="font-size:13px;color:var(--green)"> pts ★</span></div>
-            <div style="font-size:10px;color:var(--mid-grey);margin-top:2px">32.1t CO₂e avoided</div>
+            <div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:4px">London 🌿</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal)">87<span style="font-size:16px;color:var(--green)"> pts ★</span></div>
+            <div style="font-size:17px;color:var(--mid-grey);margin-top:2px">32.1t CO₂e avoided</div>
             <div style="height:4px;background:var(--marble);border-radius:2px;overflow:hidden;margin-top:8px"><div style="width:87%;height:100%;background:linear-gradient(90deg,#4ab464,#6abe8a);border-radius:2px"></div></div>
           </div>
         </div>
         <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ HKEX</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ CSRD</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ TCFD</span>
-        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:10px;color:var(--green);font-weight:500">✓ Audit trail live</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ HKEX</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ CSRD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ TCFD</span>
+        <span style="background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:6px;padding:3px 8px;font-size:17px;color:var(--green);font-weight:500">✓ Audit trail live</span>
       </div>
       </div>
     </div>
@@ -1677,7 +1677,7 @@ body{
       <div><div class="esg-lbl">HKEX ESG · Portfolio</div><div class="esg-val">CO₂e: 1.84t today · 48.2t MTD · EarthCheck 83 pts</div></div>
     </div>
     <div onclick="nav('roadmap')" style="margin:10px 16px 0;background:linear-gradient(135deg,#1B2D4F,#243A62);border-radius:14px;padding:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(201,169,122,.2)">
-      <div><div style="font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:3px">Strategic Vision</div><div style="font-size:14px;color:var(--ivory);font-weight:500">ServiceFlow · Portfolio Roadmap</div><div style="font-size:11px;color:rgba(245,240,232,.35);margin-top:2px">4 phases · 2026–2028</div></div>
+      <div><div style="font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:3px">Strategic Vision</div><div style="font-size:17px;color:var(--ivory);font-weight:500">ServiceFlow · Portfolio Roadmap</div><div style="font-size:17px;color:rgba(245,240,232,.35);margin-top:2px">4 phases · 2026–2028</div></div>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(201,169,122,.6)" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
     </div>
     <div class="roles-link" onclick="nav('splash')"><span>← Switch role</span></div>
@@ -1700,7 +1700,7 @@ body{
     <div style="position:relative;z-index:1">
       <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Lucciola</div>
-      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Italian Fine Dining · 84 covers tonight</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.38);margin-top:2px">Italian Fine Dining · 84 covers tonight</div>
     </div>
   </div>
   <div class="otabs">
@@ -1722,30 +1722,30 @@ body{
       <div style="position:absolute;top:-20px;right:-20px;width:80px;height:80px;background:radial-gradient(circle,rgba(201,169,122,.08) 0%,transparent 70%)"></div>
       <div style="position:relative;z-index:1">
         <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px">
-          <div style="background:rgba(201,169,122,.15);border-radius:8px;padding:4px 8px;font-size:9px;font-weight:700;letter-spacing:.1em;color:#C9A97A">⚡ PRE-EMPTIVE STRIKE</div>
-          <div style="font-size:9px;color:rgba(245,240,232,.3)">AI · Weather + Occupancy signal</div>
+          <div style="background:rgba(201,169,122,.15);border-radius:8px;padding:4px 8px;font-size:16px;font-weight:700;letter-spacing:.1em;color:#C9A97A">⚡ PRE-EMPTIVE STRIKE</div>
+          <div style="font-size:16px;color:rgba(245,240,232,.3)">AI · Weather + Occupancy signal</div>
         </div>
         <div style="display:flex;gap:10px;margin-bottom:10px">
-          <div style="background:rgba(74,103,65,.2);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(106,190,138,.8)">🌧 Rain Mon</div>
-          <div style="background:rgba(201,169,122,.12);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(201,169,122,.8)">78% occ.</div>
-          <div style="background:rgba(245,240,232,.06);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(245,240,232,.5)">345 covers</div>
+          <div style="background:rgba(74,103,65,.2);border-radius:8px;padding:6px 10px;font-size:17px;color:rgba(106,190,138,.8)">🌧 Rain Mon</div>
+          <div style="background:rgba(201,169,122,.12);border-radius:8px;padding:6px 10px;font-size:17px;color:rgba(201,169,122,.8)">78% occ.</div>
+          <div style="background:rgba(245,240,232,.06);border-radius:8px;padding:6px 10px;font-size:17px;color:rgba(245,240,232,.5)">345 covers</div>
         </div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ivory);margin-bottom:6px;line-height:1.3">Reduce Branzino prep by 25%<br><em style="color:rgba(245,240,232,.6);font-size:15px">Reroute burrata to Zoku omakase</em></div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ivory);margin-bottom:6px;line-height:1.3">Reduce Branzino prep by 25%<br><em style="color:rgba(245,240,232,.6);font-size:17px">Reroute burrata to Zoku omakase</em></div>
         <div style="display:flex;gap:8px;margin-bottom:12px">
           <div style="flex:1;background:rgba(106,190,138,.1);border:1px solid rgba(106,190,138,.2);border-radius:10px;padding:8px;text-align:center">
-            <div style="font-size:9px;color:rgba(106,190,138,.6);letter-spacing:.1em;text-transform:uppercase">Savings</div>
+            <div style="font-size:16px;color:rgba(106,190,138,.6);letter-spacing:.1em;text-transform:uppercase">Savings</div>
             <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#6abe8a">HK$680</div>
           </div>
           <div style="flex:1;background:rgba(74,103,65,.1);border:1px solid rgba(74,103,65,.2);border-radius:10px;padding:8px;text-align:center">
-            <div style="font-size:9px;color:rgba(106,190,138,.5);letter-spacing:.1em;text-transform:uppercase">CO₂e</div>
+            <div style="font-size:16px;color:rgba(106,190,138,.5);letter-spacing:.1em;text-transform:uppercase">CO₂e</div>
             <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#6abe8a">−3.2 kg</div>
           </div>
           <div style="flex:1;background:rgba(201,169,122,.08);border:1px solid rgba(201,169,122,.15);border-radius:10px;padding:8px;text-align:center">
-            <div style="font-size:9px;color:rgba(201,169,122,.5);letter-spacing:.1em;text-transform:uppercase">Scope-3</div>
-            <div style="font-size:10px;color:#C9A97A;margin-top:4px;font-weight:600">Auto-logged</div>
+            <div style="font-size:16px;color:rgba(201,169,122,.5);letter-spacing:.1em;text-transform:uppercase">Scope-3</div>
+            <div style="font-size:17px;color:#C9A97A;margin-top:4px;font-weight:600">Auto-logged</div>
           </div>
         </div>
-        <div style="font-size:10px;color:rgba(245,240,232,.35);margin-bottom:10px">EarthCheck Scope-3 · HKEX ESG · Auto-captured on action</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.35);margin-bottom:10px">EarthCheck Scope-3 · HKEX ESG · Auto-captured on action</div>
         <button class="reco-cta" onclick="nav('fblog')" style="width:100%">Confirm & Log →</button>
       </div>
     </div>
@@ -1772,7 +1772,7 @@ body{
     <div style="position:relative;z-index:1">
       <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Zoku</div>
-      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Japanese Omakase · 48 covers tonight</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.38);margin-top:2px">Japanese Omakase · 48 covers tonight</div>
     </div>
   </div>
   <div class="otabs">
@@ -1793,30 +1793,30 @@ body{
     <div style="margin:10px 16px 0;background:linear-gradient(135deg,#080f1a,#0d1a2e);border-radius:16px;padding:16px;border:1px solid rgba(74,158,181,.2);position:relative;overflow:hidden">
       <div style="position:relative;z-index:1">
         <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px">
-          <div style="background:rgba(74,158,181,.15);border-radius:8px;padding:4px 8px;font-size:9px;font-weight:700;letter-spacing:.1em;color:#4A9EB5">⚡ PRE-EMPTIVE STRIKE</div>
-          <div style="font-size:9px;color:rgba(245,240,232,.3)">AI · POS + Forecast signal</div>
+          <div style="background:rgba(74,158,181,.15);border-radius:8px;padding:4px 8px;font-size:16px;font-weight:700;letter-spacing:.1em;color:#4A9EB5">⚡ PRE-EMPTIVE STRIKE</div>
+          <div style="font-size:16px;color:rgba(245,240,232,.3)">AI · POS + Forecast signal</div>
         </div>
         <div style="display:flex;gap:10px;margin-bottom:10px">
-          <div style="background:rgba(139,58,58,.2);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(220,100,100,.8)">⚠ HK$480 gap</div>
-          <div style="background:rgba(201,169,122,.12);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(201,169,122,.8)">94% cap.</div>
-          <div style="background:rgba(74,158,181,.08);border-radius:8px;padding:6px 10px;font-size:10px;color:rgba(74,158,181,.7)">Tues +12%</div>
+          <div style="background:rgba(139,58,58,.2);border-radius:8px;padding:6px 10px;font-size:17px;color:rgba(220,100,100,.8)">⚠ HK$480 gap</div>
+          <div style="background:rgba(201,169,122,.12);border-radius:8px;padding:6px 10px;font-size:17px;color:rgba(201,169,122,.8)">94% cap.</div>
+          <div style="background:rgba(74,158,181,.08);border-radius:8px;padding:6px 10px;font-size:17px;color:rgba(74,158,181,.7)">Tues +12%</div>
         </div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ivory);margin-bottom:6px;line-height:1.3">Reconcile POS variance by 09:00<br><em style="color:rgba(245,240,232,.6);font-size:15px">Order Wagyu +15% for Tuesday forecast</em></div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ivory);margin-bottom:6px;line-height:1.3">Reconcile POS variance by 09:00<br><em style="color:rgba(245,240,232,.6);font-size:17px">Order Wagyu +15% for Tuesday forecast</em></div>
         <div style="display:flex;gap:8px;margin-bottom:12px">
           <div style="flex:1;background:rgba(220,100,100,.1);border:1px solid rgba(220,100,100,.2);border-radius:10px;padding:8px;text-align:center">
-            <div style="font-size:9px;color:rgba(220,100,100,.6);letter-spacing:.1em;text-transform:uppercase">Recovered</div>
+            <div style="font-size:16px;color:rgba(220,100,100,.6);letter-spacing:.1em;text-transform:uppercase">Recovered</div>
             <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#dc6464">HK$480</div>
           </div>
           <div style="flex:1;background:rgba(74,158,181,.1);border:1px solid rgba(74,158,181,.2);border-radius:10px;padding:8px;text-align:center">
-            <div style="font-size:9px;color:rgba(74,158,181,.6);letter-spacing:.1em;text-transform:uppercase">Waste</div>
+            <div style="font-size:16px;color:rgba(74,158,181,.6);letter-spacing:.1em;text-transform:uppercase">Waste</div>
             <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#4A9EB5">0.8 kg</div>
           </div>
           <div style="flex:1;background:rgba(201,169,122,.08);border:1px solid rgba(201,169,122,.15);border-radius:10px;padding:8px;text-align:center">
-            <div style="font-size:9px;color:rgba(201,169,122,.5);letter-spacing:.1em;text-transform:uppercase">Scope-3</div>
-            <div style="font-size:10px;color:#C9A97A;margin-top:4px;font-weight:600">Auto-logged</div>
+            <div style="font-size:16px;color:rgba(201,169,122,.5);letter-spacing:.1em;text-transform:uppercase">Scope-3</div>
+            <div style="font-size:17px;color:#C9A97A;margin-top:4px;font-weight:600">Auto-logged</div>
           </div>
         </div>
-        <div style="font-size:10px;color:rgba(245,240,232,.35);margin-bottom:10px">Wagyu portioning excellent — maintain ratios · EarthCheck tracked</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.35);margin-bottom:10px">Wagyu portioning excellent — maintain ratios · EarthCheck tracked</div>
         <button class="reco-cta" onclick="nav('fblog')" style="width:100%;background:rgba(74,158,181,.2);border-color:rgba(74,158,181,.4);color:#4A9EB5">Confirm & Log →</button>
       </div>
     </div>
@@ -1842,7 +1842,7 @@ body{
     <div style="position:relative;z-index:1">
       <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">The Lounge</div>
-      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Bar & Cocktails · 112 covers tonight</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.38);margin-top:2px">Bar & Cocktails · 112 covers tonight</div>
     </div>
   </div>
   <div class="otabs">
@@ -1882,7 +1882,7 @@ body{
     <div style="position:relative;z-index:1">
       <button class="back lt" onclick="nav('fbmodule')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>F&amp;B</button>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:26px;color:var(--ivory);line-height:1.05;margin-bottom:3px">Terrace</div>
-      <div style="font-size:11px;color:rgba(245,240,232,.38);margin-top:2px">Outdoor Dining · 68 covers tonight</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.38);margin-top:2px">Outdoor Dining · 68 covers tonight</div>
     </div>
   </div>
   <div class="otabs">
@@ -1929,7 +1929,7 @@ body{
       <button class="voice-btn voice-top" style="color:var(--bronze)">
         <div class="vb-icon" style="background:rgba(160,120,74,.1)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--bronze)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
         <div class="vb-text">
-          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-main" style="font-size:17px;font-weight:600">Tap to dictate</div>
           <div class="vb-sub">English or Chinese · Auto-fills form</div>
         </div>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
@@ -1992,7 +1992,7 @@ body{
       <button class="voice-btn voice-top" style="color:var(--green)">
         <div class="vb-icon" style="background:rgba(74,103,65,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg></div>
         <div class="vb-text">
-          <div class="vb-main" style="font-size:14px;font-weight:600">Tap to dictate</div>
+          <div class="vb-main" style="font-size:17px;font-weight:600">Tap to dictate</div>
           <div class="vb-sub">English or Chinese · Auto-fills form</div>
         </div>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4"><path d="M9 18l6-6-6-6"/></svg>
@@ -2044,9 +2044,9 @@ body{
     <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#4AB464,#6abe8a,#4AB464,transparent)"></div>
     <div style="position:relative;z-index:1">
       <button class="back" style="color:rgba(106,190,138,.8);margin-bottom:10px" onclick="nav('dashboard')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Dashboard</button>
-      <div style="font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:rgba(106,190,138,.45);margin-bottom:6px">HKEX ESG · EarthCheck · Scope 1, 2 &amp; 3</div>
+      <div style="font-size:16px;letter-spacing:.24em;text-transform:uppercase;color:rgba(106,190,138,.45);margin-bottom:6px">HKEX ESG · EarthCheck · Scope 1, 2 &amp; 3</div>
       <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;color:#F5F0E8;line-height:1.05">ESG Intelligence<br><em style="color:#6abe8a">The Hari Hong Kong</em></div>
-      <div style="font-size:11px;color:rgba(245,240,232,.35);margin-top:6px">Q1 2026 · Live · Reporting ready</div>
+      <div style="font-size:17px;color:rgba(245,240,232,.35);margin-top:6px">Q1 2026 · Live · Reporting ready</div>
     </div>
   </div>
 
@@ -2054,17 +2054,17 @@ body{
     <!-- EarthCheck Score -->
     <div style="margin:14px 16px 0;background:var(--charcoal);border-radius:16px;padding:16px;position:relative;overflow:hidden">
       <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle,rgba(106,190,138,.12) 0%,transparent 70%)"></div>
-      <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(106,190,138,.5);margin-bottom:8px">EarthCheck Benchmark · 2026</div>
+      <div style="font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:rgba(106,190,138,.5);margin-bottom:8px">EarthCheck Benchmark · 2026</div>
       <div style="display:flex;align-items:flex-end;gap:14px">
         <div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:#6abe8a;line-height:1">83</div>
-          <div style="font-size:10px;color:rgba(245,240,232,.4);margin-top:2px">out of 100</div>
+          <div style="font-size:17px;color:rgba(245,240,232,.4);margin-top:2px">out of 100</div>
         </div>
         <div style="flex:1;padding-bottom:8px">
-          <div style="font-size:12px;color:#F5F0E8;font-weight:500">Certified Gold</div>
-          <div style="font-size:11px;color:rgba(245,240,232,.4);margin-top:3px">↑ 4pts vs 2025</div>
+          <div style="font-size:17px;color:#F5F0E8;font-weight:500">Certified Gold</div>
+          <div style="font-size:17px;color:rgba(245,240,232,.4);margin-top:3px">↑ 4pts vs 2025</div>
           <div style="margin-top:8px;height:6px;background:rgba(245,240,232,.08);border-radius:3px;overflow:hidden"><div style="height:100%;width:83%;background:linear-gradient(90deg,#2e7a44,#6abe8a);border-radius:3px"></div></div>
-          <div style="display:flex;justify-content:space-between;margin-top:3px"><span style="font-size:9px;color:rgba(245,240,232,.25)">0</span><span style="font-size:9px;color:#6abe8a">83 / 100</span></div>
+          <div style="display:flex;justify-content:space-between;margin-top:3px"><span style="font-size:16px;color:rgba(245,240,232,.25)">0</span><span style="font-size:16px;color:#6abe8a">83 / 100</span></div>
         </div>
       </div>
     </div>
@@ -2073,22 +2073,22 @@ body{
     <div style="padding:12px 18px 6px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--charcoal)">Carbon · Scope 1, 2 &amp; 3</div></div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 16px">
       <div style="background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px;text-align:center;box-shadow:var(--shadow-sm)">
-        <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px">Scope 1</div>
+        <div style="font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px">Scope 1</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--charcoal)">0.4t</div>
-        <div style="font-size:10px;color:var(--green);margin-top:2px">↓ 8%</div>
-        <div style="font-size:9px;color:var(--light-grey);margin-top:2px">Gas · Kitchen</div>
+        <div style="font-size:17px;color:var(--green);margin-top:2px">↓ 8%</div>
+        <div style="font-size:16px;color:var(--light-grey);margin-top:2px">Gas · Kitchen</div>
       </div>
       <div style="background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px;text-align:center;box-shadow:var(--shadow-sm)">
-        <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px">Scope 2</div>
+        <div style="font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px">Scope 2</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--charcoal)">1.4t</div>
-        <div style="font-size:10px;color:var(--green);margin-top:2px">↓ 12%</div>
-        <div style="font-size:9px;color:var(--light-grey);margin-top:2px">Grid · HVAC</div>
+        <div style="font-size:17px;color:var(--green);margin-top:2px">↓ 12%</div>
+        <div style="font-size:16px;color:var(--light-grey);margin-top:2px">Grid · HVAC</div>
       </div>
       <div style="background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:12px;text-align:center;box-shadow:var(--shadow-sm)">
-        <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px">Scope 3</div>
+        <div style="font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:5px">Scope 3</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--charcoal)">28.4t</div>
-        <div style="font-size:10px;color:var(--bronze);margin-top:2px">YTD</div>
-        <div style="font-size:9px;color:var(--light-grey);margin-top:2px">F&amp;B · Waste</div>
+        <div style="font-size:17px;color:var(--bronze);margin-top:2px">YTD</div>
+        <div style="font-size:16px;color:var(--light-grey);margin-top:2px">F&amp;B · Waste</div>
       </div>
     </div>
 
@@ -2096,34 +2096,34 @@ body{
     <div style="padding:12px 18px 6px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--charcoal)">Energy · Today</div></div>
     <div style="margin:0 16px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
-        <div><div style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--charcoal);line-height:1">3,842 <span style="font-size:14px;font-family:'Jost',sans-serif;color:var(--mid-grey)">kWh</span></div><div style="font-size:11px;color:var(--green);margin-top:3px">↓ 12% vs EarthCheck baseline</div></div>
-        <div style="text-align:right"><div style="font-size:10px;color:var(--light-grey)">Target</div><div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--bronze)">4,360 kWh</div></div>
+        <div><div style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--charcoal);line-height:1">3,842 <span style="font-size:17px;font-family:'Jost',sans-serif;color:var(--mid-grey)">kWh</span></div><div style="font-size:17px;color:var(--green);margin-top:3px">↓ 12% vs EarthCheck baseline</div></div>
+        <div style="text-align:right"><div style="font-size:17px;color:var(--light-grey)">Target</div><div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--bronze)">4,360 kWh</div></div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
-        <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,240</div><div style="font-size:9px;color:var(--mid-grey);margin-top:1px">HVAC kWh</div></div>
-        <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">890</div><div style="font-size:9px;color:var(--mid-grey);margin-top:1px">F&amp;B kWh</div></div>
-        <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,712</div><div style="font-size:9px;color:var(--mid-grey);margin-top:1px">Rooms kWh</div></div>
+        <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,240</div><div style="font-size:16px;color:var(--mid-grey);margin-top:1px">HVAC kWh</div></div>
+        <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">890</div><div style="font-size:16px;color:var(--mid-grey);margin-top:1px">F&amp;B kWh</div></div>
+        <div style="background:var(--marble);border-radius:9px;padding:8px;text-align:center"><div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)">1,712</div><div style="font-size:16px;color:var(--mid-grey);margin-top:1px">Rooms kWh</div></div>
       </div>
     </div>
 
     <!-- F&B Waste / Scope 3 -->
     <div style="padding:12px 18px 6px"><div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--charcoal)">F&amp;B Waste · Scope 3</div></div>
     <div style="margin:0 16px;background:var(--warm-white);border:1px solid var(--marble-dark);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)">
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--marble);padding:8px 14px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)"><span>Outlet</span><span style="text-align:center">Tonight</span><span style="text-align:right">MTD</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:12px;color:var(--charcoal)">Lucciola</span><span style="text-align:center;font-size:12px;color:var(--red-alert)">8.4 kg</span><span style="text-align:right;font-size:12px;color:var(--mid-grey)">184 kg</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:12px;color:var(--charcoal)">Zoku</span><span style="text-align:center;font-size:12px;color:var(--green)">0.8 kg</span><span style="text-align:right;font-size:12px;color:var(--mid-grey)">62 kg</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:12px;color:var(--charcoal)">The Lounge</span><span style="text-align:center;font-size:12px;color:var(--bronze)">1.4 kg</span><span style="text-align:right;font-size:12px;color:var(--mid-grey)">98 kg</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:12px;color:var(--charcoal)">Terrace</span><span style="text-align:center;font-size:12px;color:var(--red-alert)">4.2 kg</span><span style="text-align:right;font-size:12px;color:var(--mid-grey)">156 kg</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px"><span style="font-size:12px;color:var(--charcoal)">Room Svc.</span><span style="text-align:center;font-size:12px;color:var(--bronze)">3.8 kg</span><span style="text-align:right;font-size:12px;color:var(--mid-grey)">118 kg</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--marble);padding:8px 14px;font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid-grey)"><span>Outlet</span><span style="text-align:center">Tonight</span><span style="text-align:right">MTD</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:17px;color:var(--charcoal)">Lucciola</span><span style="text-align:center;font-size:17px;color:var(--red-alert)">8.4 kg</span><span style="text-align:right;font-size:17px;color:var(--mid-grey)">184 kg</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:17px;color:var(--charcoal)">Zoku</span><span style="text-align:center;font-size:17px;color:var(--green)">0.8 kg</span><span style="text-align:right;font-size:17px;color:var(--mid-grey)">62 kg</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:17px;color:var(--charcoal)">The Lounge</span><span style="text-align:center;font-size:17px;color:var(--bronze)">1.4 kg</span><span style="text-align:right;font-size:17px;color:var(--mid-grey)">98 kg</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px;border-bottom:1px solid var(--marble)"><span style="font-size:17px;color:var(--charcoal)">Terrace</span><span style="text-align:center;font-size:17px;color:var(--red-alert)">4.2 kg</span><span style="text-align:right;font-size:17px;color:var(--mid-grey)">156 kg</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:9px 14px"><span style="font-size:17px;color:var(--charcoal)">Room Svc.</span><span style="text-align:center;font-size:17px;color:var(--bronze)">3.8 kg</span><span style="text-align:right;font-size:17px;color:var(--mid-grey)">118 kg</span></div>
     </div>
 
     <!-- HKEX Reporting status -->
     <div style="margin:12px 16px 0;background:var(--petrol-pale);border:1px solid rgba(27,45,79,.15);border-radius:14px;padding:14px">
-      <div style="font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol);margin-bottom:10px;font-weight:600">HKEX ESG Reporting · Status</div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div style="width:8px;height:8px;border-radius:50%;background:#34C759;flex-shrink:0"></div><div style="flex:1;font-size:12px;color:var(--charcoal)">Scope 1 &amp; 2 — Auto-captured via BMS</div><div style="font-size:10px;color:var(--green);font-weight:600">Live</div></div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div style="width:8px;height:8px;border-radius:50%;background:#34C759;flex-shrink:0"></div><div style="flex:1;font-size:12px;color:var(--charcoal)">Scope 3 F&amp;B waste — ServiceFlow logged</div><div style="font-size:10px;color:var(--green);font-weight:600">Live</div></div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div style="width:8px;height:8px;border-radius:50%;background:#FF9500;flex-shrink:0"></div><div style="flex:1;font-size:12px;color:var(--charcoal)">Annual ESG report — Q1 draft ready</div><div style="font-size:10px;color:#FF9500;font-weight:600">Review</div></div>
-      <div style="display:flex;align-items:center;gap:10px"><div style="width:8px;height:8px;border-radius:50%;background:var(--marble-dark);flex-shrink:0"></div><div style="flex:1;font-size:12px;color:var(--charcoal)">EarthCheck recertification — due June</div><div style="font-size:10px;color:var(--mid-grey);font-weight:600">Jun 26</div></div>
+      <div style="font-size:16px;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol);margin-bottom:10px;font-weight:600">HKEX ESG Reporting · Status</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div style="width:8px;height:8px;border-radius:50%;background:#34C759;flex-shrink:0"></div><div style="flex:1;font-size:17px;color:var(--charcoal)">Scope 1 &amp; 2 — Auto-captured via BMS</div><div style="font-size:17px;color:var(--green);font-weight:600">Live</div></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div style="width:8px;height:8px;border-radius:50%;background:#34C759;flex-shrink:0"></div><div style="flex:1;font-size:17px;color:var(--charcoal)">Scope 3 F&amp;B waste — ServiceFlow logged</div><div style="font-size:17px;color:var(--green);font-weight:600">Live</div></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div style="width:8px;height:8px;border-radius:50%;background:#FF9500;flex-shrink:0"></div><div style="flex:1;font-size:17px;color:var(--charcoal)">Annual ESG report — Q1 draft ready</div><div style="font-size:17px;color:#FF9500;font-weight:600">Review</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:8px;height:8px;border-radius:50%;background:var(--marble-dark);flex-shrink:0"></div><div style="flex:1;font-size:17px;color:var(--charcoal)">EarthCheck recertification — due June</div><div style="font-size:17px;color:var(--mid-grey);font-weight:600">Jun 26</div></div>
     </div>
 
     <div style="height:16px"></div>
@@ -2150,41 +2150,41 @@ body{
   <div class="scroll">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px 16px 0">
       <div style="background:linear-gradient(135deg,#1a1208,#2a1e0e);border-radius:14px;padding:14px;border:1px solid rgba(201,169,122,.3)">
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#C9A97A;margin-bottom:6px">Phase 1 · In Development</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#C9A97A;margin-bottom:6px">Phase 1 · In Development</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ivory);margin-bottom:8px">The Hari<br>Hong Kong</div>
-        <div style="font-size:11px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ Prototype built</div>
-        <div style="font-size:11px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ Concept validated</div>
-        <div style="font-size:11px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ HKEX logic mapped</div>
-        <div style="font-size:10px;color:#C9A97A;margin-top:6px;font-weight:600">Pilot target: Q3 2026</div>
+        <div style="font-size:17px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ Prototype built</div>
+        <div style="font-size:17px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ Concept validated</div>
+        <div style="font-size:17px;color:rgba(201,169,122,.8);margin-bottom:2px">▸ HKEX logic mapped</div>
+        <div style="font-size:17px;color:#C9A97A;margin-top:6px;font-weight:600">Pilot target: Q3 2026</div>
       </div>
       <div style="background:linear-gradient(135deg,#080f1a,#0d1a2e);border-radius:14px;padding:14px;border:1px solid rgba(27,45,79,.4)">
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(106,190,138,.5);margin-bottom:6px">Phase 2 · Q3 2026</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(106,190,138,.5);margin-bottom:6px">Phase 2 · Q3 2026</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ivory);margin-bottom:8px">The Hari<br>London</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.45);margin-bottom:2px">▸ F&amp;B Intelligence</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.45);margin-bottom:2px">▸ Housekeeping</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.45);margin-bottom:2px">▸ ESG Reporting</div>
-        <div style="font-size:10px;color:#C9A97A;margin-top:6px;font-weight:600">Go-live: Sep 2026</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.45);margin-bottom:2px">▸ F&amp;B Intelligence</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.45);margin-bottom:2px">▸ Housekeeping</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.45);margin-bottom:2px">▸ ESG Reporting</div>
+        <div style="font-size:17px;color:#C9A97A;margin-top:6px;font-weight:600">Go-live: Sep 2026</div>
       </div>
       <div style="background:linear-gradient(135deg,#0a1a10,#0a1218);border-radius:14px;padding:14px;border:1px solid rgba(27,45,79,.2);opacity:.8">
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.3);margin-bottom:6px">Phase 3 · Q2 2027</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(245,240,232,.6);margin-bottom:8px">New Hotel<br><em style="font-size:13px;color:rgba(245,240,232,.4)">City TBA</em></div>
-        <div style="font-size:11px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Native integration</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Pre-opening waste</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.3)">▸ Ramp-up acceleration</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.3);margin-bottom:6px">Phase 3 · Q2 2027</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(245,240,232,.6);margin-bottom:8px">New Hotel<br><em style="font-size:16px;color:rgba(245,240,232,.4)">City TBA</em></div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Native integration</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Pre-opening waste</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3)">▸ Ramp-up acceleration</div>
       </div>
       <div style="background:linear-gradient(135deg,#12081a,#1a0e28);border-radius:14px;padding:14px;border:1px solid rgba(155,127,196,.2);opacity:.7">
-        <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(155,127,196,.5);margin-bottom:6px">Phase 4 · Q1 2028</div>
+        <div style="font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:rgba(155,127,196,.5);margin-bottom:6px">Phase 4 · Q1 2028</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(245,240,232,.55);margin-bottom:8px">Portfolio<br>Intelligence AI</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Cross-property AI</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Predictive procurement</div>
-        <div style="font-size:11px;color:rgba(245,240,232,.3)">▸ Automated investor reports</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Cross-property AI</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3);margin-bottom:2px">▸ Predictive procurement</div>
+        <div style="font-size:17px;color:rgba(245,240,232,.3)">▸ Automated investor reports</div>
       </div>
     </div>
     <div style="margin:12px 16px 0;background:var(--charcoal);border-radius:14px;padding:14px">
-      <div style="font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:8px">Portfolio Value at Full Deployment</div>
-      <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:12px;color:rgba(245,240,232,.5)">Annual EBITDA uplift (3 props)</span><span style="font-size:12px;color:#6abe8a;font-weight:600">HK$3.8M</span></div>
-      <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:12px;color:rgba(245,240,232,.5)">Asset value created (20×)</span><span style="font-size:12px;color:#C9A97A;font-weight:600">HK$76M</span></div>
-      <div style="display:flex;justify-content:space-between;padding:5px 0"><span style="font-size:12px;color:rgba(245,240,232,.5)">ESG compliance (all markets)</span><span style="font-size:12px;color:#6abe8a;font-weight:600">✓ Full</span></div>
+      <div style="font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:8px">Portfolio Value at Full Deployment</div>
+      <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:17px;color:rgba(245,240,232,.5)">Annual EBITDA uplift (3 props)</span><span style="font-size:17px;color:#6abe8a;font-weight:600">HK$3.8M</span></div>
+      <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(245,240,232,.06)"><span style="font-size:17px;color:rgba(245,240,232,.5)">Asset value created (20×)</span><span style="font-size:17px;color:#C9A97A;font-weight:600">HK$76M</span></div>
+      <div style="display:flex;justify-content:space-between;padding:5px 0"><span style="font-size:17px;color:rgba(245,240,232,.5)">ESG compliance (all markets)</span><span style="font-size:17px;color:#6abe8a;font-weight:600">✓ Full</span></div>
     </div>
     <div style="height:16px"></div>
   </div>
@@ -2197,9 +2197,9 @@ body{
 <!-- INFO BUBBLE OVERLAY -->
 <div id="infoBubble" style="display:none;position:absolute;inset:0;z-index:500;background:rgba(26,20,14,.75);backdrop-filter:blur(2px);align-items:flex-end;justify-content:center;padding:20px" onclick="document.getElementById('infoBubble').style.display='none'">
   <div style="background:var(--charcoal);border:1px solid rgba(201,169,122,.3);border-radius:18px;padding:20px;width:100%;max-width:350px;position:relative">
-    <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:8px">Presentation Note</div>
-    <div id="infoBubbleText" style="font-size:13px;color:rgba(245,240,232,.8);line-height:1.6"></div>
-    <div style="margin-top:14px;font-size:11px;color:rgba(245,240,232,.3);text-align:center">Tap anywhere to dismiss</div>
+    <div style="font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,169,122,.5);margin-bottom:8px">Presentation Note</div>
+    <div id="infoBubbleText" style="font-size:16px;color:rgba(245,240,232,.8);line-height:1.6"></div>
+    <div style="margin-top:14px;font-size:17px;color:rgba(245,240,232,.3);text-align:center">Tap anywhere to dismiss</div>
   </div>
 </div>
 </div><!-- end .phone -->
@@ -2246,7 +2246,7 @@ function renderFaultLog(idx){
   log.forEach(function(e){
     var d=document.createElement('div');
     d.style.cssText='background:var(--marble);border-radius:9px;padding:9px 11px;display:flex;gap:10px;align-items:flex-start';
-    d.innerHTML='<span style="font-size:10px;color:var(--mid-grey);font-family:monospace;white-space:nowrap;margin-top:1px">'+e.t+'</span><span style="font-size:12px;color:var(--charcoal);line-height:1.45">'+e.m+'</span>';
+    d.innerHTML='<span style="font-size:17px;color:var(--mid-grey);font-family:monospace;white-space:nowrap;margin-top:1px">'+e.t+'</span><span style="font-size:17px;color:var(--charcoal);line-height:1.45">'+e.m+'</span>';
     el.appendChild(d);
   });
 }
@@ -2290,19 +2290,7 @@ function tick(){
 tick();setInterval(tick,1000);
 
 // ── NAV (fixed: tracks in-flight transitions) ──
-// Position splash scroll area below the fixed header card
-function positionSplashBody(){
-  var phone=document.querySelector('.phone');
-  var card=document.getElementById('splashCard');
-  var body=document.getElementById('splashBody');
-  if(card&&body&&phone){
-    var phoneTop=phone.getBoundingClientRect().top;
-    var cardBottom=card.getBoundingClientRect().bottom;
-    body.style.top=(cardBottom-phoneTop+8)+'px';
-  }
-}
-window.addEventListener('load',positionSplashBody);
-setTimeout(positionSplashBody,150);
+// Splash is now a natural scroll flow — no JS positioning needed
 
 var cur='splash',transitioning=false;
 function nav(id){
