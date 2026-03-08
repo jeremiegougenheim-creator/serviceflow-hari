@@ -1163,12 +1163,10 @@ body{
   </div>
 
   <div class="scroll">
-    <div style="padding:12px 16px 4px">
-      <button onclick="nav('maintlog')" style="width:100%;padding:13px;background:linear-gradient(135deg,#252010,#2a1c08);border:1px solid rgba(255,149,0,.7);border-radius:14px;font-size:17px;color:#FFB340;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Log New Fault</button>
-    </div>
 
     <!-- FAULTS TAB -->
     <div id="mp-faults">
+      <div style="padding:12px 16px 4px"><button onclick="nav('maintlog')" style="width:100%;padding:13px;background:linear-gradient(135deg,#252010,#2a1c08);border:1px solid rgba(255,149,0,.7);border-radius:14px;font-size:17px;color:#FFB340;font-family:'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Log New Fault</button></div>
       <div style="padding:10px 16px 6px;display:flex;justify-content:space-between;align-items:center">
         <div style="font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)" id="faultFilterLabel">All Faults</div>
         <button onclick="filterFaults('all')" style="font-size:17px;color:var(--bronze);background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.06em" id="faultClearBtn" style="display:none">Show All</button>
@@ -1265,7 +1263,10 @@ body{
 
     <!-- PLANT TAB -->
     <div id="mp-plant" style="display:none">
-      <div style="padding:12px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">HVAC Systems</div>
+      <div style="padding:8px 16px 4px;display:flex;justify-content:flex-end">
+        <button onclick="nav('maintlog')" style="display:flex;align-items:center;gap:6px;background:linear-gradient(135deg,#252010,#2a1c08);border:1px solid rgba(255,149,0,.5);border-radius:10px;padding:7px 14px;font-size:13px;font-weight:600;color:#FFB340;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFB340" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Log</button>
+      </div>
+      <div style="padding:4px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">HVAC Systems</div>
       <div class="pdc warn"><div class="pdc-l"><div class="pdc-name">Rooftop HVAC Unit</div><div class="pdc-loc">Plant Room RF · Floors 25–30</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Pressure</span><span class="pdc-rv warn">82%</span></div><div class="pdc-r"><span class="pdc-rl">Temp Out</span><span class="pdc-rv">18°C</span></div><div class="pdc-r"><span class="pdc-rl">Runtime</span><span class="pdc-rv">14h 22m</span></div></div></div><div class="pdc-status warn">⚠ Low</div></div>
       <div class="pdc ok"><div class="pdc-l"><div class="pdc-name">Main AHU — B1</div><div class="pdc-loc">Plant Room B1 · Floors 1–15</div><div class="pdc-readings"><div class="pdc-r"><span class="pdc-rl">Pressure</span><span class="pdc-rv">96%</span></div><div class="pdc-r"><span class="pdc-rl">Temp Out</span><span class="pdc-rv">16°C</span></div><div class="pdc-r"><span class="pdc-rl">Runtime</span><span class="pdc-rv">18h 05m</span></div></div></div><div class="pdc-status ok">Normal</div></div>
       <div style="padding:10px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey)">Lift Systems</div>
@@ -1279,7 +1280,10 @@ body{
 
     <!-- PM SCHEDULE TAB -->
     <div id="mp-pm" style="display:none">
-      <div style="padding:12px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#FF453A">Overdue</div>
+      <div style="padding:8px 16px 4px;display:flex;justify-content:flex-end">
+        <button onclick="nav('maintlog')" style="display:flex;align-items:center;gap:6px;background:linear-gradient(135deg,#252010,#2a1c08);border:1px solid rgba(255,149,0,.5);border-radius:10px;padding:7px 14px;font-size:13px;font-weight:600;color:#FFB340;font-family:'Jost',sans-serif;cursor:pointer;letter-spacing:.06em"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFB340" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Log</button>
+      </div>
+      <div style="padding:4px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#FF453A">Overdue</div>
       <div class="pmr ov"><div class="pmd-date"><div class="pmd-day">26</div><div class="pmd-mon">Feb</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">LED dimmer check · Corridor F22 &amp; F24</div><div class="pmd-sub">Renewable lighting system · 2hr · 1 person</div><div class="jtag crit" style="display:inline-block;margin-top:4px">4 days overdue</div></div><div class="pmd-chip ov" style="flex-shrink:0;margin-top:2px">Overdue</div></div>
       <div class="pmr ov"><div class="pmd-date"><div class="pmd-day">27</div><div class="pmd-mon">Feb</div></div><div class="pmd-vdiv"></div><div class="pmd-body"><div class="pmd-title">Boiler annual inspection — B1</div><div class="pmd-sub">Regulatory compliance · 3hr · 2 persons</div><div class="jtag crit" style="display:inline-block;margin-top:4px">3 days overdue</div></div><div class="pmd-chip ov" style="flex-shrink:0;margin-top:2px">Overdue</div></div>
       <div style="padding:8px 16px 7px;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#FF9500">This Week — Planned</div>
@@ -1334,7 +1338,7 @@ body{
   <div class="bnav">
     <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
     <button class="nb on" onclick="nav('maintenance')" aria-label="Maintenance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span>Maint.</span></button>
-    <button class="nb" onclick="nav('maintlog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg><span>Log</span></button>
+    <button class="nb" onclick="nav('maintlog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg><span>Log</span></button>
   </div>
 </div>
 
@@ -1390,6 +1394,7 @@ body{
   <div class="bnav">
     <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
     <button class="nb on" onclick="nav('maintenance')" aria-label="Maintenance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span>Maint.</span></button>
+    <button class="nb" onclick="nav('maintlog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg><span>Log</span></button>
     <button class="nb" onclick="nav('briefing')" aria-label="Briefing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Brief</span></button>
   </div>
 </div>
@@ -1904,7 +1909,7 @@ body{
   <div class="bnav">
     <button class="nb" onclick="nav('dashboard')" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></button>
     <button class="nb on" onclick="nav('maintenance')" aria-label="Maintenance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span>Maint.</span></button>
-    <button class="nb" onclick="nav('maintlog')" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg><span>Log</span></button>
+
   </div>
 </div>
 
